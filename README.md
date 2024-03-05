@@ -4,8 +4,19 @@
 
 <details>
 
-<summary>aa?</summary>
+<summary>soru?</summary>
 
-aaaaaa
+cevap
 
 </details>
+
+<figure><img src="assets/solid.gif" alt=""><figcaption></figcaption></figure>
+
+```java
+kodlar kodlar
+```
+
+
+
+
+
