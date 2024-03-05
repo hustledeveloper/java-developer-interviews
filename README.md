@@ -1,6 +1,6 @@
 # java-developerMulakat-Sorulari
 
-### *Java ve OOP*
+### _Java ve OOP_
 
 <details>
 
@@ -8,17 +8,13 @@
 
 cevap
 
-
 ```java
 kodlar kodlar
 ```
 
 </details>
 
-
 <figure><img src="assets/solid.gif" alt=""><figcaption></figcaption></figure>
-
-
 
 <details>
 
@@ -36,36 +32,34 @@ Polymorphism: Methodların objeye göre farklı çıktılar üretmesi veya farkl
 
 <summary>Javada ”public static void main(String[ ] args)” neden kullanmalıyız?</summary>
 
-JVM kodları çalışırken yazılmış classlar arasından başlayacağı noktayı bilmesi gerekmektedir. JVM, publicstaticvoidmain(String[ ] args) metodunu arar ve oradan çalışmaya başlar. 
-
+JVM kodları çalışırken yazılmış classlar arasından başlayacağı noktayı bilmesi gerekmektedir. JVM, publicstaticvoidmain(String[ ] args) metodunu arar ve oradan çalışmaya başlar.
 
 </details>
-
-
 
 <details>
 
 <summary>javada veri tipleri kaça ayrılır?</summary>
 
 Java'da veri tipleri 3 ana kategoriye ayrılır:
+
 1. Temel Veri Tipleri (Primitive Data Types)
-Tam Sayılar:
-byte (8 bit)
-short (16 bit)
-int (32 bit)
-long (64 bit)
-Ondalıklı Sayılar:
-float (32 bit)
-double (64 bit)
-Karakterler:
-char (16 bit)
-Mantıksal Değerler:
-boolean (true veya false)
+   Tam Sayılar:
+   byte (8 bit)
+   short (16 bit)
+   int (32 bit)
+   long (64 bit)
+   Ondalıklı Sayılar:
+   float (32 bit)
+   double (64 bit)
+   Karakterler:
+   char (16 bit)
+   Mantıksal Değerler:
+   boolean (true veya false)
 2. Referans Tipleri (Reference Types)
-Nesneleri ve dizileri saklamak için kullanılır.
-Sınıflar
-Arabirimler
-Diziler
+   Nesneleri ve dizileri saklamak için kullanılır.
+   Sınıflar
+   Arabirimler
+   Diziler
 3. Özel Veri Tipleri (Special Data Types)
 void
 null
@@ -75,10 +69,6 @@ void fonksiyonların geri dönüş değerini belirtmek için kullanılır.
 null bir referans tipinin değerinin boş olduğunu gösterir.
 </details>
 
-
-
-
-
 <details>
 
 <summary>++İmplement, extend ve instanceof kavramlarını açıklayınız?
@@ -87,7 +77,6 @@ null bir referans tipinin değerinin boş olduğunu gösterir.
 Implement: Bir sınıfın belirli bir davranışa sahip olduğunu belirtmek için kullanılmalıdır. Bu davranış arayüzde tanımlanır ve sınıf bu arayüzü implement ederek bu davranışı sağlamalıdır.
 Extend: Bir sınıftan yeni bir sınıf oluşturmak ve üst sınıfa ait özellikleri ve metotları kullanarak yeni bir davranış eklemek istediğinizde kullanılır.
 Instanceof operatörü, bir nesnenin belirli bir sınıftan veya arayüzden olup olmadığını kontrol etmek için kullanılır.
-
 
 </details>
 
@@ -134,6 +123,7 @@ public class Person {
 }
 
 ```
+
 Bu örnekte, Person sınıfının name ve age üyeleri private olarak belirtilmiştir. Bu üyelere doğrudan erişilemez. Erişim için getName(), setName(), getAge() ve setAge() metotları kullanılmalıdır.
 Encapsulation, Java'da önemli bir programlama tekniğidir. Sınıfların üyelerini korumak ve saklamak için kullanılır. Bu teknik, kodun daha güvenli, sağlam ve bakımı kolay olmasını sağlar.
 
@@ -145,8 +135,10 @@ Encapsulation, Java'da önemli bir programlama tekniğidir. Sınıfların üyele
 ?</summary>
 
 Polymorphism, birden fazla işlemin tek bir kod ile gerçekleştirilebilme özelliğidir. Java'da polymorphism iki şekilde gerçekleşir:
+
 1. Overloading: Aynı isimdeki metotların farklı parametre listeleri ile tanımlanmasıdır. Bu sayede, aynı isimdeki metot farklı işlevler için kullanılabilir.
-Örnek:
+   Örnek:
+
 ```java
 public class Overloading {
 
@@ -164,10 +156,12 @@ public class Overloading {
     }
 }
 ```
+
 Bu örnekte, topla metodu iki farklı şekilde tanımlanmıştır. Birincisi int parametreler alır ve int değer döndürür. İkincisi ise double parametreler alır ve double değer döndürür.
 
 2. Overriding: Bir alt sınıfta, bir üst sınıftaki metodun farklı bir şekilde tanımlanmasıdır. Bu sayede, alt sınıf, üst sınıftan devraldığı metodu kendi ihtiyacına göre özelleştirebilir.
-Örnek:
+   Örnek:
+
 ```java
 public class Animal {
 
@@ -206,6 +200,7 @@ public class Main {
     }
 }
 ```
+
 Bu örnekte, Animal sınıfındaki speak metodu, Dog ve Cat sınıflarında farklı şekilde override edilmiştir. Bu sayede, her hayvan kendi türüne özgü ses çıkarabilir.
 Polymorphism'in faydaları:
 Kodun daha az tekrarlı olmasını sağlar.
@@ -213,9 +208,8 @@ Kodun daha okunabilir ve anlaşılır olmasını sağlar.
 Kodun daha esnek ve genişletilebilir olmasını sağlar.
 Bakım kolaylığı sağlar.
 Polymorphism, Java'da önemli bir programlama tekniğidir. Kodun daha az tekrarlı, daha okunabilir, daha esnek ve daha bakımı kolay olmasını sağlar.
+
 </details>
-
-
 
 <details>
 
@@ -228,7 +222,6 @@ try bloğu, hataya neden olabilecek kodları içerir.
 catch bloğu, hataya ne zaman ve nasıl tepki verileceğini tanımlar.
 throw Anahtar Sözcüğü:
 throw anahtar sözcüğü, kasıtlı olarak bir hata oluşturmak için kullanılır.
-
 
 </details>
 
@@ -250,45 +243,41 @@ Fırlatılabilecek hatalar bir veya daha fazla Exception nesnesi olarak belirtil
 Metodun hata fırlatıp fırlatmayacağını garanti etmez.
 Hata fırlatma işlemi try-catch bloğunda kontrol edilir.
 
-
 </details>
-
 
 <details>
 
 <summary>++Java’da nesneleri karşılaştırıken .equals() ile == kullanmanın farkı nedir?</summary>
 
 Java'da nesneleri karşılaştırmak için iki yöntem kullanılır:
+
 1. == Operatörü:
-== operatörü, iki nesnenin referanslarının aynı olup olmadığını kontrol eder.
-İki nesnenin referansları aynıysa, == operatörü true döndürür.
-String s1 = "Merhaba";
-String s2 = "Merhaba";
+   == operatörü, iki nesnenin referanslarının aynı olup olmadığını kontrol eder.
+   İki nesnenin referansları aynıysa, == operatörü true döndürür.
+   String s1 = "Merhaba";
+   String s2 = "Merhaba";
 
 if (s1 == s2) {
-    System.out.println("Nesneler aynı!");
+System.out.println("Nesneler aynı!");
 } else {
-    System.out.println("Nesneler farklı!");
+System.out.println("Nesneler farklı!");
 }
 
 2. .equals() Metotu:
-.equals() metodu, iki nesnenin içeriklerinin aynı olup olmadığını kontrol eder.
-.equals() metodu true döndürürse, iki nesnenin içerikleri aynıdır.
-Ne zaman neyi kullanmalıyız?
-Nesnelerin referanslarının aynı olup olmadığını kontrol etmek istiyorsanız == operatörünü kullanmalısınız.
-Nesnelerin içeriklerinin aynı olup olmadığını kontrol etmek istiyorsanız .equals() metodunu kullanmalısınız.
-Dikkat:
-== operatörü, primitive tipler için de kullanılabilir. Primitive tipler için == operatörü, iki değerin aynı olup olmadığını kontrol eder.
-.equals() metodu, Object sınıfından miras alınır. Bu nedenle, tüm nesneler .equals() metoduna sahiptir.
-
-
+   .equals() metodu, iki nesnenin içeriklerinin aynı olup olmadığını kontrol eder.
+   .equals() metodu true döndürürse, iki nesnenin içerikleri aynıdır.
+   Ne zaman neyi kullanmalıyız?
+   Nesnelerin referanslarının aynı olup olmadığını kontrol etmek istiyorsanız == operatörünü kullanmalısınız.
+   Nesnelerin içeriklerinin aynı olup olmadığını kontrol etmek istiyorsanız .equals() metodunu kullanmalısınız.
+   Dikkat:
+   == operatörü, primitive tipler için de kullanılabilir. Primitive tipler için == operatörü, iki değerin aynı olup olmadığını kontrol eder.
+   .equals() metodu, Object sınıfından miras alınır. Bu nedenle, tüm nesneler .equals() metoduna sahiptir.
 
 ```java
 kodlar kodlar
 ```
 
 </details>
-
 
 <details>
 
@@ -301,7 +290,6 @@ private erişim belirteci, metodun sadece tanımlandığı sınıf tarafından e
 
 </details>
 
-
 <details>
 
 <summary>Java’da multi inheritance var mıdır, neden?</summary>
@@ -309,7 +297,6 @@ private erişim belirteci, metodun sadece tanımlandığı sınıf tarafından e
 Hayır, Java'da çoklu kalıtım (multi inheritance) doğrudan desteklenmez. Bunun sebeplerinden biri Diamond Problemidir:
 Bir sınıf birden fazla sınıftan miras alırsa ve bu sınıflardan birkaçı aynı metodu veya field'ı tanımlarsa, hangisinin kullanılacağına karar vermede belirsizlik oluşur. Bu duruma diamond problemi denir.
 Örnek:
-
 
 ```java
 
@@ -329,10 +316,6 @@ public class Cat implements Animal, Dog {
 
 </details>
 
-
-
-
-
 <details>
 
 <summary>Java’da multithreading nedir?</summary>
@@ -349,6 +332,7 @@ Hata ayıklama: Çoklu iş parçacıklı program hatalarını ayıklamak daha zo
 Java'da çoklu iş parçacıklılık:
 Java, Thread sınıfı ve iş parçacıklarını senkronize etmek için çeşitli mekanizmalar (kilitler, semaforlar) ile çoklu iş parçacıklı programlama desteği sunar. Bunların yanı sıra, ExecutorService ve Callable arayüzleri gibi daha yüksek seviyeli API'ler de mevcuttur.
 Örnek:
+
 ```java
 public class Example {
   public static void main(String[] args) {
@@ -364,54 +348,50 @@ public class Example {
   }
 }
 ```
+
 Bu örnekte, thread1 ve thread2 adında iki iş parçacığı oluşturulur ve her biri farklı bir işi yürütecek şekilde programlanır. Her iki iş parçacığı da aynı anda başlatılır ve kendi görevlerini bağımsız olarak yerine getirir.
 
-
 </details>
-
 
 <details>
 
 <summary>++Java’da thread safe yöntemleri nelerdir?
 ?</summary>
 
-
 Java'da thread-safe yöntemler, birden fazla thread tarafından aynı anda erişildiğinde tutarsızlık veya veri bozulması oluşmadan çalışabilen yöntemlerdir. Bu yöntemler, thread'lerin birbirleriyle senkronize olmasını ve veri erişimini kontrol etmesini sağlayarak programın stabilitesini ve güvenliğini artırır.
 Thread-safe yöntemleri oluşturmak için:
+
 1. Synchronized Anahtar Sözcüğü:
-synchronized anahtar sözcüğü, bir metodun veya kod bloğunun bir anda sadece bir thread tarafından erişilebilir olmasını sağlar. Bu sayede, bir thread metodu çalıştırırken diğer thread'ler o metodun tamamlanmasını bekler.
-public synchronized void someMethod() {
-  // Thread-safe kod
-}
+   synchronized anahtar sözcüğü, bir metodun veya kod bloğunun bir anda sadece bir thread tarafından erişilebilir olmasını sağlar. Bu sayede, bir thread metodu çalıştırırken diğer thread'ler o metodun tamamlanmasını bekler.
+   public synchronized void someMethod() {
+   // Thread-safe kod
+   }
 2. Kilitler (Locks):
-Kilitler, bir resource'a erişimi kontrol etmek için kullanılan nesnelerdir. Bir thread bir resource'a erişmek istediğinde kilidi alır ve işini tamamladıktan sonra kilidi serbest bırakır. Bu sayede, birden fazla thread aynı resource'a erişmeye çalışırken veri bozulması önlenir.
-private final Lock lock = new ReentrantLock();
-public void someMethod() {
-  lock.lock();
-  try {
-    // Thread-safe kod
-  } finally {
-    lock.unlock();
-  }
-}
+   Kilitler, bir resource'a erişimi kontrol etmek için kullanılan nesnelerdir. Bir thread bir resource'a erişmek istediğinde kilidi alır ve işini tamamladıktan sonra kilidi serbest bırakır. Bu sayede, birden fazla thread aynı resource'a erişmeye çalışırken veri bozulması önlenir.
+   private final Lock lock = new ReentrantLock();
+   public void someMethod() {
+   lock.lock();
+   try {
+   // Thread-safe kod
+   } finally {
+   lock.unlock();
+   }
+   }
 3. Atomik İşlemler:
-Atomik işlemler, tek bir adımda tamamlanan ve bölünemeyen işlemlerdir. Bu işlemler, birden fazla thread tarafından aynı anda erişilse bile tutarsızlık oluşmaz. Java'da AtomicInteger gibi atomik değişkenler ve compareAndSet() gibi atomik işlemler mevcuttur.
+   Atomik işlemler, tek bir adımda tamamlanan ve bölünemeyen işlemlerdir. Bu işlemler, birden fazla thread tarafından aynı anda erişilse bile tutarsızlık oluşmaz. Java'da AtomicInteger gibi atomik değişkenler ve compareAndSet() gibi atomik işlemler mevcuttur.
 
 private final AtomicInteger counter = new AtomicInteger();
 
 public void incrementCounter() {
-  counter.incrementAndGet();
-}
-4. Değişmez Nesneler (Immutable Objects):
+counter.incrementAndGet();
+} 4. Değişmez Nesneler (Immutable Objects):
 Değişmez nesneler, oluşturulduktan sonra değiştirilemeyen nesnelerdir. Bu nesneler, birden fazla thread tarafından erişilse bile tutarsızlık oluşmaz. Java'da String ve Integer gibi değişmez nesneler mevcuttur.
 
 private final String name = "John Doe";
 
-
 public String getName() {
-  return name;
-}
-5. Thread-safe Kütüphaneler:
+return name;
+} 5. Thread-safe Kütüphaneler:
 Java'da java.util.concurrent paketi gibi thread-safe kütüphaneler mevcuttur. Bu kütüphaneler, thread-safe koleksiyonlar, senkronizasyon araçları ve diğer yardımcı sınıflar içerir.
 Thread-safe yöntemleri kullanmanın faydaları:
 Veri tutarsızlığı ve bozulmasını önler
@@ -425,9 +405,7 @@ Atomik işlemleri doğru kullanın.
 Değişmez nesneleri tercih edin.
 Thread-safe kütüphanelerden yararlanın.
 
-
 </details>
-
 
 <details>
 
@@ -453,62 +431,63 @@ Set: Benzersiz elemanları depolamak için kullanılır. Örneğin, bir kelime l
 
 </details>
 
-
 <details>
 
 <summary>+Java’da nesneleri nasıl sıralayabiliriz?
 ?</summary>
 
 Java'da nesneleri sıralamak için iki temel yöntem vardır:
-1. Comparable Kullanarak:
-Comparable arayüzünü uygulayan nesneler karşılaştırılabilir hale gelir.
-Bu arayüz, compareTo() adında bir metodu tanımlar.
-Bu metot, iki nesneyi karşılaştırarak hangisinin daha büyük veya daha küçük olduğunu belirler.
-Örnek:
-Java
-public class Person implements Comparable<Person> {
+
+1.  Comparable Kullanarak:
+    Comparable arayüzünü uygulayan nesneler karşılaştırılabilir hale gelir.
+    Bu arayüz, compareTo() adında bir metodu tanımlar.
+    Bu metot, iki nesneyi karşılaştırarak hangisinin daha büyük veya daha küçük olduğunu belirler.
+    Örnek:
+    Java
+    public class Person implements Comparable<Person> {
     private String name;
     private int age;
 
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
+        public Person(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
 
-    @Override
-    public int compareTo(Person other) {
-        return this.age - other.age;
+        @Override
+        public int compareTo(Person other) {
+            return this.age - other.age;
+        }
+
     }
-}
 
 // Sıralama
 List<Person> people = Arrays.asList(
-    new Person("Ahmet", 25),
-    new Person("Ayşe", 30),
-    new Person("Mehmet", 20)
+new Person("Ahmet", 25),
+new Person("Ayşe", 30),
+new Person("Mehmet", 20)
 );
 
 Collections.sort(people);
 
 // Yaş sırasına göre yazdırma
 for (Person person : people) {
-    System.out.println(person.name + " - " + person.age);
+System.out.println(person.name + " - " + person.age);
 }
 
 2. Stream Kullanarak:
-Java 8'den itibaren Stream API'si kullanılarak nesneleri sıralamak daha kolay hale gelmiştir.
-sorted() metodu, bir stream'deki nesneleri belirli bir kritere göre sıralar.
-Örnek:
-Java
-List<Person> people = Arrays.asList(
-    new Person("Ahmet", 25),
-    new Person("Ayşe", 30),
-    new Person("Mehmet", 20)
-);
+   Java 8'den itibaren Stream API'si kullanılarak nesneleri sıralamak daha kolay hale gelmiştir.
+   sorted() metodu, bir stream'deki nesneleri belirli bir kritere göre sıralar.
+   Örnek:
+   Java
+   List<Person> people = Arrays.asList(
+   new Person("Ahmet", 25),
+   new Person("Ayşe", 30),
+   new Person("Mehmet", 20)
+   );
 
 people.stream()
-    .sorted(Comparator.comparingInt(Person::getAge))
-    .forEach(System.out::println);
+.sorted(Comparator.comparingInt(Person::getAge))
+.forEach(System.out::println);
 
 Farklı Sıralama Kriterleri:
 Comparable ile sıralama yaparken sadece tek bir kritere göre sıralama yapılabilir.
@@ -519,10 +498,7 @@ Comparable arayüzünü kullanarak nesneleri karşılaştırılabilir hale getir
 Stream API'si ile nesneleri daha kolay ve esnek bir şekilde sıralayabilirsiniz.
 Hangi yöntemi kullanacağınız, ihtiyaçlarınıza ve sıralama kriterlerinize bağlıdır.
 
-
 </details>
-
-
 
 <details>
 
@@ -530,52 +506,53 @@ Hangi yöntemi kullanacağınız, ihtiyaçlarınıza ve sıralama kriterlerinize
 ?</summary>
 
 Java 8 ile gelen yenilikler, Java'da programlama yapmayı daha kolay, daha güçlü ve daha esnek hale getirmiştir. Bu yeniliklerden bazıları şunlardır:
+
 1. Lambda İfadeleri:
-Fonksiyonları daha kısa ve öz bir şekilde yazmamızı sağlar.
-Örnek:
-Java
-// Java 7
-List<String> names = Arrays.asList("Ahmet", "Ayşe", "Mehmet");
-Collections.sort(names, new Comparator<String>() {
-    @Override
-    public int compare(String o1, String o2) {
-        return o1.compareTo(o2);
-    }
-});
+   Fonksiyonları daha kısa ve öz bir şekilde yazmamızı sağlar.
+   Örnek:
+   Java
+   // Java 7
+   List<String> names = Arrays.asList("Ahmet", "Ayşe", "Mehmet");
+   Collections.sort(names, new Comparator<String>() {
+   @Override
+   public int compare(String o1, String o2) {
+   return o1.compareTo(o2);
+   }
+   });
 
 // Java 8
 names.sort((o1, o2) -> o1.compareTo(o2));
 
 2. Stream API:
-Koleksiyonlar üzerinde daha kolay ve işlevsel bir şekilde işlem yapmamızı sağlar.
-Örnek:
+   Koleksiyonlar üzerinde daha kolay ve işlevsel bir şekilde işlem yapmamızı sağlar.
+   Örnek:
 
 // Java 7
 List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
 int sum = 0;
 for (int number : numbers) {
-    if (number % 2 == 0) {
-        sum += number;
-    }
+if (number % 2 == 0) {
+sum += number;
+}
 }
 
 // Java 8
 sum = numbers.stream().filter(n -> n % 2 == 0).sum();
 
 3. Method References:
-Metotları daha kısa ve öz bir şekilde referans almamızı sağlar.
-Örnek:
-Java
-// Java 7
-List<String> names = Arrays.asList("Ahmet", "Ayşe", "Mehmet");
-Collections.sort(names, String::compareToIgnoreCase);
+   Metotları daha kısa ve öz bir şekilde referans almamızı sağlar.
+   Örnek:
+   Java
+   // Java 7
+   List<String> names = Arrays.asList("Ahmet", "Ayşe", "Mehmet");
+   Collections.sort(names, String::compareToIgnoreCase);
 
 // Java 8
 names.sort(String::compareToIgnoreCase);
 
 4. Date and Time API:
-Tarih ve saat ile işlemleri daha kolay ve modern bir şekilde yapmamızı sağlar.
-Örnek:
+   Tarih ve saat ile işlemleri daha kolay ve modern bir şekilde yapmamızı sağlar.
+   Örnek:
 
 // Java 7
 Date date = new Date();
@@ -587,38 +564,39 @@ LocalDate localDate = LocalDate.now();
 LocalTime localTime = LocalTime.now();
 
 5. Optional Class:
-null değerlerini daha güvenli ve işlevsel bir şekilde yönetmemizi sağlar.
-Örnek:
-Java
-// Java 7
-String name = null;
-if (name != null) {
-    System.out.println(name.toUpperCase());
-}
+   null değerlerini daha güvenli ve işlevsel bir şekilde yönetmemizi sağlar.
+   Örnek:
+   Java
+   // Java 7
+   String name = null;
+   if (name != null) {
+   System.out.println(name.toUpperCase());
+   }
 
 // Java 8
 Optional<String> optionalName = Optional.ofNullable(name);
 optionalName.ifPresent(System.out::println);
 
-6. Default ve Static Metotlar:
-Arayüzlere yeni metotlar eklememizi sağlar.
-Örnek:
-Java
-public interface Animal {
+6.  Default ve Static Metotlar:
+    Arayüzlere yeni metotlar eklememizi sağlar.
+    Örnek:
+    Java
+    public interface Animal {
     default void makeSound() {
-        System.out.println("Ses çıkarıyor...");
+    System.out.println("Ses çıkarıyor...");
     }
 
-    static void printInfo() {
-        System.out.println("Hayvan sınıfı");
+        static void printInfo() {
+            System.out.println("Hayvan sınıfı");
+        }
+
     }
-}
 
 public class Dog implements Animal {
-    @Override
-    public void makeSound() {
-        System.out.println("Havlıyor!");
-    }
+@Override
+public void makeSound() {
+System.out.println("Havlıyor!");
+}
 }
 
 Dog dog = new Dog();
@@ -639,21 +617,17 @@ Ayrıca:
 Static metotlar da arayüzlere eklenebilir.
 Private metotlar ise eklenilemez.
 
-
 7. Nashorn JavaScript Motoru:
-Java'da JavaScript kodlarını çalıştırmamızı sağlar.
+   Java'da JavaScript kodlarını çalıştırmamızı sağlar.
 
-Bunlar sadece Java 8 ile gelen yeniliklerden birkaçıdır. 
+Bunlar sadece Java 8 ile gelen yeniliklerden birkaçıdır.
 
 </details>
-
-
 
 <details>
 
 <summary>++Uçtan uca bir proje yazılmaya başlanırken hangi teknolojiler kullanılır ve neden bunlar kullanılır? 
 ?</summary>
-
 
 Yaygın olarak kullanılan bazı teknolojiler ve neden tercih edildikleri hakkında bilgiler yer almaktadır:
 Spring Boot:
@@ -694,10 +668,7 @@ Hedef kitle: Geliştiricilerin ve kullanıcıların beceri seviyesini ve deneyim
 Bütçe ve zaman: Ücretli ve ücretsiz seçenekler arasından bütçenize ve zaman çizelgesine uygun olanları seçin.
 Topluluk desteği: Seçtiğiniz teknolojiler için aktif ve destekleyici bir topluluk olduğundan emin olun.
 
-
 </details>
-
-
 
 <details>
 
@@ -731,10 +702,7 @@ Yemeksepeti, milyonlarca kullanıcısı olan bir platformdur. Bu kadar yüksek b
 Yemeksepeti'nde Mikro Hizmetler:
 Yemeksepeti, farklı işlevler için farklı mikro hizmetler kullanmaktadır. Örneğin, sipariş verme, ödeme ve teslimat için ayrı mikro hizmetler vardır. Bu sayede Yemeksepeti, yüksek kullanıcı sayısını daha kolay yönetebilmektedir.
 
-
 </details>
-
-
 
 <details>
 
@@ -755,12 +723,13 @@ Heap ve Stack Arasındaki Farklar:
 
 Java
 public class Main {
-    public static void main(String[] args) {
-        int a = 10; // Stack'te saklanır
-        String s = "Merhaba"; // Heap'te saklanır
+public static void main(String[] args) {
+int a = 10; // Stack'te saklanır
+String s = "Merhaba"; // Heap'te saklanır
 
         // ...
     }
+
 }
 
 Bu örnekte, a değişkeni stack'te, s değişkeni ise heap'te saklanır. main() metotu sona erdiğinde, a değişkeni stack'ten silinir. s değişkeni ise garbage collector tarafından bellekten silinene kadar heap'te kalacaktır.
@@ -775,10 +744,7 @@ Java'da, new operatörü heap'te yeni bir nesne oluşturur ve null referansı is
 Stack overflow hatası, stack'in dolması durumunda oluşur.
 Heap ve stack, Java'da programlama yaparken göz önünde bulundurulması gereken önemli kavramlardır. Bu kavramları anlamak, programınızın bellek kullanımını optimize etmenize ve daha iyi performans elde etmenize yardımcı olacaktır.
 
-
 </details>
-
-
 
 <details>
 
@@ -788,13 +754,10 @@ cevap
 
 </details>
 
-
-
 <details>
 
 <summary>++Java’da Garbage collection ne işe yarar?
 ?</summary>
-
 
 Java'da Garbage Collection Nedir ve Ne İşe Yarar?
 Garbage collection (Çöp toplama), Java'da bellek yönetimini otomatik hale getiren bir mekanizmadır. Bu mekanizma, programın bellek kullanımını optimize etmeye ve bellek sızıntılarını önlemeye yardımcı olur.
@@ -815,10 +778,7 @@ Garbage collector, nesnelerin bellekten silinme sırasını garanti etmez.
 finalize() metotu, garbage collector tarafından çağrılmadan önce nesnenin bellekten silinmesini garanti etmez.
 System.gc() metotu garbage collector'ı çalıştırmaya zorlar, ancak bu metodun ne zaman ve nasıl çalışacağını garanti etmez.
 
-
 </details>
-
-
 
 <details>
 
@@ -840,16 +800,16 @@ Client: Nesneyi oluşturmak için director sınıfını kullanır.
 Builder deseninin bir örneği:
 
 public interface PersonBuilder {
-    PersonBuilder setName(String name);
-    PersonBuilder setAge(int age);
-    PersonBuilder setAddress(String address);
-    Person build();
+PersonBuilder setName(String name);
+PersonBuilder setAge(int age);
+PersonBuilder setAddress(String address);
+Person build();
 }
 
 public class ConcretePersonBuilder implements PersonBuilder {
-    private String name;
-    private int age;
-    private String address;
+private String name;
+private int age;
+private String address;
 
     @Override
     public PersonBuilder setName(String name) {
@@ -873,10 +833,11 @@ public class ConcretePersonBuilder implements PersonBuilder {
     public Person build() {
         return new Person(name, age, address);
     }
+
 }
 
 public class Director {
-    private PersonBuilder builder;
+private PersonBuilder builder;
 
     public Director(PersonBuilder builder) {
         this.builder = builder;
@@ -888,14 +849,15 @@ public class Director {
         builder.setAddress("123 Main Street");
         return builder.build();
     }
+
 }
 
 public class Main {
-    public static void main(String[] args) {
-        Director director = new Director(new ConcretePersonBuilder());
-        Person person = director.constructPerson();
-        System.out.println(person);
-    }
+public static void main(String[] args) {
+Director director = new Director(new ConcretePersonBuilder());
+Person person = director.constructPerson();
+System.out.println(person);
+}
 }
 
 Bu örnekte, Person nesnesi karmaşık bir nesnedir ve birden fazla parametreye sahiptir. Builder deseni kullanılarak, bu nesne adım adım ve kolay bir şekilde oluşturulabilir.
@@ -906,10 +868,7 @@ Değiştirilebilir nesnelerin oluşturulması
 Kodun daha okunabilir ve anlaşılır olması istenilen durumlar
 Builder deseni, karmaşık nesnelerin oluşturulmasını kolaylaştıran ve kodun daha okunabilir ve anlaşılır olmasını sağlayan bir tasarım desenidir. Bu desenin nasıl uygulandığını ve ne zaman kullanılabileceğini anlamak, programcıların daha iyi Java programları yazmalarına yardımcı olacaktır.
 
-
 </details>
-
-
 
 <details>
 
@@ -954,10 +913,7 @@ Bir üst/temel sınıfın geçerli örneğini temsil eder.
 Üst/temel sınıfın varsayılan yapıcısını çağırmak için kullanılır.
 Temel sınıfın yöntemlerine erişmek ve üst sınıf örneğini işaret etmek için kullanılır.
 
-
 </details>
-
-
 
 <details>
 
@@ -984,16 +940,12 @@ JRE, Java uygulamalarını çalıştırmak için kullanılır.
 JVM, Java bytecode'u çalıştıran bir sanal makinedir.
 JDK, JRE ve JVM arasındaki farklar:
 
-
 </details>
-
-
 
 <details>
 
 <summary>++Java’da primitiv, nonprimitiv tipler ve wrapper class nedir?
 ?</summary>
-
 
 Non-Primitive Type'larin Bellek Adresleri stack'te saklanir. içerikleri Heap'de saklanir
 Primitive Type'lara ulasmak, Non-Primitive type'lara göre daha hazlidar.
@@ -1027,36 +979,30 @@ String yeniMetin = yeniSayi.toString();
 // Integer üzerinde metot kullanımı
 boolean sonuc = yeniSayi.equals(20);
 
-
 </details>
-
-
 
 <details>
 
 <summary>++Java’da pointer kavramı neden yoktur?
 ?</summary>
 
-
 Java'da pointer kavramının olmamasının birkaç sebebi vardır:
+
 1. Güvenlik: Pointer'lar, bellek erişimi üzerinde doğrudan kontrol sağlayarak programcıların bellek hataları yapmasına ve sistemin çökmesine yol açabilir. Java, pointer'lar yerine referanslar kullanarak bu riski azaltmayı amaçlar. Referanslar, bellek adreslerini doğrudan değil, nesnelere olan erişimleri temsil eder. Bu sayede bellek hatalarının önüne geçilmiş olur.
 2. Otomatik bellek yönetimi: Java, garbage collector (çöp toplama) mekanizması ile bellek yönetimini otomatik hale getirir. Pointer'lar ile bellek yönetimi programcıya bırakıldığında, bellek sızıntıları ve diğer bellek hataları oluşabilir. Garbage collector, kullanılmayan nesneleri otomatik olarak bellekten silerek bellek sızıntılarını önler.
 3. Basitleştirilmiş programlama: Pointer'lar, karmaşık ve hata yapmaya açık bir kodlama stili teşvik eder. Java, referanslar ve garbage collector ile programlamayı basitleştirmeyi ve programcıların bellek yönetimi ile uğraşmak zorunda kalmamalarını amaçlar.
 4. Platform bağımsızlığı: Pointer'lar, farklı platformlarda farklı bellek adresleme şemaları kullandığından platform bağımsız programlama için uygun değildir. Java, bytecode ve JVM gibi platform bağımsız teknolojiler kullanarak bu sorunu aşar.
 5. Nesneye dayalı programlama: Java, nesneye dayalı programlama diline odaklanır. Pointer'lar ise nesneye dayalı programlamanın temel ilkeleri ile tam olarak uyumlu değildir.
-Özetle: Java'da pointer kavramının olmaması, dilin güvenliğini, otomatik bellek yönetimini, basitleştirilmiş programlamayı, platform bağımsızlığı ve nesneye dayalı programlama ilkelerini desteklemek için bir tercihtir.
-Bazı durumlarda pointer'lara ihtiyaç duyulabilir:
-Düşük seviyeli sistem programlama
-Donanım ile doğrudan etkileşim
-Performans optimizasyonu
-Ancak bu gibi durumlarda bile, Java'da NIO (Non-Blocking I/O) gibi alternatif çözümler tercih edilebilir.
-Not: Java'da pointer'ların olmamasının bazı dezavantajları da vardır. Örneğin, bazı işlemler için daha fazla kod yazmak gerekebilir.
-Pointer'ların kullanımının gerekli olup olmadığını ve alternatif çözümlerin varlığını değerlendirmek önemlidir.
-
+   Özetle: Java'da pointer kavramının olmaması, dilin güvenliğini, otomatik bellek yönetimini, basitleştirilmiş programlamayı, platform bağımsızlığı ve nesneye dayalı programlama ilkelerini desteklemek için bir tercihtir.
+   Bazı durumlarda pointer'lara ihtiyaç duyulabilir:
+   Düşük seviyeli sistem programlama
+   Donanım ile doğrudan etkileşim
+   Performans optimizasyonu
+   Ancak bu gibi durumlarda bile, Java'da NIO (Non-Blocking I/O) gibi alternatif çözümler tercih edilebilir.
+   Not: Java'da pointer'ların olmamasının bazı dezavantajları da vardır. Örneğin, bazı işlemler için daha fazla kod yazmak gerekebilir.
+   Pointer'ların kullanımının gerekli olup olmadığını ve alternatif çözümlerin varlığını değerlendirmek önemlidir.
 
 </details>
-
-
 
 <details>
 
@@ -1093,18 +1039,15 @@ public class PassByValue {
         y = 20;
         System.out.println("Değişkenin değeri degistir metodunda: " + y);
     }
+
 }
 Bu örnekte, degistir metodu x değişkenini parametre olarak alır. Metot içinde x değişkeninin değeri 20 olarak değiştirilir. Ancak, metottan çıkıldığında x değişkeninin değeri hala 10'dur.
 
-
 </details>
-
-
 
 <details>
 
 <summary>++Java’da static keywordü nedir??</summary>
-
 
 Static keywordü sınıfa ait degiskenler için kullanılır.
 Yani static olan bir method'a ya da bir field'a Class adiyla doğrudan erişilebilir.
@@ -1115,15 +1058,11 @@ uygulama context in içerisine yüklenir.
 JVM' in heap alanindaki perm gen/metaspace alanina yerlesir.
 Class'lar static keywordü ile imlenemezler. Yani Class'lar static olmazlar.
 
-
 </details>
-
-
 
 <details>
 
 <summary>++Java’da final keyword nedir??</summary>
-
 
 Final olan bir sey finaldir. Yani degistirilemez.
 Final olan Class'lar extend edilemezler.
@@ -1131,10 +1070,7 @@ Final olan metodlar override edilemezler.
 Final olan bir field için ya baslangic degeri verilmeli, ya da constructorlarda
 ilk deger atamasi yapilmalidir.
 
-
 </details>
-
-
 
 <details>
 
@@ -1150,10 +1086,7 @@ Bir Class'ta birden fazla constructor bulunabilir.
 Bir Class oluşturduğumuzda constructor method tanimlamadlysak, arka tarafta
 Bir tane parametre almayan constructor bizim için olusturulur.
 
-
 </details>
-
-
 
 <details>
 
@@ -1185,10 +1118,7 @@ Hangi durumda hangisi kullanılır?
 Bir nesnenin diğer nesnelerden oluştuğu durumlarda composition kullanılır.
 Bir nesnenin diğer nesnelerle ilişkili olduğu durumlarda aggregation kullanılır.
 
-
 </details>
-
-
 
 <details>
 
@@ -1211,10 +1141,7 @@ Composition, inheritance'dan daha fazla kod yazmayı gerektirebilir.
 Ancak, composition'ın faydaları genellikle dezavantajlarından daha fazladır.
 Inheritance ve composition'ın nasıl kullanılacağı, programın gereksinimlerine göre belirlenir.
 
-
 </details>
-
-
 
 <details>
 
@@ -1228,6 +1155,7 @@ public class Animal {
     public void speak() {
         System.out.println("Hayvan ses çıkarıyor.");
     }
+
 }
 
 public class Dog extends Animal {
@@ -1236,6 +1164,7 @@ public class Dog extends Animal {
     public void speak() {
         System.out.println("Havlıyor.");
     }
+
 }
 
 public class Main {
@@ -1246,6 +1175,7 @@ public class Main {
 
         animal.speak(); // Hayvan ses çıkarıyor. (Dog'un speak metodu değil, Animal'ın speak metodu çalışır.)
     }
+
 }
 
 Downcasting (Aşağı Çevirim): Bir üst sınıf nesnesini, alt sınıfın bir nesne türüne dönüştürme işlemidir. Açıkça yapılmalıdır ve (AltSınıfAdı) şeklinde bir tür dönüşümü kullanılır.
@@ -1256,6 +1186,7 @@ public class Animal {
     public void speak() {
         System.out.println("Hayvan ses çıkarıyor.");
     }
+
 }
 
 public class Dog extends Animal {
@@ -1264,6 +1195,7 @@ public class Dog extends Animal {
     public void speak() {
         System.out.println("Havlıyor.");
     }
+
 }
 
 public class Main {
@@ -1274,6 +1206,7 @@ public class Main {
 
         dog.speak(); // Havlıyor. (Dog'un speak metodu çalışır.)
     }
+
 }
 
 Downcasting'te dikkat edilmesi gerekenler:
@@ -1286,6 +1219,7 @@ public class Animal {
     public void speak() {
         System.out.println("Hayvan ses çıkarıyor.");
     }
+
 }
 
 public class Dog extends Animal {
@@ -1294,6 +1228,7 @@ public class Dog extends Animal {
     public void speak() {
         System.out.println("Havlıyor.");
     }
+
 }
 
 public class Main {
@@ -1308,12 +1243,10 @@ public class Main {
             System.out.println("Nesne bir Dog örneği değil.");
         }
     }
+
 }
 
-
 </details>
-
-
 
 <details>
 
@@ -1331,10 +1264,7 @@ Overloading ve inheritance hem compile time'da hem de runtime'da çalışır.
 Overriding ve upcasting/downcasting sadece runtime'da çalışır.
 Polymorphism, Java'da önemli bir programlama tekniğidir. Kodun daha az tekrarlı, daha okunabilir, daha esnek ve daha bakımı kolay olmasını sağlar.
 
-
 </details>
-
-
 
 <details>
 
@@ -1351,14 +1281,15 @@ Genellikle private metotlar ve final metotlar için kullanılır.
 Örnek:
 Java
 public class StaticBinding {
-    public void print() {
-        System.out.println("Static Binding");
-    }
+public void print() {
+System.out.println("Static Binding");
+}
 
     public static void main(String[] args) {
         StaticBinding obj = new StaticBinding();
         obj.print(); // Static Binding metodu çalışır.
     }
+
 }
 
 Dynamic Binding (Geç Bağlantı):
@@ -1369,23 +1300,23 @@ Genellikle public metotlar ve non-final metotlar için kullanılır.
 Örnek:
 Java
 public class Animal {
-    public void speak() {
-        System.out.println("Animal ses çıkarıyor.");
-    }
+public void speak() {
+System.out.println("Animal ses çıkarıyor.");
+}
 }
 
 public class Dog extends Animal {
-    @Override
-    public void speak() {
-        System.out.println("Havlıyor.");
-    }
+@Override
+public void speak() {
+System.out.println("Havlıyor.");
+}
 }
 
 public class Main {
-    public static void main(String[] args) {
-        Animal animal = new Dog();
-        animal.speak(); // Havlıyor. (Dog'un speak metodu çalışır.)
-    }
+public static void main(String[] args) {
+Animal animal = new Dog();
+animal.speak(); // Havlıyor. (Dog'un speak metodu çalışır.)
+}
 }
 
 Static binding tercih edildiği durumlar:
@@ -1402,10 +1333,7 @@ Hangi bağlama mekanizmasının kullanılacağı, programın gereksinimlerine g�
 
 ek bilgi: static metotlar override edilmezler, derleme zamanı bind edilirler.
 
-
 </details>
-
-
 
 <details>
 
@@ -1418,7 +1346,7 @@ Abstract class lardan ve interface lerden nesne üretemezler.
 Abstract class'larin kendi constructorlari olabilir ama, interface'lerin kendi constructorlari olamaz.
 Abstract class'ların kendi fieldlar olabilir, interface Lerin de kendi fieldları olabilir ama final olmak
 zorundadır ve başlangıç değerleri olmalıdır. Bu fieldlar ayni zamanda default olarak olarak public ve static tir.
-Bir class, bir interface’i ya da bir abstract class ı  implement/extend ettiğinde ilgili abstract class in ya da
+Bir class, bir interface’i ya da bir abstract class ı implement/extend ettiğinde ilgili abstract class in ya da
 interface in içi bos metodlar override etmek zorundadır.
 Bir class, bir abstract classı extend edebilir ama birden fazla interface'i implements edebilir.
 Bir interface baska bir interface'i extend eder. Ve bir interface birden fazla interface'i extend edebilir.
@@ -1431,15 +1359,11 @@ edebilir.
 Eger bir interface'in sadece bir tane içi boş metodu varsa, bu interface lere Functional İnterface Ler denir. Eger
 bir interface in hig bir içi boş metodu yok ise, bu interface lere Marker İnterface Ler denir.
 
-
 </details>
-
-
 
 <details>
 
 <summary>++Elimizde bir abstract class var. Bu abstract class'in bütün metodlarını public ve abstract yaparsam ne olur.??</summary>
-
 
 Teknik olarak basima ne gelir?
 Bir abstract class'ın bütün metodlarını public ve abstract olarak yaparsanız, aşağıdaki sonuçlar ortaya çıkar:
@@ -1462,10 +1386,7 @@ Abstract class'lar, birden fazla sınıftan miras alınamaz.
 Abstract class'lar, somut metotlar da içerebilir.
 Interface'ler, sınıflar gibi nesneler oluşturamaz.
 
-
 </details>
-
-
 
 <details>
 
@@ -1480,54 +1401,52 @@ Interface'ler, sınıflar gibi nesneler oluşturamaz.
 7-) Interface yapıcı metotlar(constructor) içermez. Abstract class yapıcı metotlar içerebilir.
 8-)Interface metotlar static olamaz. Abstract class soyut olmayan metodlar static olarak tanımlanabilir.
 
-
 </details>
-
-
 
 <details>
 
 <summary>++Öyle bir yapı tasarlayın ki interface i implemente eden class ilgili interface in metodunu override etmek zorunda kalmasın.?</summary>
 
 Bir interface'in metodlarını override etmeden kullanmak için iki temel yöntem vardır:
+
 1. Default Metotlar:
-Java 8'den beri, interface'ler default metotlar tanımlayabilir. Bu metotlar, bir gövdeye sahiptir ve alt sınıflar tarafından override edilebilir. Bir alt sınıf, default metodu override etmezse, interface'deki default metot kullanılır.
-Örnek:
-Java
-public interface MyInterface {
-    default void myMethod() {
-        System.out.println("Default metot");
-    }
-}
+   Java 8'den beri, interface'ler default metotlar tanımlayabilir. Bu metotlar, bir gövdeye sahiptir ve alt sınıflar tarafından override edilebilir. Bir alt sınıf, default metodu override etmezse, interface'deki default metot kullanılır.
+   Örnek:
+   Java
+   public interface MyInterface {
+   default void myMethod() {
+   System.out.println("Default metot");
+   }
+   }
 
 public class MyClass implements MyInterface {
-    // myMethod'u override etmiyoruz.
+// myMethod'u override etmiyoruz.
 }
 
 public class Main {
-    public static void main(String[] args) {
-        MyClass obj = new MyClass();
-        obj.myMethod(); // "Default metot" yazdırır.
-    }
+public static void main(String[] args) {
+MyClass obj = new MyClass();
+obj.myMethod(); // "Default metot" yazdırır.
+}
 }
 
 2. Static Metotlar:
-Java 8'den beri, interface'ler static metotlar da tanımlayabilir. Static metotlar, bir nesneye ihtiyaç duymadan doğrudan interface üzerinden çağrılabilir.
-Örnek:
-Java
-public interface MyInterface {
-    static void myStaticMethod() {
-        System.out.println("Static metot");
-    }
-}
+   Java 8'den beri, interface'ler static metotlar da tanımlayabilir. Static metotlar, bir nesneye ihtiyaç duymadan doğrudan interface üzerinden çağrılabilir.
+   Örnek:
+   Java
+   public interface MyInterface {
+   static void myStaticMethod() {
+   System.out.println("Static metot");
+   }
+   }
 
 public class MyClass implements MyInterface {
 }
 
 public class Main {
-    public static void main(String[] args) {
-        MyInterface.myStaticMethod(); // "Static metot" yazdırır.
-    }
+public static void main(String[] args) {
+MyInterface.myStaticMethod(); // "Static metot" yazdırır.
+}
 }
 
 Hangi yöntemin kullanılacağı, programınızın gereksinimlerine bağlıdır.
@@ -1542,10 +1461,7 @@ Abstract class'lar da default ve static metotlar tanımlayabilir.
 Interface'lerdeki default ve static metotlar, final olarak tanımlanmalıdır.
 Umarım bu bilgiler yardımcı olmuştur!
 
-
 </details>
-
-
 
 <details>
 
@@ -1581,10 +1497,7 @@ Externalizable arayüzü
 JSON veya XML gibi formatlar
 Umarım bu bilgiler yardımcı olmuştur!
 
-
 </details>
-
-
 
 <details>
 
@@ -1597,10 +1510,7 @@ final olarak imlenmesi lazim.
 Set metotlarının olmamasi lazim.
 Deep Copy / Shallow Copy uygulanmasi lazim.
 
-
 </details>
-
-
 
 <details>
 
@@ -1636,10 +1546,7 @@ Map'e alternatifler:
 List: Anahtar-değer çiftleri sıralı bir şekilde depolanmak istendiğinde kullanılabilir.
 Set: Anahtarların benzersiz olması ve sıralı olmaması gerektiğinde kullanılabilir.
 
-
 </details>
-
-
 
 <details>
 
@@ -1663,10 +1570,7 @@ Bellek kullanımı: Cache'de saklanan veriler bellek kullanımı artırır.
 Tutarlılık: Veriler güncellendiğinde cache'deki eski veriler tutarsız hale gelebilir.
 Karmaşıklık: Cache'i doğru şekilde yapılandırmak ve yönetmek karmaşık olabilir.
 
-
 </details>
-
-
 
 <details>
 
@@ -1691,10 +1595,7 @@ E-ticaret işlemleri
 Otomasyon sistemleri
 Idempotency, birçok farklı alanda kullanılabilecek önemli bir kavramdır. Bir işlemin idempotent olmasını sağlayarak, hatalara karşı koruma sağlayabilir, performansı artırabilir ve kullanımı kolaylaştırabilirsiniz.
 
-
 </details>
-
-
 
 <details>
 
@@ -1730,10 +1631,7 @@ Online oyunlar (oyun durumu saklanır)
 Seçim Kriterleri:
 Hangi yaklaşımı kullanacağınız, projenin ihtiyaçlarına bağlıdır. Eğer ölçeklenebilirlik, hata toleransı ve güvenlik sizin için öncelikli ise stateless yaklaşım daha avantajlı olabilir. Ancak kullanıcı oturumları veya durum bilgisi gerektiren işlemler için stateful yaklaşım tercih edilebilir.
 
-
 </details>
-
-
 
 <details>
 
@@ -1759,10 +1657,7 @@ Bir uygulamanın daha az özellik içeren bir sürümünü kullanmak.
 Bir veritabanının boyutunu küçültmek.
 Scale down, bir sistemin veya uygulamanın kapasitesini veya boyutunu optimize etmek için kullanılabilecek bir tekniktir. Doğru şekilde yapıldığında, maliyetleri düşürmeye, verimliliği artırmaya ve güvenilirliği ve bakımı kolaylaştırmaya yardımcı olabilir.
 
-
 </details>
-
-
 
 <details>
 
@@ -1779,28 +1674,29 @@ Esnekliği azaltır. Bir sınıftan tek bir nesne oluşturulduğundan, kodda de�
 Test edilmesi daha zor olabilir. Bir sınıftan tek bir nesne oluşturulduğundan, singleton class'ı test etmek daha karmaşık olabilir.
 Singleton Class Nasıl Oluşturulur?
 Singleton class oluşturmak için aşağıdaki adımları takip edebilirsiniz:
-1. Sınıfı private veya protected olarak tanımlayın. Bu sayede, sınıftan nesne oluşturmak sadece sınıfın içinde mümkün olur.
-2. Sınıftan tek bir nesne oluşturan bir statik method oluşturun. Bu method, ilk çağrıldığında nesneyi oluşturmalı ve sonraki çağrılarda bu nesneyi döndürmelidir.
-3. Sınıfın nesnesine erişmek için public bir getter method oluşturun. Bu method, statik method tarafından oluşturulan nesneyi döndürmelidir.
-4. Sınıfın constructor'ını private olarak tanımlayın. Bu sayede, sınıftan nesne oluşturmak constructor üzerinden engellenir.
-Singleton class örneği:
-Python
-class Singleton:
 
-    def __init__(self):
-        # ...
+1.  Sınıfı private veya protected olarak tanımlayın. Bu sayede, sınıftan nesne oluşturmak sadece sınıfın içinde mümkün olur.
+2.  Sınıftan tek bir nesne oluşturan bir statik method oluşturun. Bu method, ilk çağrıldığında nesneyi oluşturmalı ve sonraki çağrılarda bu nesneyi döndürmelidir.
+3.  Sınıfın nesnesine erişmek için public bir getter method oluşturun. Bu method, statik method tarafından oluşturulan nesneyi döndürmelidir.
+4.  Sınıfın constructor'ını private olarak tanımlayın. Bu sayede, sınıftan nesne oluşturmak constructor üzerinden engellenir.
+    Singleton class örneği:
+    Python
+    class Singleton:
 
-    @staticmethod
-    def getInstance():
-        if not hasattr(Singleton, "_instance"):
-            Singleton._instance = Singleton()
-        return Singleton._instance
+        def __init__(self):
+            # ...
 
-    def getSomeData(self):
-        # ...
+        @staticmethod
+        def getInstance():
+            if not hasattr(Singleton, "_instance"):
+                Singleton._instance = Singleton()
+            return Singleton._instance
 
-    def doSomething(self):
-        # ...
+        def getSomeData(self):
+            # ...
+
+        def doSomething(self):
+            # ...
 
 # ...
 
@@ -1816,32 +1712,27 @@ Sınıfın nesnesine erişmek için public bir getter method oluşturmak önemli
 Sınıfın constructor'ını private olarak tanımlamak önemlidir.
 Singleton class, bir sınıftan sadece bir tane nesne oluşturulması ve bu nesnenin tüm uygulamada tek bir erişim noktası olarak kullanılmasına imkan veren bir tasarım desenidir. Bu desen, bellek tasarrufu sağlar, tutarlılığı artırır ve kodun daha kolay okunmasını ve anlaşılmasını sağlar.
 
-
 </details>
-
-
 
 <details>
 
 <summary>++HashSet, LinkedHashSet ve TreeSet arasındaki farkları açıklayınız.
 ?</summary>
 
-
-
 HashSet, LinkedHashSet ve TreeSet, Java'da bulunan ve hashing prensibi ile çalışan üç farklı veri setidir. Hepsi tekil değerler saklar ve hızlı arama işlemleri sunar. Aralarındaki temel farklar şunlardır:
-1. Sıra:
-HashSet: Elemanlar rastgele sıralanır.
-LinkedHashSet: Elemanlar eklenme sırasına göre sıralanır.
-TreeSet: Elemanlar doğal sıralamalarına göre sıralanır (compareTo metodu kullanılarak).
-2. Performans:
-HashSet: Ekleme ve silme işlemleri en hızlıdır.
-LinkedHashSet: Ekleme ve silme işlemleri HashSet'e göre biraz daha yavaştır.
-TreeSet: Ekleme ve silme işlemleri HashSet ve LinkedHashSet'e göre daha yavaştır.
-3. Kullanım Alanları:
-HashSet: Tekil değerleri hızlı bir şekilde saklamak ve aramak için kullanılır.
-LinkedHashSet: Elemanların eklenme sırasını korumak ve hızlı bir şekilde aramak için kullanılır.
-TreeSet: Elemanları doğal sıralamalarına göre saklamak ve aramak için kullanılır.
 
+1. Sıra:
+   HashSet: Elemanlar rastgele sıralanır.
+   LinkedHashSet: Elemanlar eklenme sırasına göre sıralanır.
+   TreeSet: Elemanlar doğal sıralamalarına göre sıralanır (compareTo metodu kullanılarak).
+2. Performans:
+   HashSet: Ekleme ve silme işlemleri en hızlıdır.
+   LinkedHashSet: Ekleme ve silme işlemleri HashSet'e göre biraz daha yavaştır.
+   TreeSet: Ekleme ve silme işlemleri HashSet ve LinkedHashSet'e göre daha yavaştır.
+3. Kullanım Alanları:
+   HashSet: Tekil değerleri hızlı bir şekilde saklamak ve aramak için kullanılır.
+   LinkedHashSet: Elemanların eklenme sırasını korumak ve hızlı bir şekilde aramak için kullanılır.
+   TreeSet: Elemanları doğal sıralamalarına göre saklamak ve aramak için kullanılır.
 
 Özetle:
 HashSet: Hızlı ekleme ve silme işlemleri için idealdir.
@@ -1849,10 +1740,7 @@ LinkedHashSet: Elemanların eklenme sırasını korumak için idealdir.
 TreeSet: Elemanları doğal sıralamalarına göre saklamak ve aramak için idealdir.
 Aşağıdaki tabloda bu üç veri setinin karşılaştırılması daha net bir şekilde gösterilmiştir:
 
-
 </details>
-
-
 
 <details>
 
@@ -1860,57 +1748,54 @@ Aşağıdaki tabloda bu üç veri setinin karşılaştırılması daha net bir �
 ?</summary>
 
 Stream ve Collection, Java'da verileri işlemek için kullanılan iki farklı API'dir. Aralarında bazı önemli farklar vardır:
+
 1. Veri Kaynağı:
-Stream: Verileri bir kaynaktan (dosya, veritabanı, koleksiyon vb.) alır ve işler.
-Collection: Verileri önceden bellekte tutulan bir koleksiyonda saklar ve işler.
+   Stream: Verileri bir kaynaktan (dosya, veritabanı, koleksiyon vb.) alır ve işler.
+   Collection: Verileri önceden bellekte tutulan bir koleksiyonda saklar ve işler.
 2. İşleme Biçimi:
-Stream: Verileri tek tek işleyen ve işleme sırasında veri kaynağını tüketen fonksiyonel bir API'dir.
-Collection: Verileri bir bütün olarak işleyen ve veri kaynağını tüketmeyen imperatif bir API'dir.
+   Stream: Verileri tek tek işleyen ve işleme sırasında veri kaynağını tüketen fonksiyonel bir API'dir.
+   Collection: Verileri bir bütün olarak işleyen ve veri kaynağını tüketmeyen imperatif bir API'dir.
 3. Performans:
-Stream: Büyük veri kümeleri üzerinde çalışırken Collection'dan daha performanslı olabilir.
-Collection: Küçük veri kümeleri üzerinde çalışırken Stream'den daha performanslı olabilir.
+   Stream: Büyük veri kümeleri üzerinde çalışırken Collection'dan daha performanslı olabilir.
+   Collection: Küçük veri kümeleri üzerinde çalışırken Stream'den daha performanslı olabilir.
 4. Bellek Kullanımı:
-Stream: Verileri tek tek işlediği için Collection'dan daha az bellek kullanır.
-Collection: Verileri önceden bellekte tuttuğu için Stream'den daha fazla bellek kullanır.
+   Stream: Verileri tek tek işlediği için Collection'dan daha az bellek kullanır.
+   Collection: Verileri önceden bellekte tuttuğu için Stream'den daha fazla bellek kullanır.
 5. Kullanım Alanları:
-Stream: Büyük veri kümeleri üzerinde filtreleme, haritalama, indirgeme gibi işlemleri gerçekleştirmek için idealdir.
-Collection: Küçük veri kümeleri üzerinde işlemler yapmak veya verileri sıralı bir şekilde tutmak için idealdir.
-Özetle:
-Stream: Büyük veri kümeleri üzerinde fonksiyonel bir şekilde işlem yapmak için idealdir.
-Collection: Küçük veri kümeleri üzerinde imperatif bir şekilde işlem yapmak için idealdir.
-Hangi API'yi kullanacağınız, uygulamanızın özel gereksinimlerine bağlıdır. Büyük veri kümeleri üzerinde işlem yapmanız gerekiyorsa Stream ideal bir seçimdir. Küçük veri kümeleri üzerinde işlem yapmanız veya verileri sıralı bir şekilde tutmanız gerekiyorsa Collection ideal bir seçimdir.
-Aşağıdaki tabloda bu iki API'nin karşılaştırılması daha net bir şekilde gösterilmiştir:
-Stream ve Collection'ı birlikte kullanmak da mümkündür. Örneğin, bir Collection'ı bir Stream'e dönüştürebilir ve Stream işlemlerini uyguladıktan sonra sonucu tekrar bir Collection'a dönüştürebilirsiniz.
+   Stream: Büyük veri kümeleri üzerinde filtreleme, haritalama, indirgeme gibi işlemleri gerçekleştirmek için idealdir.
+   Collection: Küçük veri kümeleri üzerinde işlemler yapmak veya verileri sıralı bir şekilde tutmak için idealdir.
+   Özetle:
+   Stream: Büyük veri kümeleri üzerinde fonksiyonel bir şekilde işlem yapmak için idealdir.
+   Collection: Küçük veri kümeleri üzerinde imperatif bir şekilde işlem yapmak için idealdir.
+   Hangi API'yi kullanacağınız, uygulamanızın özel gereksinimlerine bağlıdır. Büyük veri kümeleri üzerinde işlem yapmanız gerekiyorsa Stream ideal bir seçimdir. Küçük veri kümeleri üzerinde işlem yapmanız veya verileri sıralı bir şekilde tutmanız gerekiyorsa Collection ideal bir seçimdir.
+   Aşağıdaki tabloda bu iki API'nin karşılaştırılması daha net bir şekilde gösterilmiştir:
+   Stream ve Collection'ı birlikte kullanmak da mümkündür. Örneğin, bir Collection'ı bir Stream'e dönüştürebilir ve Stream işlemlerini uyguladıktan sonra sonucu tekrar bir Collection'a dönüştürebilirsiniz.
 
 </details>
-
-
 
 <details>
 
 <summary>++Java Reflection nedir??</summary>
 
 Java Reflection, bir Java programının çalışma zamanında kendi yapısını ve davranışını inceleyebilmesi ve manipüle edebilmesi için kullanılan bir mekanizmadır. Yani, bir Java kodu parçası çalışma esnasında kendi sınıflarını, metodlarını, alanlarını vb. öğrenebilir ve bunları dinamik olarak kullanabilir. Bu mekanizmanın çeşitli kullanım alanları vardır:
+
 1. Metaprogramlama: Reflection, programın davranışını yazma zamanında değil çalışma zamanında belirlemek için kullanılabilir. Bu, dinamik ve esnek uygulamalar yazılmasına olanak tanır.
 2. Frameworkler: Birçok framework, uygulamaların dinamik bir şekilde yüklenip yönetilmesi için Reflection'ı kullanır.
 3. Test Araçları: Test araçları genellikle test senaryolarını tanımlamak ve yürütmek için Reflection'ı kullanır.
 4. Introspection: Reflection, bir sınıfın yapısını ve özelliklerini incelemek için de kullanılabilir.
-Reflection ile neler yapılabilir?
-Bir sınıfın adını, metodlarını, alanlarını ve bunların erişim düzeylerini vb. bilgilerini almak.
-Metodları dinamik olarak çağırmak.
-Metod parametrelerine değer atamak.
-Alanlara değer okumak ve yazmak.
-Yeni nesneler oluşturmak.
-Sınıfın hiyerarşisini takip etmek.
-Reflection kullanımının dikkat edilmesi gereken noktalar:
-Reflection kullanımı güvenliksiz olabilir. Özel alanlara ve metodlara erişilmesine izin vermemek önemlidir.
-Reflection performansı etkileyebilir. Dinamik olarak yapılan işlemler statik olarak tanımlanmış işlemlerden daha yavaş olabilir.
-Reflection kodu karmaşık olabilir. Reflection kodunu yazmak ve anlamak zor olabilir.
-
+   Reflection ile neler yapılabilir?
+   Bir sınıfın adını, metodlarını, alanlarını ve bunların erişim düzeylerini vb. bilgilerini almak.
+   Metodları dinamik olarak çağırmak.
+   Metod parametrelerine değer atamak.
+   Alanlara değer okumak ve yazmak.
+   Yeni nesneler oluşturmak.
+   Sınıfın hiyerarşisini takip etmek.
+   Reflection kullanımının dikkat edilmesi gereken noktalar:
+   Reflection kullanımı güvenliksiz olabilir. Özel alanlara ve metodlara erişilmesine izin vermemek önemlidir.
+   Reflection performansı etkileyebilir. Dinamik olarak yapılan işlemler statik olarak tanımlanmış işlemlerden daha yavaş olabilir.
+   Reflection kodu karmaşık olabilir. Reflection kodunu yazmak ve anlamak zor olabilir.
 
 </details>
-
-
 
 <details>
 
@@ -1933,10 +1818,7 @@ Eğer sadece basit veri tipleri (int, String vb.) içeren bir nesneyi kopyalıyo
 İç içe geçmiş yapılar içeren bir nesneyi kopyalarken ve her ikisini de birbirinden bağımsız olarak değiştirmek istiyorsanız Deep Copy kullanmalısınız.
 Performans ve bellek kullanımı sizin için önemli faktörler ise, Shallow Copy'i tercih edebilirsiniz. Ancak bu durumda değişikliklerin asıl nesneyi de etkileyeceğini unutmayın.
 
-
 </details>
-
-
 
 <details>
 
@@ -1944,19 +1826,18 @@ Performans ve bellek kullanımı sizin için önemli faktörler ise, Shallow Cop
 ?</summary>
 
 1. Marker Interface:
-Bir marker interface, herhangi bir metot ya da sabit içermeyen boş bir arayüzdür.
-Bir sınıfa uygulanan marker interface, o sınıfa ek bir bilgi eklemek için kullanılır. Bu bilgi daha sonra sınıfın davranışını etkilemek için reflection gibi mekanizmalar ile kullanılabilir.
-Marker interface'lerin kullanım alanları sınırlıdır ve günümüz Java uygulamalarında tercih edilmeyen bir yaklaşımdır. Çünkü bir interface'nin varlığı zaten bir bilgiyi temsil ederken, ekstra bir boş interface eklemek kod karmaşıklığına sebep olabilir.
+   Bir marker interface, herhangi bir metot ya da sabit içermeyen boş bir arayüzdür.
+   Bir sınıfa uygulanan marker interface, o sınıfa ek bir bilgi eklemek için kullanılır. Bu bilgi daha sonra sınıfın davranışını etkilemek için reflection gibi mekanizmalar ile kullanılabilir.
+   Marker interface'lerin kullanım alanları sınırlıdır ve günümüz Java uygulamalarında tercih edilmeyen bir yaklaşımdır. Çünkü bir interface'nin varlığı zaten bir bilgiyi temsil ederken, ekstra bir boş interface eklemek kod karmaşıklığına sebep olabilir.
 2. Marker Annotation:
-Marker annotation, Java 5'ten itibaren kullanıma giren bir anotaysyon türüdür.
-Bir annotation, sınıflara, metodlara veya alanlara eklenebilen meta bilgi sağlayan bir yapıdır. Marker annotation ise herhangi bir değer ya da parametre almayan boş bir annotationdur.
-Marker annotation'lar, reflection gibi mekanizmalar ile sınıfın özelliklerini belirlemek için kullanılabilir.
-Günümüz Java uygulamalarında, marker interface yerine daha açıklayıcı ve kod okunurluğu sağlayan marker annotation kullanımı tercih edilir.
-Özetle:
-Marker interface ve marker annotation aynı mantığa dayanarak çalışır ancak farklı syntax kullanılır.
-Marker interface günümüz Java uygulamalarında pek tercih edilmezken, marker annotation daha sıklıkla kullanılır.
-Her ikisi de bir sınıfa ek bilgi eklemek için kullanılır ancak bu bilgiyi ekleme şekilleri farklıdır.
-
+   Marker annotation, Java 5'ten itibaren kullanıma giren bir anotaysyon türüdür.
+   Bir annotation, sınıflara, metodlara veya alanlara eklenebilen meta bilgi sağlayan bir yapıdır. Marker annotation ise herhangi bir değer ya da parametre almayan boş bir annotationdur.
+   Marker annotation'lar, reflection gibi mekanizmalar ile sınıfın özelliklerini belirlemek için kullanılabilir.
+   Günümüz Java uygulamalarında, marker interface yerine daha açıklayıcı ve kod okunurluğu sağlayan marker annotation kullanımı tercih edilir.
+   Özetle:
+   Marker interface ve marker annotation aynı mantığa dayanarak çalışır ancak farklı syntax kullanılır.
+   Marker interface günümüz Java uygulamalarında pek tercih edilmezken, marker annotation daha sıklıkla kullanılır.
+   Her ikisi de bir sınıfa ek bilgi eklemek için kullanılır ancak bu bilgiyi ekleme şekilleri farklıdır.
 
 </details>
 
@@ -1965,66 +1846,62 @@ Her ikisi de bir sınıfa ek bilgi eklemek için kullanılır ancak bu bilgiyi e
 <summary>++Javada int ve Integer arasındaki farklar nelerdir? Neden ikisine de ihtiyacımız vardır??</summary>
 
 int ve Integer, Java'da tamsayı değerleri temsil etmek için kullanılan iki farklı veri tipidir. Aralarındaki temel farklar şunlardır:
-1. Tür:
-int: İlkel bir veri tipidir.
-Integer: Bir sınıftır.
-2. Değer Aralığı:
-int: 32 bitlik bir tamsayı değerini temsil eder. Bu, -2.147.483.648 ile 2.147.483.647 arasındaki değerleri kapsar.
-Integer: 32 bitlik bir tamsayı değerini temsil eder. Bu, -2.147.483.648 ile 2.147.483.647 arasındaki değerleri kapsar.
-3. Null Değeri:
-int: Null değer alamaz.
-Integer: Null değer alabilir.
-4. Bellek Kullanımı:
-int: Daha az bellek kullanır.
-Integer: Daha fazla bellek kullanır.
-5. İşlemler:
-int: Temel matematiksel işlemler için doğrudan kullanılabilir.
-Integer: Temel matematiksel işlemler için Integer sınıfının metotlarını kullanmak gerekir.
-Neden ikisine de ihtiyacımız vardır?
-int: İlkel bir veri tipi olduğu için daha hızlı ve daha az bellek kullanır. Bu nedenle, basit tamsayı değerlerini saklamak ve işlemek için idealdir.
-Integer: Bir sınıf olduğu için null değer alabilir ve metotlar gibi ek özellikler sunar. Bu nedenle, daha karmaşık işlemler için ve null değerlerle çalışırken idealdir.
-Özetle:
-int: Hızlı ve basit tamsayı işlemleri için kullanılır.
-Integer: Karmaşık işlemler ve null değerlerle çalışmak için kullanılır.
-Ekstra Bilgi:
-Java'da byte, short, long gibi int'e benzer diğer ilkel veri tipleri de mevcuttur.
-Double, Float gibi Integer'a benzer diğer wrapper sınıfları da mevcuttur.
 
+1. Tür:
+   int: İlkel bir veri tipidir.
+   Integer: Bir sınıftır.
+2. Değer Aralığı:
+   int: 32 bitlik bir tamsayı değerini temsil eder. Bu, -2.147.483.648 ile 2.147.483.647 arasındaki değerleri kapsar.
+   Integer: 32 bitlik bir tamsayı değerini temsil eder. Bu, -2.147.483.648 ile 2.147.483.647 arasındaki değerleri kapsar.
+3. Null Değeri:
+   int: Null değer alamaz.
+   Integer: Null değer alabilir.
+4. Bellek Kullanımı:
+   int: Daha az bellek kullanır.
+   Integer: Daha fazla bellek kullanır.
+5. İşlemler:
+   int: Temel matematiksel işlemler için doğrudan kullanılabilir.
+   Integer: Temel matematiksel işlemler için Integer sınıfının metotlarını kullanmak gerekir.
+   Neden ikisine de ihtiyacımız vardır?
+   int: İlkel bir veri tipi olduğu için daha hızlı ve daha az bellek kullanır. Bu nedenle, basit tamsayı değerlerini saklamak ve işlemek için idealdir.
+   Integer: Bir sınıf olduğu için null değer alabilir ve metotlar gibi ek özellikler sunar. Bu nedenle, daha karmaşık işlemler için ve null değerlerle çalışırken idealdir.
+   Özetle:
+   int: Hızlı ve basit tamsayı işlemleri için kullanılır.
+   Integer: Karmaşık işlemler ve null değerlerle çalışmak için kullanılır.
+   Ekstra Bilgi:
+   Java'da byte, short, long gibi int'e benzer diğer ilkel veri tipleri de mevcuttur.
+   Double, Float gibi Integer'a benzer diğer wrapper sınıfları da mevcuttur.
 
 </details>
-
-
 
 <details>
 
 <summary>++Javada StringBuilder clasına neden ihtiyaç duyarız??</summary>
 
 1. Veri Katma İşlemleri:
-String sınıfı, metinsel verileri saklamak ve işlemek için kullanılır. Fakat String nesneleri immutable (değiştirilemez)dir. Bir String nesnesine veri eklemek veya değiştirmek isterseniz, yeni bir String nesnesi oluşturmanız gerekir. Bu işlem, özellikle büyük metinler için performans sorunlarına yol açabilir.
-StringBuilder sınıfı ise mutable (değiştirilebilir) bir yapıya sahiptir. Bu sayede, bir StringBuilder nesnesine veri ekleme ve değiştirme işlemleri çok daha hızlı ve verimli bir şekilde yapılabilir.
+   String sınıfı, metinsel verileri saklamak ve işlemek için kullanılır. Fakat String nesneleri immutable (değiştirilemez)dir. Bir String nesnesine veri eklemek veya değiştirmek isterseniz, yeni bir String nesnesi oluşturmanız gerekir. Bu işlem, özellikle büyük metinler için performans sorunlarına yol açabilir.
+   StringBuilder sınıfı ise mutable (değiştirilebilir) bir yapıya sahiptir. Bu sayede, bir StringBuilder nesnesine veri ekleme ve değiştirme işlemleri çok daha hızlı ve verimli bir şekilde yapılabilir.
 2. Performans:
-String nesneleri immutable olduğu için, her veri ekleme veya değiştirme işleminde yeni bir nesne oluşturulması gerekir. Bu işlem, bellek kullanımının artmasına ve performansın düşmesine neden olabilir.
-StringBuilder nesneleri mutable olduğu için, veri ekleme ve değiştirme işlemleri mevcut nesne üzerinde gerçekleştirilir. Bu sayede, bellek kullanımı ve performans artışı sağlanır.
+   String nesneleri immutable olduğu için, her veri ekleme veya değiştirme işleminde yeni bir nesne oluşturulması gerekir. Bu işlem, bellek kullanımının artmasına ve performansın düşmesine neden olabilir.
+   StringBuilder nesneleri mutable olduğu için, veri ekleme ve değiştirme işlemleri mevcut nesne üzerinde gerçekleştirilir. Bu sayede, bellek kullanımı ve performans artışı sağlanır.
 3. Thread Güvenliği:
-String nesneleri immutable olduğu için thread-safe (çoklu iş parçacığı güvenli)dir. Birden fazla iş parçacığı aynı String nesnesine erişmeye çalışsa bile, veri tutarsızlığı oluşmaz.
-StringBuilder nesneleri mutable olduğu için thread-safe değildir. Birden fazla iş parçacığı aynı StringBuilder nesnesine erişmeye çalışırsa ve veri ekleme veya değiştirme işlemleri yaparsa, veri tutarsızlığı oluşabilir.
+   String nesneleri immutable olduğu için thread-safe (çoklu iş parçacığı güvenli)dir. Birden fazla iş parçacığı aynı String nesnesine erişmeye çalışsa bile, veri tutarsızlığı oluşmaz.
+   StringBuilder nesneleri mutable olduğu için thread-safe değildir. Birden fazla iş parçacığı aynı StringBuilder nesnesine erişmeye çalışırsa ve veri ekleme veya değiştirme işlemleri yaparsa, veri tutarsızlığı oluşabilir.
 4. Kolay Kullanım:
-StringBuilder sınıfı, metinsel verileri işlemek için çeşitli metotlar sunar. Bu metotlar, veri ekleme, silme, değiştirme ve arama gibi işlemleri kolay ve hızlı bir şekilde yapmamızı sağlar.
-Özetle:
-StringBuilder sınıfı, metinsel verileri işlemek için daha performanslı, verimli ve kullanımı kolay bir çözüm sunar.
-Büyük metinlerle çalışırken, veri ekleme ve değiştirme işlemlerinin sık yapıldığı durumlarda StringBuilder sınıfını kullanmak önemlidir.
-StringBuilder sınıfının kullanımının bazı örnekleri:
-Bir metne metin eklemek
-Bir metinden metin silmek
-Bir metni değiştirmek
-Bir metinde arama yapmak
-Bir metni büyük harfe veya küçük harfe dönüştürmek
-Ekstra Bilgi:
-StringBuilder sınıfına benzer bir sınıf olan StringBuffer sınıfı da mevcuttur. StringBuffer sınıfı thread-safe'dir, ancak StringBuilder sınıfından daha yavaştır.
-Java 9'dan itibaren String sınıfına concat() metodu eklenmiştir. Bu metot, iki String nesnesini birleştirmek için kullanılabilir.
-Umarım bu bilgiler yardımcı olmuştur.
-
-
+   StringBuilder sınıfı, metinsel verileri işlemek için çeşitli metotlar sunar. Bu metotlar, veri ekleme, silme, değiştirme ve arama gibi işlemleri kolay ve hızlı bir şekilde yapmamızı sağlar.
+   Özetle:
+   StringBuilder sınıfı, metinsel verileri işlemek için daha performanslı, verimli ve kullanımı kolay bir çözüm sunar.
+   Büyük metinlerle çalışırken, veri ekleme ve değiştirme işlemlerinin sık yapıldığı durumlarda StringBuilder sınıfını kullanmak önemlidir.
+   StringBuilder sınıfının kullanımının bazı örnekleri:
+   Bir metne metin eklemek
+   Bir metinden metin silmek
+   Bir metni değiştirmek
+   Bir metinde arama yapmak
+   Bir metni büyük harfe veya küçük harfe dönüştürmek
+   Ekstra Bilgi:
+   StringBuilder sınıfına benzer bir sınıf olan StringBuffer sınıfı da mevcuttur. StringBuffer sınıfı thread-safe'dir, ancak StringBuilder sınıfından daha yavaştır.
+   Java 9'dan itibaren String sınıfına concat() metodu eklenmiştir. Bu metot, iki String nesnesini birleştirmek için kullanılabilir.
+   Umarım bu bilgiler yardımcı olmuştur.
 
 </details>
 
@@ -2032,7 +1909,6 @@ Umarım bu bilgiler yardımcı olmuştur.
 
 <summary>++REST API Özellikleri Nelerdir?
 ?</summary>
-
 
 REST mimarisi, 6 madde üzerine inşa edilmiştir.
 Stateless: Stateless yapısı sayesinde geçmişe yönelik bir tarama yapmanız gerekmez ve her reguest arasında bir kayıt tutmak zorunluluğu yoktur.
@@ -2042,9 +1918,7 @@ Client-Server: Bu kısıta göre client, server’ın sorumluluğundaki depolama
 Layered System: Client-server mimarisi her zaman client’in direkt bir server’a istek göndermesi ve ondan cevap alması şeklinde değildir. Bu aşamada aralarda güvenlik katmanı, cache katmanı gibi katmanlar olabilir.
 Code on Demand: Code on demand kısıt, server’ın client’a belli durumlarda executable script’ler ve applet’ler gönderebilmesini kapsar.
 
-
 </details>
-
 
 <details>
 
@@ -2054,8 +1928,6 @@ Agregatör, birden fazla servisin verilerini toplayıp birleştiren bir servisti
 
 </details>
 
-
-
 <details>
 
 <summary>Proxy?</summary>
@@ -2063,8 +1935,6 @@ Agregatör, birden fazla servisin verilerini toplayıp birleştiren bir servisti
 Proxy, bir servisin yerine geçen bir aracıdır. Proxy, istekleri gerçek servise yönlendirir ve servisin davranışını değiştirebilir. Örneğin, bir authorization proxy'si, istekleri yetkilendirebilir veya bir caching proxy, sıkça erişilen verileri önbellekte tutabilir.
 
 </details>
-
-
 
 <details>
 
@@ -2074,8 +1944,6 @@ Pipeline, birden fazla servisin seri olarak çalıştırıldığı bir tasarımd
 
 </details>
 
-
-
 <details>
 
 <summary>shared resources?</summary>
@@ -2084,8 +1952,6 @@ Paylaşılan kaynaklar, birden fazla servis tarafından kullanılan veriler veya
 
 </details>
 
-
-
 <details>
 
 <summary>Asenkron Mesajlaşma?</summary>
@@ -2093,12 +1959,6 @@ Paylaşılan kaynaklar, birden fazla servis tarafından kullanılan veriler veya
 Asenkron mesajlaşma, servisler arasında iletişim kurmak için kullanılan bir yöntemdir. Bu yöntemde, bir servis bir mesaj gönderir ve daha sonra bir yanıt bekler yerine, mesajı bir kuyruğa gönderir ve devam eder. Bu, servislerin birbirini beklemeden çalışmasına ve performansı artırmaya yardımcı olur.
 
 </details>
-
-
-
-
-
-
 
 <details>
 
@@ -2124,7 +1984,6 @@ Güvenlik: Serialized nesneler, güvenli olmayan bir şekilde depolanırsa veya 
 Performans: Serializing işlemi, büyük ve karmaşık nesneler için zaman alıcı olabilir.
 Uyumluluk: Serialized nesneler, farklı platformlarda veya farklı Java sürümlerinde geri yüklenebilmeleri için uyumlu bir şekilde serileştirilmelidir.
 Serializing, nesneleri saklamak, aktarmak ve kopyalamak için kullanılabilecek güçlü bir araçtır. Serializing'in avantajlarından ve dezavantajlarından haberdar olmak ve onu doğru şekilde kullanmak önemlidir.
-
 
 </details>
 
@@ -2162,15 +2021,13 @@ public class VolatileExample {
     public int getCounter() {
         return counter;
     }
+
 }
 
 Bu örnekte, counter değişkeni volatile olarak tanımlanmıştır. Bu, birden fazla iş parçacığı tarafından erişilmesine izin vererek, her iş parçacığının her zaman counter'ın güncel değerini görmesini sağlar.
 Volatile, çoklu iş parçacığı programlamada ve donanım kesmeleri ile çalışırken önemli bir kavramdır. Doğru şekilde kullanıldığında, veri tutarlılığını sağlayabilir ve iş parçacıkları arasında veri yarışını önleyebilir.
 
-
 </details>
-
-
 
 <details>
 
@@ -2206,10 +2063,7 @@ Event handling: Bir nesnenin bir olayı başka bir nesneye bildirmesi için.
 Callback: Bir işlem tamamlandıktan sonra başka bir nesneyi bilgilendirmek için.
 Logging: Bir nesnenin log mesajlarını başka bir nesneye göndermesi için.
 
-
 </details>
-
-
 
 <details>
 
@@ -2237,18 +2091,16 @@ Event-Driven, birçok farklı programlama dilinde ve platformda uygulanabilen g�
 Event-Driven'ın Örnek Kullanımı:
 Python
 def on_button_click(event):
-    print("Düğmeye tıklandı!")
+print("Düğmeye tıklandı!")
 
 # Bir düğmeye tıklandığında on_button_click fonksiyonu çağrılacak
+
 button.on_click(on_button_click)
 
 Bu örnekte, bir düğmeye tıklandığında on_button_click fonksiyonunun çağrılmasını sağlayan bir event-driven programın basit bir örneği gösterilmiştir.
 Event-Driven, programların daha esnek, ölçeklenebilir ve bakımı kolay olmasını sağlayabilecek güçlü bir paradigmadır.
 
-
 </details>
-
-
 
 <details>
 
@@ -2266,17 +2118,17 @@ Java
 int counter = 0;
 
 public void incrementCounter() {
-  counter++;
+counter++;
 }
 
 public int getCounter() {
-  return counter;
+return counter;
 }
 
 // Ana Thread
 // ... Diğer işlemler
 for (int i = 0; i < 1000; i++) {
-  new Thread(this::incrementCounter).start();
+new Thread(this::incrementCounter).start();
 }
 
 // ... Diğer işlemler
@@ -2294,10 +2146,7 @@ Senkronizasyon: Lock, Mutex gibi mekanizmalar ile paylaşılan kaynağa aynı an
 Atomik İşlemler: İşlemi bölünemeyecek bir birim olarak ele alarak aynı anda başka bir iş parçacığı müdahale edemez.
 Thread-Safe Veri Yapıları: Paylaşılan verileri iş parçacığı güvenli hale getirilmiş veri yapıları ile kullanmak.
 
-
 </details>
-
-
 
 <details>
 
@@ -2319,10 +2168,7 @@ Bir web sayfasının kodlama sistemini belirlemek.
 Veritabanında bir metin sütununu belirli bir kodlama sistemi ile saklamak.
 Encoding, metinlerle çalışırken önemli bir kavramdır. Doğru encoding seçimi ve kullanımı, metinlerin doğru şekilde işlenmesini ve görüntülenmesini sağlar.
 
-
 </details>
-
-
 
 <details>
 
@@ -2351,27 +2197,17 @@ Testler, code coverage'ı artırsa da her zaman doğru ve etkili olmayabilir. Ka
 
 </details>
 
-
-
-
-
-
-
 <details>
 
 <summary>++Warning Threshold
 ?</summary>
-
 
 Warning Threshold, farklı bağlamlarda kullanılabilen, ancak temel olarak bir uyarı eşiğini ifade eden bir terimdir.
 Warning Threshold, bir sistemin normal çalışma durumunu tanımlayan sınır değerlerdir. Bu sınırlar aşıldığında, potansiyel bir sorun olduğunu anlamak için bir uyarı verilir.
 Warning Threshold'un hangi seviyede olması gerektiği, sistemin amacına, risk tolere edilebilirliğine ve alınacak aksiyonlara göre değişir.
 Efektif uyarı eşiği belirlemek, sorun tespitini hızlandırır, gereksiz uyarıları azaltır ve istenmeyen durumlara önlem alınmasını sağlar.
 
-
 </details>
-
-
 
 <details>
 
@@ -2404,7 +2240,6 @@ Zabbix: Kapsamlı bir izleme çözümü sunan, açık kaynaklı bir platformdur.
 SolarWinds Orion: Ağ, sistem ve uygulama izleme için ticari bir çözümdür.
 Microsoft System Center Operations Manager: Microsoft tarafından geliştirilen bir sistem ve uygulama izleme platformudur.
 
-
 </details>
 
 <details>
@@ -2434,34 +2269,28 @@ Bir veritabanındaki sorguların yürütme süresi
 Bir ağdaki paket kaybı ve gecikme süresi
 Özel Telemetri/Metrik, her bir sistemin veya uygulamanın özel gereksinimlerine göre özelleştirilebilir.
 
-
 </details>
-
-
 
 <details>
 
 <summary>++Blog Storage
 ?</summary>
 
-
 "Blog storage" terimi aslında net bir şekilde tanımlanmış bir teknoloji veya konsept değildir. Ancak web sitelerinde ve blog yazarlığı ile ilgili olarak iki farklı şekilde yorumlanabilir:
-1. Blog platformlarının depolama seçenekleri:
-Burada "blog storage" blog platformlarının sunduğu depolama çözümlerini ifade eder. Örneğin, WordPress.com, Blogger gibi ücretsiz platformlar sınırlı bir depolama alanı sunarlar. Blog yazarları daha fazla depolama ihtiyacı olduğunda ise ücretli planlara geçebilirler. Diğer yandan Wix, Squarespace gibi platformlar ödenen planlarla birlikte çeşitli depolama kapasiteleri sunarlar. Bunlara ek olarak, kendi web sunucunuzu kullanarak bir blog kurduğunuzda depolama için sunucu sağlayıcının sunacağı disk alanından faydalanırsınız.
-2. Blog içeriğinin depolandığı yerler:
-Bu yorumda ise "blog storage" blog içeriklerinin (metin, resimler, videolar) fiziksel olarak saklandığı yerlere işaret eder. Bu da yine birkaç olasılığı barındırır:
-Merkezi sunucular: Çoğu blog platformu içeriği kendi sunucularında depolar. Bu sunucular genellikle güvenli ve bakımı yapılmış verimerkezlerinde bulunur.
-CDN (Content Delivery Network): Bazı platformlar veya blog yazarları içeriği daha hızlı yüklemek için CDN hizmetlerinden yararlanır. CDN, dünyanın farklı yerlerinde bulunan sunucularda web sitesi içeriğini önbelleğe alır. Böylece ziyaretçi içeriğe en yakın sunucudan erişerek daha hızlı yükleme elde eder.
-Yerel depolama: Eğer WordPress gibi kendi kod tabanınızı barındıran bir platform kullanıyorsanız, blog içeriği web sunucunuzun disk alanında depolanır.
-"Blog storage" hakkında ek bilgilendirme isterseniz, şu konuları belirterek sorunuzu detaylandırabilirsiniz:
-Hangi bağlamda "blog storage" terimini duyduğunuz?
-Siz ne tür bir bilgi arıyorsunuz?
-Umarım bu açıklamalar size yardımcı olur.
 
+1. Blog platformlarının depolama seçenekleri:
+   Burada "blog storage" blog platformlarının sunduğu depolama çözümlerini ifade eder. Örneğin, WordPress.com, Blogger gibi ücretsiz platformlar sınırlı bir depolama alanı sunarlar. Blog yazarları daha fazla depolama ihtiyacı olduğunda ise ücretli planlara geçebilirler. Diğer yandan Wix, Squarespace gibi platformlar ödenen planlarla birlikte çeşitli depolama kapasiteleri sunarlar. Bunlara ek olarak, kendi web sunucunuzu kullanarak bir blog kurduğunuzda depolama için sunucu sağlayıcının sunacağı disk alanından faydalanırsınız.
+2. Blog içeriğinin depolandığı yerler:
+   Bu yorumda ise "blog storage" blog içeriklerinin (metin, resimler, videolar) fiziksel olarak saklandığı yerlere işaret eder. Bu da yine birkaç olasılığı barındırır:
+   Merkezi sunucular: Çoğu blog platformu içeriği kendi sunucularında depolar. Bu sunucular genellikle güvenli ve bakımı yapılmış verimerkezlerinde bulunur.
+   CDN (Content Delivery Network): Bazı platformlar veya blog yazarları içeriği daha hızlı yüklemek için CDN hizmetlerinden yararlanır. CDN, dünyanın farklı yerlerinde bulunan sunucularda web sitesi içeriğini önbelleğe alır. Böylece ziyaretçi içeriğe en yakın sunucudan erişerek daha hızlı yükleme elde eder.
+   Yerel depolama: Eğer WordPress gibi kendi kod tabanınızı barındıran bir platform kullanıyorsanız, blog içeriği web sunucunuzun disk alanında depolanır.
+   "Blog storage" hakkında ek bilgilendirme isterseniz, şu konuları belirterek sorunuzu detaylandırabilirsiniz:
+   Hangi bağlamda "blog storage" terimini duyduğunuz?
+   Siz ne tür bir bilgi arıyorsunuz?
+   Umarım bu açıklamalar size yardımcı olur.
 
 </details>
-
-
 
 <details>
 
@@ -2488,11 +2317,7 @@ Ek Bilgi:
 Her iki proxy türü de güvenlik riskleri oluşturabilir. Forward Proxy kullanırken gizliliğinizin korunduğundan emin olmak önemlidir. Reverse Proxy, web sunucularınızı ve uygulamalarınızı daha güvenli hale getirmeye yardımcı olabilir, ancak doğru yapılandırılmadığında güvenlik açıkları oluşturabilir.
 CDN (Content Delivery Network) hizmetleri genellikle Reverse Proxy teknolojisini kullanır.
 
-
-
 </details>
-
-
 
 <details>
 
@@ -2521,10 +2346,7 @@ Veri İşlemleri: Veri değişikliklerini bir bütün olarak işleyen mekanizmal
 Veri Yönetim Araçları: Veri tutarlılığını izleyen ve enforse eden yazılımlar kullanaılması.
 Data consistency farklı sistemler ve uygulamalarda karmaşık olabileceğinden, sürekli takip ve iyileştirme gerektirir. Veri mimarisi, güvenlik ilkeleri ve iş kurallarıyla uyumlu bir yaklaşım izlenmelidir.
 
-
 </details>
-
-
 
 <details>
 
@@ -2559,10 +2381,7 @@ Güncel tutun: Sistem/süreç değiştikçe dokümantasyonu güncelleyin.
 Erişilebilir olun: Dokümantasyona kolayca erişilebilir olduğundan emin olun.
 Sonuç olarak, sistem/süreç dokümantasyonu, sistemlerin ve süreçlerin verimli ve etkili bir şekilde çalışmasını sağlayan önemli bir araçtır. İyi hazırlanmış dokümantasyon, sistemin anlaşılmasını, kullanımını, bakımını ve iyileştirilmesini kolaylaştırır.
 
-
 </details>
-
-
 
 <details>
 
@@ -2570,19 +2389,20 @@ Sonuç olarak, sistem/süreç dokümantasyonu, sistemlerin ve süreçlerin verim
 ?</summary>
 
 Typecasting, bir veri tipini başka bir veri tipine dönüştürme işlemidir. Java'da iki tür typecasting vardır:
+
 1. Implicit Typecasting (Otomatik Dönüştürme)
-Java, bazı durumlarda veri tiplerini otomatik olarak dönüştürür. Örneğin, bir byte veri tipindeki değer bir int veri tipine atanabilir. Bu işlem veri kaybına neden olmaz.
-Örnek:
-Java
-byte b = 10;
-int i = b; // Otomatik dönüştürme
+   Java, bazı durumlarda veri tiplerini otomatik olarak dönüştürür. Örneğin, bir byte veri tipindeki değer bir int veri tipine atanabilir. Bu işlem veri kaybına neden olmaz.
+   Örnek:
+   Java
+   byte b = 10;
+   int i = b; // Otomatik dönüştürme
 
 2. Explicit Typecasting (Açık Dönüştürme)
-Bazı durumlarda, veri tipini açıkça dönüştürmeniz gerekir. Bunu, dönüştürmek istediğiniz veri tipinin adını parantez içinde yazarak yapabilirsiniz. Explicit typecasting veri kaybına neden olabilir.
-Örnek:
-Java
-int i = 10;
-byte b = (byte) i; // Açık dönüştürme
+   Bazı durumlarda, veri tipini açıkça dönüştürmeniz gerekir. Bunu, dönüştürmek istediğiniz veri tipinin adını parantez içinde yazarak yapabilirsiniz. Explicit typecasting veri kaybına neden olabilir.
+   Örnek:
+   Java
+   int i = 10;
+   byte b = (byte) i; // Açık dönüştürme
 
 // Bu kod veri kaybına neden olabilir
 
@@ -2594,13 +2414,10 @@ Typecasting Kullanırken Dikkat Edilmesi Gerekenler:
 Explicit typecasting kullanırken veri kaybına neden olabileceğini unutmayın.
 Dönüştürmek istediğiniz veri tipinin aralığını kontrol edin.
 Typecasting'i gereksiz yere kullanmaktan kaçının.
- ++Java'da sonsuz döngü (infinite loop) nedir? 
-Java’da sonsuz döngü (infinite loop), bir döngü veya koşulun sürekli olarak doğru kalması nedeniyle döngünün hiçbir zaman sonlanmaması durumudur. Yani döngü, sürekli olarak tekrar eder. 
-
+++Java'da sonsuz döngü (infinite loop) nedir?
+Java’da sonsuz döngü (infinite loop), bir döngü veya koşulun sürekli olarak doğru kalması nedeniyle döngünün hiçbir zaman sonlanmaması durumudur. Yani döngü, sürekli olarak tekrar eder.
 
 </details>
-
-
 
 <details>
 
@@ -2641,10 +2458,7 @@ String str4 = "Merhaba".intern();
 // str4 ve str1 aynı String nesnesine referans verir.
 System.out.println(str1 == str4); // true
 
-
 </details>
-
-
 
 <details>
 
@@ -2655,10 +2469,7 @@ Wrapper'lar primative 8 değişkenin (byte,short,int,long,float,double,boolean,c
 Process ve Thread arasındaki farklar nelerdir?
 Günümüzde bir bilgisayar sisteminde tek bir işlem birimi olsa dahi, bu tek işlem birimi(işlemci) işletim sisteminin kaynak kullanım stratejisine göre her birine belli bir zaman ayırma esasına göre işlem yapmaktadır. Dolayısıyla bilgisayarda aynı anda çok sayıda thread ve process bulunmaktadır. Process kendisine ait kaynakları olan işlem birimidir. Örneğin her process kendisine ait hafıza alanına sahiptir. Theadler de processler gibi işlem birimleridir ve hafif siklet processler (lightweight processes) olarak adlandırılır. Theadler daha az kaynağa ihtiyaç duymaktadır. Theadler bir process içinde yer almaktadır yani her Thead mutlaka bir processe sahiptir ve onun kaynaklarından faydalanır. Theadler de processler gibi uygulamalarda paralelllik elde etmek için kullanılır. Ancak processler daha bağımsız işletim birimleridir kendilerine ait durum bilgileri, kendilerine ait adres alanları varodr. Bir process içerisinde birçok thread barındırabilir ve herbir thread mutlaka bir process içinde yer almaktadır. Aynı process içindeki tüm Theadler aynı hafıza ve aynı durumu paylaşır birbirleriyle direkt olarak haberleşebilirler çünkü aynı alanı paylaşırlar.
 
-
 </details>
-
-
 
 <details>
 
@@ -2675,8 +2486,6 @@ Bir sınıf oluşturup arada bir interface kullanarak, kullanılacak sınıflar 
 JPA / Hibernate arasındaki fark nedir?
 JPA bir spesifikasyondur, yani kurallar bütünüdür. Java EE ve Java SE uygulamalarında kullanılır. Java Persistence API kendi başına bir şey yapamaz, bir implementation'a yani uygulamak için bir araca ihtiyaç duyar.Hibernate, Java geliştiricileri için geliştirilmiş bir ORM kütüphanesidir. Nesne yönelimli modellere göre veritabanı ile olan ilişkiyi sağlayarak, veritabanı üzerinde yapılan işlemleri kolaylaştırır.JPA sadece bir spesifikasyon, yani bir implementasyonu yok. JPA'yı izlenmesi gereken yönergeler veya bir arabirim olarak düşünürken, Hibernate JPA uygulaması, JPA tarafından tanımlanan API altında işlevsellik sağlayan koddur.
 
-
-
 </details>
 
 <details>
@@ -2687,10 +2496,7 @@ JPA bir spesifikasyondur, yani kurallar bütünüdür. Java EE ve Java SE uygula
 1-Runnable interface'ini implemente ederek.
 2-Thread sınıfını extend ederek.
 
-
 </details>
-
-
 
 <details>
 
@@ -2700,8 +2506,6 @@ JPA bir spesifikasyondur, yani kurallar bütünüdür. Java EE ve Java SE uygula
 nedir abi
 
 </details>
-
-
 
 <details>
 
@@ -2716,10 +2520,7 @@ TRUNCATE — Kayıtlar için ayrılan tüm boşluklar dahil, bir tablodaki tüm 
 COMMENT — Veri sözlüğüne yorum eklemek için kullanılır.
 RENAME — Bir nesneyi yeniden adlandırmak için kullanılır.
 
-
 </details>
-
-
 
 <details>
 
@@ -2737,8 +2538,6 @@ EXPLAIN PLAN — Verilere erişim yolunun detaylarını açıklamak için kullan
 LOCK TABLE — Kontrolü eş zamanlılığı sağlamak için kullanılır.
 
 </details>
-
-
 
 <details>
 
@@ -2761,10 +2560,7 @@ Network trafiğini azaltırlar.
 Sql ifadelerinin geçtiği yerlerdeki parametreleri tek tek değiştirmek yerine store procedure içindeki parametre yada kuralları değiştirirerek istediğimizi yapabiliriz.
 Sıklıkla kullanılan işlemler için 1 defa yazıp birden fazla kullanabiliriz.
 
-
 </details>
-
-
 
 <details>
 
@@ -2775,10 +2571,7 @@ Birim testi geliştirmiş olduğumuz kodu test etmek için yazmış olduğumuz k
 Kodun veya fonksiyonun belirli bir biriminin davranışını kontrol eder.
 Unit test kodlarımızı kullanacak diğer developerlar açısından da önemlidir,diğer developerlar kodun nasıl çalıştığını anlamak için unit testi çalıştırırlar.
 
-
 </details>
-
-
 
 <details>
 
@@ -2826,15 +2619,13 @@ public class LoggingAspect {
     public void logAfter(JoinPoint joinPoint) {
         System.out.println("Metot bitti!");
     }
+
 }
 Logging aspect'i ile bir uygulamadaki tüm metoda giriş ve çıkışlarını loglamak isteyebilirsiniz. Aspect'inizde metodun adını, parametrelerini ve dönüş değerini kayıt eden fonksiyon yer alır. Pointcut ile hangi metodlara uygulanacağını belirleyebilirsiniz. Bu sayede logging kodunu her metoda ayrı ayrı yazmak yerine tek bir yerde yönetebilirsiniz.
 Sonuç olarak:
 Aspect-Oriented Programming, cross-cutting concern'leri etkili bir şekilde yönetmeye ve kod tekrarını azaltmaya yardımcı olan güçlü bir programlama paradigmasıdır. Ancak öğrenme ve uygulama eğrisi daha zor olabilir ve yanlış kullanıldığında kodun anlaşılırlığını azaltabilir. Uygun durumlarda kullanıldığında kodun okunabilirliğini, bakımı ve modülerliğini artırarak yazılım geliştirme sürecini kolaylaştırabilir.
 
-
 </details>
-
-
 
 <details>
 
@@ -2873,10 +2664,7 @@ Sonuçları İşleyin: Veritabanından gelen sonuçları ResultSet nesnesi üzer
 Bağlantıyı Kapatın: İşlem bittiğinde bağlantıyı kapatın.
 Sonuç olarak, JDBC, Java uygulamalarının çeşitli veritabanlarına bağlanıp etkileşim kurmasını sağlayan önemli bir araçtır. JDBC'nin doğru şekilde kullanılmasıyla hızlı, güvenilir ve verimli veritabanı uygulamaları geliştirilebilir.
 
-
 </details>
-
-
 
 <details>
 
@@ -2886,23 +2674,24 @@ Sonuç olarak, JDBC, Java uygulamalarının çeşitli veritabanlarına bağlanı
 
 ACID Prensipleri
 ACID, veritabanı işlemlerinin güvenilirliğini ve tutarlılığını sağlamak için kullanılan dört temel prensipten oluşur. Bu prensipler şunlardır:
+
 1. Atomicity (Bütünlük): Bir işlemdeki tüm işlemler ya tamamıyla gerçekleşir ya da hiç gerçekleşmez. Bir işlem sırasında bir hata oluşursa, işlem geri alınır ve veritabanı başlangıçtaki haline döner.
 2. Consistency (Tutarlılık): Bir işlem veritabanını her zaman tutarlı bir durumda bırakır. Bir işlemden önce veritabanı tutarlıysa, işlemden sonra da tutarlı kalacaktır.
 3. Isolation (Yalıtım): Aynı anda birden fazla işlem çalışırken, birbirlerinden etkilenmezler. Her işlem kendi özel bir ortamda çalışıyormuş gibi davranır.
 4. Durability (Dayanıklılık): Bir işlem tamamlandıktan sonra, veritabanındaki değişiklikler kalıcı hale gelir. Bir sistem arızası veya güç kesintisi olsa bile, veriler kaybolmaz.
-ACID prensiplerinin faydaları:
-Veritabanı tutarlılığını ve güvenilirliğini sağlar.
-Veri kaybını ve hatalı verileri önler.
-İşlemlerin güvenli ve doğru bir şekilde gerçekleşmesini sağlar.
-ACID prensiplerinin dezavantajları:
-Performansı etkileyebilir.
-Karmaşıklığı artırabilir.
-ACID prensiplerinin kullanımı:
-ACID prensipleri, veritabanı işlemlerinin güvenilirliği ve tutarlılığı kritik önem taşıyan uygulamalarda kullanılır. Örneğin, banka uygulamaları, finansal uygulamalar ve sağlık uygulamaları gibi.
-ACID prensiplerine örnek:
-Bir banka havalesi işleminde, paradan gönderenin hesabından alıcının hesabına aktarılması tek bir işlem olarak gerçekleşir. İşlem sırasında bir hata oluşursa, para transferi gerçekleşmez ve her iki hesap da başlangıçtaki bakiyelerinde kalır.
-Bir e-ticaret sitesinde bir ürün satın alırken, sipariş işlemi ve ödeme işlemi tek bir işlem olarak gerçekleşir. İşlem sırasında bir hata oluşursa, sipariş tamamlanmaz ve ödeme gerçekleşmez.
-Sonuç olarak, ACID prensipleri, veritabanı işlemlerinin güvenilirliğini ve tutarlılığını sağlamak için kullanılan temel prensiplerdir. Bu prensiplerin doğru şekilde kullanılmasıyla güvenli, tutarlı ve hatasız veritabanı uygulamaları geliştirilebilir.
+   ACID prensiplerinin faydaları:
+   Veritabanı tutarlılığını ve güvenilirliğini sağlar.
+   Veri kaybını ve hatalı verileri önler.
+   İşlemlerin güvenli ve doğru bir şekilde gerçekleşmesini sağlar.
+   ACID prensiplerinin dezavantajları:
+   Performansı etkileyebilir.
+   Karmaşıklığı artırabilir.
+   ACID prensiplerinin kullanımı:
+   ACID prensipleri, veritabanı işlemlerinin güvenilirliği ve tutarlılığı kritik önem taşıyan uygulamalarda kullanılır. Örneğin, banka uygulamaları, finansal uygulamalar ve sağlık uygulamaları gibi.
+   ACID prensiplerine örnek:
+   Bir banka havalesi işleminde, paradan gönderenin hesabından alıcının hesabına aktarılması tek bir işlem olarak gerçekleşir. İşlem sırasında bir hata oluşursa, para transferi gerçekleşmez ve her iki hesap da başlangıçtaki bakiyelerinde kalır.
+   Bir e-ticaret sitesinde bir ürün satın alırken, sipariş işlemi ve ödeme işlemi tek bir işlem olarak gerçekleşir. İşlem sırasında bir hata oluşursa, sipariş tamamlanmaz ve ödeme gerçekleşmez.
+   Sonuç olarak, ACID prensipleri, veritabanı işlemlerinin güvenilirliğini ve tutarlılığını sağlamak için kullanılan temel prensiplerdir. Bu prensiplerin doğru şekilde kullanılmasıyla güvenli, tutarlı ve hatasız veritabanı uygulamaları geliştirilebilir.
 
 </details>
 
@@ -2935,10 +2724,7 @@ Veritabanı yapılandırması değiştiğinde.
 Sonuç olarak:
 Hard parse ve soft parse, SQL sorgularının veritabanında işlenmesine ilişkin iki ayrıştırma yöntemidir. Soft parse performans açısından tercih edilir, ancak bir sorgu ilk kez veya önbellekteki plan geçerli değilse hard parse gerekir.
 
-
 </details>
-
-
 
 <details>
 
@@ -2982,6 +2768,7 @@ public class Main {
         // Bağlantıyı kapatma
         connection.close();
     }
+
 }
 
 Bu örnekte, Statement nesnesi bir SELECT sorgusu çalıştırmak ve sonuçları yazdırmak için kullanılır. Ayrıca, bir INSERT sorgusu çalıştırmak için de kullanılır.
@@ -2990,10 +2777,7 @@ Statement: Temel SQL ifadelerini çalıştırmak için kullanılır.
 PreparedStatement: Parametreli sorguları çalıştırmak için kullanılır ve performansı optimize eder.
 CallableStatement: Stored procedure'ları (saklı prosedürler) çalıştırmak için kullanılır.
 
-
 </details>
-
-
 
 <details>
 
@@ -3050,12 +2834,10 @@ public class Main {
         // Bağlantıyı kapatma
         connection.close();
     }
+
 }
 
-
 </details>
-
-
 
 <details>
 
@@ -3069,66 +2851,61 @@ Eksik Veri: Bir tablodaki bazı bilgilere diğer tablodan erişilmesi gerektiği
 Anomali: Veritabanındaki bir değişikliğin birden fazla tabloda tutarsızlık yaratması.
 Normalizasyon Seviyeleri:
 Normalizasyon, çeşitli seviyelerde uygulanabilir. Her seviye, veri tekrarını ve tutarsızlığı azaltmaya yardımcı olur. En yaygın normalizasyon seviyeleri şunlardır:
+
 1. Normal Form (1NF): Her satırın benzersiz bir anahtara sahip olması ve her sütunun atomik olması (ayrıştırılamaz) gerekir.
 2. Normal Form (2NF): 1NF'i sağlamanın yanı sıra, her sütunun birincil anahtara tam bağımlı olması gerekir.
 3. Normal Form (3NF): 2NF'i sağlamanın yanı sıra, her sütunun geçişsiz bağımlılık olması gerekir.
-Normalizasyon Teknikleri:
-Normalizasyon, aşağıdaki teknikler kullanılarak uygulanabilir:
-Ayrıştırma: Bir tabloyu birden fazla tabloya bölme işlemi.
-Fonksiyonel Bağımlılık Analizi: Hangi sütunların hangi sütunlara bağımlı olduğunu belirleme işlemi.
-Asıl Anahtar Belirleme: Her satırı benzersiz şekilde tanımlayan bir sütun veya sütun grubu seçme işlemi.
-Normalizasyonun Avantajları:
-Veri Tutarlılığı: Veritabanındaki tutarsızlıkları ve hataları azaltır.
-Veri Erişimi: Verilere erişimi kolaylaştırır ve hızlandırır.
-Veri İşlemleri: Veri ekleme, silme ve güncelleme işlemlerini kolaylaştırır.
-Depolama Alanı: Veri tekrarını azaltarak depolama alanından tasarruf sağlar.
-Normalizasyonun Dezavantajları:
-Karmaşıklık: Veritabanı tasarımını ve uygulamasını karmaşıklaştırabilir.
-Performans: Bazı durumlarda, sorguların performansını olumsuz etkileyebilir.
-Sonuç olarak:
-Normalizasyon, veritabanındaki veri tutarlılığı, erişimi ve işlenmesini optimize etmek için kullanılan önemli bir tekniktir. Doğru şekilde uygulandığında, veritabanı performansını ve güvenilirliğini artırır.
-
+   Normalizasyon Teknikleri:
+   Normalizasyon, aşağıdaki teknikler kullanılarak uygulanabilir:
+   Ayrıştırma: Bir tabloyu birden fazla tabloya bölme işlemi.
+   Fonksiyonel Bağımlılık Analizi: Hangi sütunların hangi sütunlara bağımlı olduğunu belirleme işlemi.
+   Asıl Anahtar Belirleme: Her satırı benzersiz şekilde tanımlayan bir sütun veya sütun grubu seçme işlemi.
+   Normalizasyonun Avantajları:
+   Veri Tutarlılığı: Veritabanındaki tutarsızlıkları ve hataları azaltır.
+   Veri Erişimi: Verilere erişimi kolaylaştırır ve hızlandırır.
+   Veri İşlemleri: Veri ekleme, silme ve güncelleme işlemlerini kolaylaştırır.
+   Depolama Alanı: Veri tekrarını azaltarak depolama alanından tasarruf sağlar.
+   Normalizasyonun Dezavantajları:
+   Karmaşıklık: Veritabanı tasarımını ve uygulamasını karmaşıklaştırabilir.
+   Performans: Bazı durumlarda, sorguların performansını olumsuz etkileyebilir.
+   Sonuç olarak:
+   Normalizasyon, veritabanındaki veri tutarlılığı, erişimi ve işlenmesini optimize etmek için kullanılan önemli bir tekniktir. Doğru şekilde uygulandığında, veritabanı performansını ve güvenilirliğini artırır.
 
 </details>
-
-
 
 <details>
 
 <summary>++Normal formlar nelerdir?1nf ye örnek veriniz
 ?</summary>
 
-
 Normal Formlar ve 1NF Örneği
 Normal Formlar:
 Normalizasyon, veritabanındaki tabloların içeriğini organize etme tekniğidir. Verileri farklı tablolara ayırarak veri tekrarı, eksik veri ve anomali gibi problemleri ortadan kaldırmak veya azaltmak için kullanılır. Normalizasyonun farklı seviyeleri vardır ve her seviye bir önceki seviyenin üzerine inşa edilir.
 En yaygın normal formlar şunlardır:
+
 1. Normal Form (1NF): Her satırın benzersiz bir anahtara sahip olması ve her sütunun atomik olması (ayrıştırılamaz) gerekir.
 2. Normal Form (2NF): 1NF'i sağlamanın yanı sıra, her sütunun birincil anahtara tam bağımlı olması gerekir.
 3. Normal Form (3NF): 2NF'i sağlamanın yanı sıra, her sütunun geçişsiz bağımlılık olması gerekir.
-1NF Örneği:
-Öğrenci tablosu:
-Bu tablo 1NF'dedir çünkü:
-Her satırın benzersiz bir anahtarı vardır (Öğrenci No).
-Her sütun atomiktir (ayrıştırılamaz).
-Ancak, bu tabloda veri tekrarı vardır. Bölüm bilgisi her satırda tekrarlanmaktadır. Bu veri tekrarını ortadan kaldırmak için Bölüm adında ayrı bir tablo oluşturabiliriz:
-Bölüm tablosu:
-Öğrenci tablosu:
-Bu şekilde, Bölüm bilgisi tek bir yerde tutulur ve veri tekrarı ortadan kalkar.
-1NF'de olması gereken diğer özellikler:
-Her satırda null değer olmamalıdır.
-Birincil anahtar birden fazla sütundan oluşabilir.
-İki farklı satırda aynı değerler tekrarlanamaz.
+   1NF Örneği:
+   Öğrenci tablosu:
+   Bu tablo 1NF'dedir çünkü:
+   Her satırın benzersiz bir anahtarı vardır (Öğrenci No).
+   Her sütun atomiktir (ayrıştırılamaz).
+   Ancak, bu tabloda veri tekrarı vardır. Bölüm bilgisi her satırda tekrarlanmaktadır. Bu veri tekrarını ortadan kaldırmak için Bölüm adında ayrı bir tablo oluşturabiliriz:
+   Bölüm tablosu:
+   Öğrenci tablosu:
+   Bu şekilde, Bölüm bilgisi tek bir yerde tutulur ve veri tekrarı ortadan kalkar.
+   1NF'de olması gereken diğer özellikler:
+   Her satırda null değer olmamalıdır.
+   Birincil anahtar birden fazla sütundan oluşabilir.
+   İki farklı satırda aynı değerler tekrarlanamaz.
 
 </details>
-
-
 
 <details>
 
 <summary>++NoSQL Nedir ?
 ?</summary>
-
 
 NoSQL, "Not Only SQL" veya "No Structured Query Language" anlamına gelir. Geleneksel ilişkisel veritabanlarına (RDBMS) alternatif olarak ortaya çıkan bir veritabanı yönetim sistemleri (DBMS) ailesidir.
 NoSQL'in Özellikleri:
@@ -3159,10 +2936,7 @@ Veri yükünüz: Ne kadar veri depolayacaksınız?
 Performans gereksinimleriniz: Ne kadar hızlı performansa ihtiyacınız var?
 Yetenek gereksinimleriniz: Karmaşık sorgulara ihtiyacınız var mı?
 
-
 </details>
-
-
 
 <details>
 
@@ -3188,16 +2962,12 @@ Yedekleme ve geri yükleme işlemleri için özel araçlar ve çözümler kullan
 NoSQL Sistemlerin Dezavantajlarını Dikkate Alırken:
 NoSQL sistemlerin dezavantajları, her bir sistemin türüne ve kullanım amacına göre değişebilir. NoSQL sistemi seçerken, bu dezavantajları ve uygulamanız için ne kadar önemli olduklarını göz önünde bulundurmanız önemlidir.
 
-
 </details>
-
-
 
 <details>
 
 <summary>++Execution Plan Nedir?
 ?</summary>
-
 
 Execution plan, bir veritabanı yönetim sisteminde (DBMS) bir SQL sorgusunun nasıl yürütüleceğini tanımlayan bir belgedir. Sorguyu işlemenin en verimli yolunu belirlemek için DBMS tarafından otomatik olarak oluşturulur.
 Execution plan aşağıdaki bilgileri içerebilir:
@@ -3215,10 +2985,7 @@ Execution Planı Nerede Bulunur?
 Execution planın nasıl erişileceği ve görüntülenebileceği DBMS'ye göre değişebilir. Bazı DBMS'lerde execution plan otomatik olarak sorgunun sonucuyla birlikte döndürülürken, diğerlerinde özel araçlar kullanılarak elde edilmesi gerekebilir.
 Umarım bu açıklamalar execution plan hakkında size daha fazla bilgi vermiştir. Eğer sorunuz varsa, çekinmeden sorun!
 
-
 </details>
-
-
 
 <details>
 
@@ -3241,14 +3008,12 @@ Veritabanları arasında veri kopyalama ve eşitleme işlemleri için sağlam bi
 Tüm servisler ve veritabanları için izleme ve hata ayıklama araçları kullanılmalıdır.
 Transactional problemler, mikroservis mimarili projelerde önemli bir zorluktur. Bu problemleri çözmek için çeşitli teknikler kullanılabilir. Hangi çözümün kullanılacağı, projenin özel gereksinimlerine bağlıdır.
 
-
 </details>
 
 <details>
 
 <summary>++Bearer token nedir ve ne için kullanılır?
 ?</summary>
-
 
 Bearer token, bir kullanıcının bir API'ye kimlik doğrulaması için kullandığı bir kimlik doğrulama belirtecidir. Genellikle bir JWT (JSON Web Token) formatında olur ve Authorization HTTP başlığında gönderilir.
 Bearer token'ın çalışma prensibi:
@@ -3303,10 +3068,7 @@ Güvenli bir şekilde kullanılmaları gerekir.
 HTTPS gibi güvenli bir protokol kullanılmalıdır.
 Session ve cookie'lerin süresi dolduğunda veya kullanıcı oturumunu kapattığında silinmelidir.
 
-
 </details>
-
-
 
 <details>
 
@@ -3315,30 +3077,25 @@ Session ve cookie'lerin süresi dolduğunda veya kullanıcı oturumunu kapattı�
 public static void main(String [Jargs)
 Integer a = 50;
 Integer b = 50;
-System.out.println(*a == b?
-+ (a = b) );
-Integer c = 500:
-Integer d = 500;
-System.out-println(*c = d?" + (c = d) );
+System.out.println(\*a == b?
 
-
-
+- (a = b) );
+  Integer c = 500:
+  Integer d = 500;
+  System.out-println(\*c = d?" + (c = d) );
 
 JVM parametrelerinin default değerleri koruduğu varsayılarak -127 +128 değerleri arasını cacheler ve bu değerler arasına yazılan iki farklı sayıyı aynı referans noktalarına atar. Bundan dolayı birinci ifade true, ikinci ifade false çıktısını verir.
+
 </details>
-
-
 
 <details>
 
 <summary>soru?</summary>
 
 public static void main(String args[]) ‹
-System.out -printin(0.1 * 3 == 0.3);
-System.out.println(0.1 * 2 ==
+System.out -printin(0.1 _ 3 == 0.3);
+System.out.println(0.1 _ 2 ==
 0.2);
-
-
 
 Float değişken derin binary formatinda nasil saklandığı
 ile alakali olan bu soruda, 0.2 tam olarak binary sisteme
@@ -3348,12 +3105,7 @@ false
 true
 çıktısını alırız.
 
-
-
-
 </details>
-
-
 
 <details>
 
@@ -3364,14 +3116,9 @@ int intValue = Integer MAX_VALUE;
 intValue++;
 System.out.println(intValue);
 
-
 overflow söz konusudur, max value üstüne bir değer daha eklenince min value -231231 gibi bir değere ulaşılır
 
-
-
 </details>
-
-
 
 <details>
 
@@ -3385,12 +3132,9 @@ public static void main(String(] args) {
 A a = null;
 a.staticMethod();
 
+static metotlar nesne üzerinden değil sınıf üzerinden çağrıldıkları için örneği yaratılmayan bir sınıfa ait static method da çağırıldığı zaman çalışılacaktır.
 
-
-static metotlar nesne üzerinden değil sınıf üzerinden çağrıldıkları için örneği yaratılmayan bir sınıfa ait static method da çağırıldığı zaman çalışılacaktır. 
 </details>
-
-
 
 <details>
 
@@ -3399,8 +3143,6 @@ static metotlar nesne üzerinden değil sınıf üzerinden çağrıldıkları i�
 cevap
 
 </details>
-
-
 
 <details>
 
@@ -3413,10 +3155,9 @@ v.set(0, "Community");
 System.out.println(v.contains("Community"));
 }
 
-true değeri verir, asList den dönen özelleştirilmiş listede elemanların eklenmesine veya çıkarılmasına izin verilmez ancak set operasyonunu gerçekleştirebiliriz. 
+true değeri verir, asList den dönen özelleştirilmiş listede elemanların eklenmesine veya çıkarılmasına izin verilmez ancak set operasyonunu gerçekleştirebiliriz.
+
 </details>
-
-
 
 <details>
 
@@ -3431,13 +3172,7 @@ public static void main(String) args) ‹
 InterfaceA.main(new String [ 10]);
 System.out println( "This is class");
 
-
-
 This is interface
 This is class
 
 </details>
-
-
-
-
