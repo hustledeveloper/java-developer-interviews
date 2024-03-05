@@ -14,7 +14,7 @@ kodlar kodlar
 
 </details>
 
-<figure><img src="assets/solid.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/unnamed ().png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -71,7 +71,7 @@ null bir referans tipinin değerinin boş olduğunu gösterir.
 
 <details>
 
-<summary>++İmplement, extend ve instanceof kavramlarını açıklayınız?
+<summary>İmplement, extend ve instanceof kavramlarını açıklayınız?
 </summary>
 
 Implement: Bir sınıfın belirli bir davranışa sahip olduğunu belirtmek için kullanılmalıdır. Bu davranış arayüzde tanımlanır ve sınıf bu arayüzü implement ederek bu davranışı sağlamalıdır.
@@ -82,7 +82,7 @@ Instanceof operatörü, bir nesnenin belirli bir sınıftan veya arayüzden olup
 
 <details>
 
-<summary>++Java'da Encapsulation Nedir?</summary>
+<summary>Java'da Encapsulation Nedir?</summary>
 
 Encapsulation, bir sınıfın üyelerini (değişkenler ve metotlar) korumak ve saklamak için kullanılan bir tekniktir. Bu teknik, sınıfın iç yapısını kullanıcılardan gizleyerek ve sadece belirli erişim izinleri sağlayarak kodun daha güvenli ve sağlam olmasını sağlar.
 Encapsulation'ın faydaları:
@@ -91,6 +91,9 @@ Değişiklik esnekliği: Sınıfın iç yapısını değiştirmeyi kolaylaştır
 Kodun sağlamlığı: Hatalı kodların ve veri tutarsızlıklarının önüne geçer.
 Bakım kolaylığı: Kodun daha okunabilir ve anlaşılır olmasını sağlar.
 Encapsulation nasıl uygulanır:
+
+<figure><img src="assets/unnamed (2).png" alt=""><figcaption></figcaption></figure>
+
 Erişim belirteçleri: Sınıf üyelerinin erişim seviyelerini belirlemek için public, private ve protected gibi erişim belirteçleri kullanılır.
 Getter ve setter metodları: Sınıfın private üyelerine erişmek için getter ve setter metodları kullanılır.
 
@@ -131,7 +134,7 @@ Encapsulation, Java'da önemli bir programlama tekniğidir. Sınıfların üyele
 
 <details>
 
-<summary>++Java'da Polymorphism Nedir?
+<summary>Java'da Polymorphism Nedir?
 ?</summary>
 
 Polymorphism, birden fazla işlemin tek bir kod ile gerçekleştirilebilme özelliğidir. Java'da polymorphism iki şekilde gerçekleşir:
@@ -213,7 +216,7 @@ Polymorphism, Java'da önemli bir programlama tekniğidir. Kodun daha az tekrarl
 
 <details>
 
-<summary>++Java’da hata ayıklanması (exception handling) nasıl yapılır?
+<summary>Java’da hata ayıklanması (exception handling) nasıl yapılır?
 ?</summary>
 
 Java'da hata ayıklama, try-catch blokları ve throw anahtar sözcüğü ile yapılır.
@@ -227,7 +230,7 @@ throw anahtar sözcüğü, kasıtlı olarak bir hata oluşturmak için kullanıl
 
 <details>
 
-<summary>++throw ile throws arasındaki fark nedir??</summary>
+<summary>throw ile throws arasındaki fark nedir??</summary>
 
 Throw ve Throws Arasındaki Fark
 Throw ve throws, Java'da hata fırlatmak ve yönetmek için kullanılan iki anahtar kelimedir. Amaçları ve kullanımları bakımından farklıdırlar.
@@ -243,11 +246,13 @@ Fırlatılabilecek hatalar bir veya daha fazla Exception nesnesi olarak belirtil
 Metodun hata fırlatıp fırlatmayacağını garanti etmez.
 Hata fırlatma işlemi try-catch bloğunda kontrol edilir.
 
+<figure><img src="assets/unnamed (1).png" alt=""><figcaption></figcaption></figure>
+
 </details>
 
 <details>
 
-<summary>++Java’da nesneleri karşılaştırıken .equals() ile == kullanmanın farkı nedir?</summary>
+<summary>Java’da nesneleri karşılaştırıken .equals() ile == kullanmanın farkı nedir?</summary>
 
 Java'da nesneleri karşılaştırmak için iki yöntem kullanılır:
 
@@ -281,7 +286,7 @@ kodlar kodlar
 
 <details>
 
-<summary>++Java’da bir alt sınıf üstün private metodları kullanabilir mi?
+<summary>Java’da bir alt sınıf üstün private metodları kullanabilir mi?
 ?</summary>
 
 Hayır, bir alt sınıf, üst sınıfın private olarak tanımlanmış metotlarını doğrudan kullanamaz.
@@ -355,7 +360,7 @@ Bu örnekte, thread1 ve thread2 adında iki iş parçacığı oluşturulur ve he
 
 <details>
 
-<summary>++Java’da thread safe yöntemleri nelerdir?
+<summary>Java’da thread safe yöntemleri nelerdir?
 ?</summary>
 
 Java'da thread-safe yöntemler, birden fazla thread tarafından aynı anda erişildiğinde tutarsızlık veya veri bozulması oluşmadan çalışabilen yöntemlerdir. Bu yöntemler, thread'lerin birbirleriyle senkronize olmasını ve veri erişimini kontrol etmesini sağlayarak programın stabilitesini ve güvenliğini artırır.
@@ -428,6 +433,8 @@ Elemanlara erişmek için indis kullanılmaz: Belirli bir elemana doğrudan eri�
 Kullanım Alanları:
 List: Sıralı verileri depolamak için kullanılır. Örneğin, bir alışveriş listesi, öğrenci listesi veya isimler listesi.
 Set: Benzersiz elemanları depolamak için kullanılır. Örneğin, bir kelime listesi, kullanıcı kimliği listesi veya ürün katalogu.
+
+<figure><img src="assets/unnamed (8).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -502,7 +509,7 @@ Hangi yöntemi kullanacağınız, ihtiyaçlarınıza ve sıralama kriterlerinize
 
 <details>
 
-<summary>++Java 8 ile gelen yenilikler nelerdir? (stream, addtype, gibi)
+<summary>Java 8 ile gelen yenilikler nelerdir? (stream, addtype, gibi)
 ?</summary>
 
 Java 8 ile gelen yenilikler, Java'da programlama yapmayı daha kolay, daha güçlü ve daha esnek hale getirmiştir. Bu yeniliklerden bazıları şunlardır:
@@ -626,7 +633,7 @@ Bunlar sadece Java 8 ile gelen yeniliklerden birkaçıdır.
 
 <details>
 
-<summary>++Uçtan uca bir proje yazılmaya başlanırken hangi teknolojiler kullanılır ve neden bunlar kullanılır? 
+<summary>Uçtan uca bir proje yazılmaya başlanırken hangi teknolojiler kullanılır ve neden bunlar kullanılır? 
 ?</summary>
 
 Yaygın olarak kullanılan bazı teknolojiler ve neden tercih edildikleri hakkında bilgiler yer almaktadır:
@@ -650,6 +657,9 @@ JSON ile kolay veri entegrasyonu
 Geliştiriciler için kullanımı kolay
 
 PostgreSQL vs MongoDB:
+
+<figure><img src="assets/unnamed (3).png" alt=""><figcaption></figcaption></figure>
+
 GraphQL:
 API'ler için sorgulanan bir dil
 Esnek ve güçlü
@@ -672,7 +682,7 @@ Topluluk desteği: Seçtiğiniz teknolojiler için aktif ve destekleyici bir top
 
 <details>
 
-<summary>++Java’da monolith nedir? mikro servisler nedir ve farkları nelerdir?
+<summary>Java’da monolith nedir? mikro servisler nedir ve farkları nelerdir?
 ?</summary>
 
 Java'da Monolith ve Mikro Hizmetler
@@ -697,6 +707,9 @@ Geliştirme ve dağıtım daha karmaşıktır.
 Hata ayıklama ve test etme daha zor olabilir.
 Hizmetler arasındaki iletişimi yönetmek gerekir.
 Monolith ve Mikro Hizmetler Arasındaki Farklar:
+
+<figure><img src="assets/unnamed (7).png" alt=""><figcaption></figcaption></figure>
+
 Ek soru Yemeksepeti Neden Monolith Değildir:
 Yemeksepeti, milyonlarca kullanıcısı olan bir platformdur. Bu kadar yüksek bir kullanıcı sayısını monolith bir mimari ile desteklemek zordur. Bu nedenle Yemeksepeti, mikro hizmetler mimarisine geçmiştir.
 Yemeksepeti'nde Mikro Hizmetler:
@@ -720,6 +733,8 @@ Yerel değişkenler, metot parametreleri ve çağrı çerçeveleri gibi geçici 
 LIFO (Last In First Out) mantığıyla çalışır.
 Metot sona erdiğinde, stack'teki ilgili veri silinir.
 Heap ve Stack Arasındaki Farklar:
+
+<figure><img src="assets/unnamed (6).png" alt=""><figcaption></figcaption></figure>
 
 Java
 public class Main {
@@ -756,7 +771,7 @@ cevap
 
 <details>
 
-<summary>++Java’da Garbage collection ne işe yarar?
+<summary>Java’da Garbage collection ne işe yarar?
 ?</summary>
 
 Java'da Garbage Collection Nedir ve Ne İşe Yarar?
@@ -782,7 +797,7 @@ System.gc() metotu garbage collector'ı çalıştırmaya zorlar, ancak bu metodu
 
 <details>
 
-<summary>++Java’da builder nedir?
+<summary>Java’da builder nedir?
 ?</summary>
 
 Java'da Builder Nedir?
@@ -872,7 +887,7 @@ Builder deseni, karmaşık nesnelerin oluşturulmasını kolaylaştıran ve kodu
 
 <details>
 
-<summary>++Java nasıl çalışır?  javac java jvm açıkla bunları da
+<summary>Java nasıl çalışır?  javac java jvm açıkla bunları da
 ?</summary>
 
 Java Nasıl Çalışır?
@@ -917,7 +932,7 @@ Temel sınıfın yöntemlerine erişmek ve üst sınıf örneğini işaret etmek
 
 <details>
 
-<summary>++JDK, JRE ve JWM nedir? 
+<summary>JDK, JRE ve JWM nedir? 
 ?</summary>
 
 JDK (Java Development Kit): Java uygulamaları geliştirmek için kullanılan bir yazılım geliştirme paketidir. JDK, aşağıdakileri içeren bir dizi araç ve kütüphane içerir:
@@ -940,11 +955,13 @@ JRE, Java uygulamalarını çalıştırmak için kullanılır.
 JVM, Java bytecode'u çalıştıran bir sanal makinedir.
 JDK, JRE ve JVM arasındaki farklar:
 
+<figure><img src="assets/unnamed (9).png" alt=""><figcaption></figcaption></figure>
+
 </details>
 
 <details>
 
-<summary>++Java’da primitiv, nonprimitiv tipler ve wrapper class nedir?
+<summary>Java’da primitiv, nonprimitiv tipler ve wrapper class nedir?
 ?</summary>
 
 Non-Primitive Type'larin Bellek Adresleri stack'te saklanir. içerikleri Heap'de saklanir
@@ -983,7 +1000,7 @@ boolean sonuc = yeniSayi.equals(20);
 
 <details>
 
-<summary>++Java’da pointer kavramı neden yoktur?
+<summary>Java’da pointer kavramı neden yoktur?
 ?</summary>
 
 Java'da pointer kavramının olmamasının birkaç sebebi vardır:
@@ -1006,11 +1023,14 @@ Java'da pointer kavramının olmamasının birkaç sebebi vardır:
 
 <details>
 
-<summary>++Java pass by value mudur pass by reference midir ve bunların farkı nedir??</summary>
+<summary>Java pass by value mudur pass by reference midir ve bunların farkı nedir??</summary>
 
 Java, pass by value yöntemini kullanır. Bu, bir metoda parametre olarak bir değişken gönderildiğinde, metodun yalnızca değişkenin değerinin bir kopyasını aldığı anlamına gelir. Metot, değişkenin değerini değiştirebilir, ancak bu değişiklik, metottan çıkıldığında kaybolur.
 Pass by reference ise, bir metoda parametre olarak bir değişken gönderildiğinde, metodun değişkenin referansını aldığı anlamına gelir. Metot, değişkenin değerini değiştirebilir ve bu değişiklik, metottan çıkıldığında da kalıcı olur.
 Pass by value ve pass by reference arasındaki farklar:
+
+<figure><img src="assets/unnamed (12).png" alt=""><figcaption></figcaption></figure>
+
 Pass by value'nun avantajları:
 Daha hızlı olabilir.
 Daha güvenli olabilir.
@@ -1047,7 +1067,7 @@ Bu örnekte, degistir metodu x değişkenini parametre olarak alır. Metot için
 
 <details>
 
-<summary>++Java’da static keywordü nedir??</summary>
+<summary>Java’da static keywordü nedir??</summary>
 
 Static keywordü sınıfa ait degiskenler için kullanılır.
 Yani static olan bir method'a ya da bir field'a Class adiyla doğrudan erişilebilir.
@@ -1062,7 +1082,7 @@ Class'lar static keywordü ile imlenemezler. Yani Class'lar static olmazlar.
 
 <details>
 
-<summary>++Java’da final keyword nedir??</summary>
+<summary>Java’da final keyword nedir??</summary>
 
 Final olan bir sey finaldir. Yani degistirilemez.
 Final olan Class'lar extend edilemezler.
@@ -1074,7 +1094,7 @@ ilk deger atamasi yapilmalidir.
 
 <details>
 
-<summary>++Java’da constructor metodlar nedir?
+<summary>Java’da constructor metodlar nedir?
 ?</summary>
 
 Nesne oluşturulduğunda çağrılan metotlar constructor metodlar denir.
@@ -1090,7 +1110,7 @@ Bir tane parametre almayan constructor bizim için olusturulur.
 
 <details>
 
-<summary>++Java’da Composition Aggretion olaylarını açıklayıp karşılaştırınız
+<summary>Java’da Composition Aggretion olaylarını açıklayıp karşılaştırınız
 ?</summary>
 
 Composition ve Aggregation Karşılaştırması
@@ -1114,6 +1134,9 @@ Nesneler, tek başına var olabilirler.
 Genellikle "bir şeyle ilişkili olma" anlamında kullanılır.
 Örnek: Bir kütüphane nesnesi, kitap nesneleriyle ilişkilidir. Kütüphane yok olduğunda, kitaplar hala var olur.
 Farklılıklar:
+
+<figure><img src="assets/unnamed (25).png" alt=""><figcaption></figcaption></figure>
+
 Hangi durumda hangisi kullanılır?
 Bir nesnenin diğer nesnelerden oluştuğu durumlarda composition kullanılır.
 Bir nesnenin diğer nesnelerle ilişkili olduğu durumlarda aggregation kullanılır.
@@ -1122,7 +1145,7 @@ Bir nesnenin diğer nesnelerle ilişkili olduğu durumlarda aggregation kullanı
 
 <details>
 
-<summary>++Java’da neden inheritance yerine composition tercih edilmelidir?
+<summary>Java’da neden inheritance yerine composition tercih edilmelidir?
 ?</summary>
 
 Java'da inheritance yerine composition tercih edilmesinin birçok sebebi vardır:
@@ -1250,7 +1273,7 @@ public class Main {
 
 <details>
 
-<summary>++Java’da  polymorphism runtime’a mı çalışır compiler time’da mı çalışır??</summary>
+<summary>Java’da  polymorphism runtime’a mı çalışır compiler time’da mı çalışır??</summary>
 
 Java'da polymorphism hem runtime'da hem de compile time'da çalışır.
 Compile time polymorphism:
@@ -1268,7 +1291,7 @@ Polymorphism, Java'da önemli bir programlama tekniğidir. Kodun daha az tekrarl
 
 <details>
 
-<summary>++Java’da Dynamic Binding-Late Binding / Static Binding-Early Binding nedir? 
+<summary>Java’da Dynamic Binding-Late Binding / Static Binding-Early Binding nedir? 
 ?</summary>
 
 Java'da Dynamic Binding ve Static Binding (Geç Bağlantı ve Erken Bağlantı)
@@ -1337,7 +1360,7 @@ ek bilgi: static metotlar override edilmezler, derleme zamanı bind edilirler.
 
 <details>
 
-<summary>++Java’da abstrack class’lar hakkında bilgi verir misin?
+<summary>Java’da abstrack class’lar hakkında bilgi verir misin?
 ?</summary>
 
 Abstract class'lar birbirleriyle benzer sınıflar bir çati altinda toplamak için kullanılırlar..
@@ -1363,7 +1386,7 @@ bir interface in hig bir içi boş metodu yok ise, bu interface lere Marker İnt
 
 <details>
 
-<summary>++Elimizde bir abstract class var. Bu abstract class'in bütün metodlarını public ve abstract yaparsam ne olur.??</summary>
+<summary>Elimizde bir abstract class var. Bu abstract class'in bütün metodlarını public ve abstract yaparsam ne olur.??</summary>
 
 Teknik olarak basima ne gelir?
 Bir abstract class'ın bütün metodlarını public ve abstract olarak yaparsanız, aşağıdaki sonuçlar ortaya çıkar:
@@ -1405,7 +1428,7 @@ Interface'ler, sınıflar gibi nesneler oluşturamaz.
 
 <details>
 
-<summary>++Öyle bir yapı tasarlayın ki interface i implemente eden class ilgili interface in metodunu override etmek zorunda kalmasın.?</summary>
+<summary>Öyle bir yapı tasarlayın ki interface i implemente eden class ilgili interface in metodunu override etmek zorunda kalmasın.?</summary>
 
 Bir interface'in metodlarını override etmeden kullanmak için iki temel yöntem vardır:
 
@@ -1465,7 +1488,7 @@ Umarım bu bilgiler yardımcı olmuştur!
 
 <details>
 
-<summary>++Java’da serializable nedir
+<summary>Java’da serializable nedir
 ?</summary>
 
 Java'da serializable, bir nesnenin byte dizisine dönüştürülüp, dosya veya ağ üzerinden aktarılabilme özelliğidir. Bu sayede nesne, farklı bir JVM'de de yeniden oluşturulabilir.
@@ -1501,7 +1524,7 @@ Umarım bu bilgiler yardımcı olmuştur!
 
 <details>
 
-<summary>++Java’da Immutable,?</summary>
+<summary>Java’da Immutable,?</summary>
 
 bir nesnenin degismezligi anlamina gelir.
 Yani herhangi bir şekilde değiştirilemez.
@@ -1550,7 +1573,7 @@ Set: Anahtarların benzersiz olması ve sıralı olmaması gerektiğinde kullan�
 
 <details>
 
-<summary>++Java’da cache nasıl çalışır?
+<summary>Java’da cache nasıl çalışır?
 ?</summary>
 
 Java'da caching, verileri bellekte saklayarak tekrarlayan erişimleri hızlandırma tekniğidir. Bu, veritabanı sorguları, dosya sistemi işlemleri veya hesaplama yoğun işlemler gibi pahalı işlemler için erişim süresini önemli ölçüde azaltabilir.
@@ -1599,7 +1622,7 @@ Idempotency, birçok farklı alanda kullanılabilecek önemli bir kavramdır. Bi
 
 <details>
 
-<summary>++Stateless ve statefull nedir?
+<summary>Stateless ve statefull nedir?
 ?</summary>
 
 Bilgisayar bilimlerinde, "stateless" ve "stateful" terimleri, bir sistemin veya bileşenin işleyiş şeklini tanımlamak için kullanılır. Bunlar arasındaki temel fark, sistemin geçmiş etkileşimleri hakkında bilgi saklama konusundaki yaklaşımlarıdır.
@@ -1635,7 +1658,7 @@ Hangi yaklaşımı kullanacağınız, projenin ihtiyaçlarına bağlıdır. Eğe
 
 <details>
 
-<summary>++Scale Down Yapmak Nedir?
+<summary>Scale Down Yapmak Nedir?
 ?</summary>
 
 Scale down, bir sistemin veya uygulamanın kapasitesini veya boyutunu küçültmek anlamına gelir. Bu, çeşitli nedenlerle yapılabilir:
@@ -1661,7 +1684,7 @@ Scale down, bir sistemin veya uygulamanın kapasitesini veya boyutunu optimize e
 
 <details>
 
-<summary>++Singleton Class Nedir & Nasıl Oluşturulur?
+<summary>Singleton Class Nedir & Nasıl Oluşturulur?
 ?</summary>
 
 Singleton class, bir sınıftan sadece bir tane nesne oluşturulmasına ve bu nesnenin tüm uygulamada tek bir erişim noktası olarak kullanılmasına imkan veren bir tasarım desenidir.
@@ -1716,7 +1739,7 @@ Singleton class, bir sınıftan sadece bir tane nesne oluşturulması ve bu nesn
 
 <details>
 
-<summary>++HashSet, LinkedHashSet ve TreeSet arasındaki farkları açıklayınız.
+<summary>HashSet, LinkedHashSet ve TreeSet arasındaki farkları açıklayınız.
 ?</summary>
 
 HashSet, LinkedHashSet ve TreeSet, Java'da bulunan ve hashing prensibi ile çalışan üç farklı veri setidir. Hepsi tekil değerler saklar ve hızlı arama işlemleri sunar. Aralarındaki temel farklar şunlardır:
@@ -1739,6 +1762,8 @@ HashSet: Hızlı ekleme ve silme işlemleri için idealdir.
 LinkedHashSet: Elemanların eklenme sırasını korumak için idealdir.
 TreeSet: Elemanları doğal sıralamalarına göre saklamak ve aramak için idealdir.
 Aşağıdaki tabloda bu üç veri setinin karşılaştırılması daha net bir şekilde gösterilmiştir:
+
+<figure><img src="assets/unnamed (17).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -1769,13 +1794,15 @@ Stream ve Collection, Java'da verileri işlemek için kullanılan iki farklı AP
    Collection: Küçük veri kümeleri üzerinde imperatif bir şekilde işlem yapmak için idealdir.
    Hangi API'yi kullanacağınız, uygulamanızın özel gereksinimlerine bağlıdır. Büyük veri kümeleri üzerinde işlem yapmanız gerekiyorsa Stream ideal bir seçimdir. Küçük veri kümeleri üzerinde işlem yapmanız veya verileri sıralı bir şekilde tutmanız gerekiyorsa Collection ideal bir seçimdir.
    Aşağıdaki tabloda bu iki API'nin karşılaştırılması daha net bir şekilde gösterilmiştir:
+   <figure><img src="assets/unnamed (16).png" alt=""><figcaption></figcaption></figure>
+
    Stream ve Collection'ı birlikte kullanmak da mümkündür. Örneğin, bir Collection'ı bir Stream'e dönüştürebilir ve Stream işlemlerini uyguladıktan sonra sonucu tekrar bir Collection'a dönüştürebilirsiniz.
 
 </details>
 
 <details>
 
-<summary>++Java Reflection nedir??</summary>
+<summary>Java Reflection nedir??</summary>
 
 Java Reflection, bir Java programının çalışma zamanında kendi yapısını ve davranışını inceleyebilmesi ve manipüle edebilmesi için kullanılan bir mekanizmadır. Yani, bir Java kodu parçası çalışma esnasında kendi sınıflarını, metodlarını, alanlarını vb. öğrenebilir ve bunları dinamik olarak kullanabilir. Bu mekanizmanın çeşitli kullanım alanları vardır:
 
@@ -1799,7 +1826,7 @@ Java Reflection, bir Java programının çalışma zamanında kendi yapısını 
 
 <details>
 
-<summary>++Javada Shallow copy ve deep copy nedir?
+<summary>Javada Shallow copy ve deep copy nedir?
 ?</summary>
 
 Java'da bir nesneyi kopyalama, iki noktada farklılaşan iki yöntemle yapılabilir: Shallow Copy (Yüzeysel Kopyalama) ve Deep Copy (Detaylı Kopyalama). Her ikisi de farklı senaryolarda faydalıdır, ancak birbirlerinden önemli farklılıkları vardır.
@@ -1822,7 +1849,7 @@ Performans ve bellek kullanımı sizin için önemli faktörler ise, Shallow Cop
 
 <details>
 
-<summary>++Java Marker Interface - Marker Annotation nedir?
+<summary>Java Marker Interface - Marker Annotation nedir?
 ?</summary>
 
 1. Marker Interface:
@@ -1843,7 +1870,7 @@ Performans ve bellek kullanımı sizin için önemli faktörler ise, Shallow Cop
 
 <details>
 
-<summary>++Javada int ve Integer arasındaki farklar nelerdir? Neden ikisine de ihtiyacımız vardır??</summary>
+<summary>Javada int ve Integer arasındaki farklar nelerdir? Neden ikisine de ihtiyacımız vardır??</summary>
 
 int ve Integer, Java'da tamsayı değerleri temsil etmek için kullanılan iki farklı veri tipidir. Aralarındaki temel farklar şunlardır:
 
@@ -1876,7 +1903,7 @@ int ve Integer, Java'da tamsayı değerleri temsil etmek için kullanılan iki f
 
 <details>
 
-<summary>++Javada StringBuilder clasına neden ihtiyaç duyarız??</summary>
+<summary>Javada StringBuilder clasına neden ihtiyaç duyarız??</summary>
 
 1. Veri Katma İşlemleri:
    String sınıfı, metinsel verileri saklamak ve işlemek için kullanılır. Fakat String nesneleri immutable (değiştirilemez)dir. Bir String nesnesine veri eklemek veya değiştirmek isterseniz, yeni bir String nesnesi oluşturmanız gerekir. Bu işlem, özellikle büyük metinler için performans sorunlarına yol açabilir.
@@ -1907,7 +1934,7 @@ int ve Integer, Java'da tamsayı değerleri temsil etmek için kullanılan iki f
 
 <details>
 
-<summary>++REST API Özellikleri Nelerdir?
+<summary>REST API Özellikleri Nelerdir?
 ?</summary>
 
 REST mimarisi, 6 madde üzerine inşa edilmiştir.
@@ -1962,7 +1989,7 @@ Asenkron mesajlaşma, servisler arasında iletişim kurmak için kullanılan bir
 
 <details>
 
-<summary>++Serializing Nedir?
+<summary>Serializing Nedir?
 ?</summary>
 
 Serializing, bir nesnenin veya veri yapısının, depolanabilecek veya ağ üzerinden aktarılabilecek ve daha sonra geri yüklenebilecek bir formata dönüştürülmesi işlemidir. Bu işlem, nesnenin durumunu (değişkenlerinin değerleri) bir dizi byte'a dönüştürerek gerçekleştirilir.
@@ -1989,7 +2016,7 @@ Serializing, nesneleri saklamak, aktarmak ve kopyalamak için kullanılabilecek 
 
 <details>
 
-<summary>++Volatile Nedir?
+<summary>Volatile Nedir?
 ?</summary>
 
 Volatile, bir değişkenin değerinin programın akışı dışında değişebileceğini gösteren bir anahtar kelimedir. Bu, genellikle birden fazla iş parçacığı veya donanım kesmesi tarafından erişilen değişkenler için kullanılır.
@@ -2031,7 +2058,7 @@ Volatile, çoklu iş parçacığı programlamada ve donanım kesmeleri ile çal�
 
 <details>
 
-<summary>++Java’da Delegate Nedir?
+<summary>Java’da Delegate Nedir?
 ?</summary>
 
 Delegate, bir nesnenin bir görevi veya sorumluluğu başka bir nesneye devretmesine olanak tanıyan bir tasarım desenidir. Bu, kodun yeniden kullanılabilirliğini ve modülerliğini artırabilir ve karmaşıklığı azaltabilir.
@@ -2067,7 +2094,7 @@ Logging: Bir nesnenin log mesajlarını başka bir nesneye göndermesi için.
 
 <details>
 
-<summary>++Event-Driven Nedir?
+<summary>Event-Driven Nedir?
 ?</summary>
 
 Event-driven, olay odaklı bir programlama ve mimari paradigmasıdır. Bu paradigma, programın akışının olaylar tarafından yönlendirildiği fikrine dayanır. Olaylar, sistemde meydana gelen önemli anlar veya değişikliklerdir. Örneğin, bir kullanıcının bir düğmeye tıklaması veya bir veri kaynağında bir değişiklik olması bir olay olabilir.
@@ -2104,7 +2131,7 @@ Event-Driven, programların daha esnek, ölçeklenebilir ve bakımı kolay olmas
 
 <details>
 
-<summary>++Race Condition
+<summary>Race Condition
 ?</summary>
 
 Race condition, birden fazla iş parçacığının veya thread'in paylaşılan bir kaynağa aynı anda erişmeye çalıştığı ve bu işlemlerin sırasına bağlı olarak beklenmeyen sonuçlar ortaya çıkabileceği bir yazılım hata durumudur.
@@ -2127,7 +2154,7 @@ return counter;
 
 // Ana Thread
 // ... Diğer işlemler
-for (int i = 0; i < 1000; i++) {
+for (int i = 0; i < 1000; i) {
 new Thread(this::incrementCounter).start();
 }
 
@@ -2150,7 +2177,7 @@ Thread-Safe Veri Yapıları: Paylaşılan verileri iş parçacığı güvenli ha
 
 <details>
 
-<summary>++Encoding Nedir?
+<summary>Encoding Nedir?
 ?</summary>
 
 Encoding, bir karakter kümesinin veya metnin, bilgisayarlar tarafından işlenebilecek bir formata dönüştürülmesi işlemidir. Bu işlemde, her karaktere bir sayı veya bit dizisi atanır. Encoding işlemi, farklı karakter kümeleri ve diller arasında veri alışverişi yapmayı ve farklı sistemlerde metni doğru şekilde görüntülemenizi sağlar.
@@ -2172,7 +2199,7 @@ Encoding, metinlerle çalışırken önemli bir kavramdır. Doğru encoding seç
 
 <details>
 
-<summary>++Code Coverage
+<summary>Code Coverage
 ?</summary>
 
 Code coverage, yazılım geliştirmede yazılan kodun ne kadarının testlerle kapsanıp çalıştırıldığına dair bir ölçüdür. Daha basitçe, kodunuzun ne kadarının test senaryoları ile çalıştırılıp kontrol edildiğini gösterir.
@@ -2199,7 +2226,7 @@ Testler, code coverage'ı artırsa da her zaman doğru ve etkili olmayabilir. Ka
 
 <details>
 
-<summary>++Warning Threshold
+<summary>Warning Threshold
 ?</summary>
 
 Warning Threshold, farklı bağlamlarda kullanılabilen, ancak temel olarak bir uyarı eşiğini ifade eden bir terimdir.
@@ -2211,7 +2238,7 @@ Efektif uyarı eşiği belirlemek, sorun tespitini hızlandırır, gereksiz uyar
 
 <details>
 
-<summary>++Monitoring
+<summary>Monitoring
 ?</summary>
 
 Monitoring, bir sistemin veya uygulamanın performansını, işlevselliğini ve güvenliğini izleme ve analiz etme işlemidir. Bu işlem, çeşitli araçlar ve teknikler kullanılarak gerçekleştirilir ve aşağıdakileri kapsar:
@@ -2244,7 +2271,7 @@ Microsoft System Center Operations Manager: Microsoft tarafından geliştirilen 
 
 <details>
 
-<summary>++Custom Telemetry/Metrik
+<summary>Custom Telemetry/Metrik
 ?</summary>
 
 Özel telemetri/metrik, belirli bir sistemin veya uygulamanın işlevselliği ve performansı hakkında bilgi edinmek için toplanan özel verilerdir. Bu veriler, standart telemetri/metrik araçları tarafından toplanan verilerden ayrıdır ve genellikle daha ayrıntılı ve özel bilgiler içerir.
@@ -2273,7 +2300,7 @@ Bir ağdaki paket kaybı ve gecikme süresi
 
 <details>
 
-<summary>++Blog Storage
+<summary>Blog Storage
 ?</summary>
 
 "Blog storage" terimi aslında net bir şekilde tanımlanmış bir teknoloji veya konsept değildir. Ancak web sitelerinde ve blog yazarlığı ile ilgili olarak iki farklı şekilde yorumlanabilir:
@@ -2294,7 +2321,7 @@ Bir ağdaki paket kaybı ve gecikme süresi
 
 <details>
 
-<summary>++Reverse Proxy ve Forward Proxy
+<summary>Reverse Proxy ve Forward Proxy
 ?</summary>
 
 Hem Forward Proxy hem de Reverse Proxy, ağ trafiğini yönlendirmek için kullanılan aracı sunuculardır. Ancak aralarında önemli farklılıklar mevcuttur:
@@ -2313,6 +2340,9 @@ Web sunucularını DDoS saldırılarından korumak için
 Birden fazla sunucuya gelen trafiği dağıtmak için
 SSL/TLS sertifikalarını merkezi olarak yönetmek için
 Forward Proxy ile Reverse Proxy arasındaki farklar:
+
+<figure><img src="assets/unnamed (19).png" alt=""><figcaption></figcaption></figure>
+
 Ek Bilgi:
 Her iki proxy türü de güvenlik riskleri oluşturabilir. Forward Proxy kullanırken gizliliğinizin korunduğundan emin olmak önemlidir. Reverse Proxy, web sunucularınızı ve uygulamalarınızı daha güvenli hale getirmeye yardımcı olabilir, ancak doğru yapılandırılmadığında güvenlik açıkları oluşturabilir.
 CDN (Content Delivery Network) hizmetleri genellikle Reverse Proxy teknolojisini kullanır.
@@ -2321,7 +2351,7 @@ CDN (Content Delivery Network) hizmetleri genellikle Reverse Proxy teknolojisini
 
 <details>
 
-<summary>++Data Consistency Nedir?
+<summary>Data Consistency Nedir?
 ?</summary>
 
 Data consistency (veri tutarlılığı), bir sistemdeki verilerin birbiriyle ve kurallarla tutarlı olma durumunu ifade eder. Başka bir deyişle, aynı bilgi farklı yerlerde tutulduğunda hepsinin aynı ve doğru olması anlamına gelir.
@@ -2350,7 +2380,7 @@ Data consistency farklı sistemler ve uygulamalarda karmaşık olabileceğinden,
 
 <details>
 
-<summary>++system/process documentation
+<summary>system/process documentation
 ?</summary>
 
 Sistem/süreç dokümantasyonu, bir sistemin veya sürecin nasıl çalıştığını, bileşenlerini ve işlevlerini ayrıntılı olarak açıklayan yazılı bir materyaldır. Bu dokümantasyon, sistemin geliştirilmesi, anlaşılması, işletilmesi ve bakımı için kritik önem taşır.
@@ -2385,7 +2415,7 @@ Sonuç olarak, sistem/süreç dokümantasyonu, sistemlerin ve süreçlerin verim
 
 <details>
 
-<summary>++Typecasting Nedir?
+<summary>Typecasting Nedir?
 ?</summary>
 
 Typecasting, bir veri tipini başka bir veri tipine dönüştürme işlemidir. Java'da iki tür typecasting vardır:
@@ -2414,14 +2444,14 @@ Typecasting Kullanırken Dikkat Edilmesi Gerekenler:
 Explicit typecasting kullanırken veri kaybına neden olabileceğini unutmayın.
 Dönüştürmek istediğiniz veri tipinin aralığını kontrol edin.
 Typecasting'i gereksiz yere kullanmaktan kaçının.
-++Java'da sonsuz döngü (infinite loop) nedir?
+Java'da sonsuz döngü (infinite loop) nedir?
 Java’da sonsuz döngü (infinite loop), bir döngü veya koşulun sürekli olarak doğru kalması nedeniyle döngünün hiçbir zaman sonlanmaması durumudur. Yani döngü, sürekli olarak tekrar eder.
 
 </details>
 
 <details>
 
-<summary>++Java String Pool (Dize Havuzu) nedir?
+<summary>Java String Pool (Dize Havuzu) nedir?
 ?</summary>
 
 Java String Havuzu (String Pool) Nedir?
@@ -2462,7 +2492,7 @@ System.out.println(str1 == str4); // true
 
 <details>
 
-<summary>++Autoboxing boxing nedir?
+<summary>Autoboxing boxing nedir?
 ?</summary>
 
 Wrapper'lar primative 8 değişkenin (byte,short,int,long,float,double,boolean,char) class halleridir. Autoboxing primative bir değişkenin wrapper sınıf tipine otomatik olarak dönüştürme işlemine denir. Boxing ise yine aynı wrapper sınıfına dönüştürme işlemidir ancak new ile üretilip constructor içerisinde bir initialization yapılır.
@@ -2500,7 +2530,7 @@ JPA bir spesifikasyondur, yani kurallar bütünüdür. Java EE ve Java SE uygula
 
 <details>
 
-<summary>++Java’da Fetch Stratejileri nelerdir?
+<summary>Java’da Fetch Stratejileri nelerdir?
 ?</summary>
 
 nedir abi
@@ -2509,7 +2539,7 @@ nedir abi
 
 <details>
 
-<summary>++DDL Komutları Nelerdir?
+<summary>DDL Komutları Nelerdir?
 ?</summary>
 
 DDL (Data Definition Language): Veri Tanımlama Dili (DDL) deyimleri tabloları, veritabanı yapısı veya şema tanımlamak için kullanılır.
@@ -2524,7 +2554,7 @@ RENAME — Bir nesneyi yeniden adlandırmak için kullanılır.
 
 <details>
 
-<summary>++DML Komutları Nelerdir?
+<summary>DML Komutları Nelerdir?
 ?</summary>
 
 DML (Data Manipulation Language): Veri İşleme Dili (DML) deyimleri tablo ya da şema nesneleri içindeki verileri yönetmek için kullanılır.
@@ -2541,18 +2571,18 @@ LOCK TABLE — Kontrolü eş zamanlılığı sağlamak için kullanılır.
 
 <details>
 
-<summary>++DCL KOMUTLARI NELERDİR?
+<summary>DCL KOMUTLARI NELERDİR?
 ?</summary>
 
 DCL (Data Control Language): Veri Kontrol Dili (DCL) deyimleri yetkilendirme ya da ayrıcalıkları belirlemek için kullanılır.
 GRANT — Belirli bir kullanıcı ya da gruba veritabanının belirtilen nesnelerine erişim ayrıcalıklarını verir.
 REVOKE — GRANT komutu ile verilen ayrıcalıkların bir kısmını ya da tümünü geri almak için kullanılır.
-++TCL KOMUTLARI NELERDİR?
+TCL KOMUTLARI NELERDİR?
 TCL (Transaction Control): İşlem Kontrol (TCL) deyimleri DML ifadeleri tarafından yapılan değişiklikleri yönetmek için kullanılır.
 COMMIT — Yapılanları kalıcı hale getirir. İşin tamamlanmasını sağlar.
 SAVEPOINT — Daha sonra geri dönülecek bir dönüş noktası belirler.
 ROLLBACK — Son COMMIT’e kadar olan yeri geri alır.
-++Stored procedure nedir?
+Stored procedure nedir?
 Database sunucusunda tutulan ve ilk derlemeden sonra bir daha derlemeye ihtiyaç duyulmayan TSQL ifadelerdir.
 Belirli bir görevi yerine getirmek amacıyla program içinden çağırarak kullanırız.
 İlk çalışmadan sonra derlenmedikleri için çalışmalara hız kazandırırlar.
@@ -2564,7 +2594,7 @@ Sıklıkla kullanılan işlemler için 1 defa yazıp birden fazla kullanabiliriz
 
 <details>
 
-<summary>++UnIt test nedir?
+<summary>UnIt test nedir?
 ?</summary>
 
 Birim testi geliştirmiş olduğumuz kodu test etmek için yazmış olduğumuz koddur.
@@ -2575,7 +2605,7 @@ Unit test kodlarımızı kullanacak diğer developerlar açısından da önemlid
 
 <details>
 
-<summary>++Aspect-Oriented Programming nedir?
+<summary>Aspect-Oriented Programming nedir?
 ?</summary>
 
 Aspect-Oriented Programming (AOP), geleneksel programlama paradigmalarında olduğu gibi fonksiyonlar ve nesneler yerine "cross-cutting concern"leri odaklanan bir programlama paradigmasıdır. "Cross-cutting concern"ler, uygulamanın her yerinde tekrar eden ve dağınık bir şekilde yerleştirilebilen iş mantığı parçalarıdır. Örneğin, logging, güvenlik, transaction yönetimi, performans ölçümü gibi işlemler bu kategoriye girer.
@@ -2629,7 +2659,7 @@ Aspect-Oriented Programming, cross-cutting concern'leri etkili bir şekilde yön
 
 <details>
 
-<summary>++Jdbc (Java Database Connectivity)nedir?
+<summary>Jdbc (Java Database Connectivity)nedir?
 ?</summary>
 
 JDBC (Java Database Connectivity), Java uygulamalarının çeşitli veritabanlarına bağlanıp etkileşim kurmasını sağlayan bir Java API'sidir. Bu sayede Java geliştiricileri veritabanlarında veri ekleme, silme, güncelleme ve sorgulama işlemlerini gerçekleştirebilirler.
@@ -2669,7 +2699,7 @@ Sonuç olarak, JDBC, Java uygulamalarının çeşitli veritabanlarına bağlanı
 <details>
 
 <summary>
-++Acid prensipleri nelerdir?
+Acid prensipleri nelerdir?
 </summary>
 
 ACID Prensipleri
@@ -2697,7 +2727,7 @@ ACID, veritabanı işlemlerinin güvenilirliğini ve tutarlılığını sağlama
 
 <details>
 
-<summary>++Hard parse ve soft paresnedir?
+<summary>Hard parse ve soft paresnedir?
 ?</summary>
 
 Hard Parse ve Soft Parse Nedir?
@@ -2728,7 +2758,7 @@ Hard parse ve soft parse, SQL sorgularının veritabanında işlenmesine ilişki
 
 <details>
 
-<summary>++Statement nesnesi ne işe yarar?
+<summary>Statement nesnesi ne işe yarar?
 ?</summary>
 
 Statement Nesnesi Ne İşe Yarar?
@@ -2781,7 +2811,7 @@ CallableStatement: Stored procedure'ları (saklı prosedürler) çalıştırmak 
 
 <details>
 
-<summary>++PreparedStatement nasıl çalışır?
+<summary>PreparedStatement nasıl çalışır?
 ?</summary>
 
 PreparedStatement Nasıl Çalışır?
@@ -2841,7 +2871,7 @@ public class Main {
 
 <details>
 
-<summary>++Normalizasyon nedir?
+<summary>Normalizasyon nedir?
 ?</summary>
 
 Normalizasyon Nedir?
@@ -2875,7 +2905,7 @@ Normalizasyon, çeşitli seviyelerde uygulanabilir. Her seviye, veri tekrarını
 
 <details>
 
-<summary>++Normal formlar nelerdir?1nf ye örnek veriniz
+<summary>Normal formlar nelerdir?1nf ye örnek veriniz
 ?</summary>
 
 Normal Formlar ve 1NF Örneği
@@ -2888,12 +2918,18 @@ En yaygın normal formlar şunlardır:
 3. Normal Form (3NF): 2NF'i sağlamanın yanı sıra, her sütunun geçişsiz bağımlılık olması gerekir.
    1NF Örneği:
    Öğrenci tablosu:
+   <figure><img src="assets/unnamed (21).png" alt=""><figcaption></figcaption></figure>
+
    Bu tablo 1NF'dedir çünkü:
    Her satırın benzersiz bir anahtarı vardır (Öğrenci No).
    Her sütun atomiktir (ayrıştırılamaz).
    Ancak, bu tabloda veri tekrarı vardır. Bölüm bilgisi her satırda tekrarlanmaktadır. Bu veri tekrarını ortadan kaldırmak için Bölüm adında ayrı bir tablo oluşturabiliriz:
    Bölüm tablosu:
+   <figure><img src="assets/unnamed (22).png" alt=""><figcaption></figcaption></figure>
+
    Öğrenci tablosu:
+   <figure><img src="assets/unnamed (23).png" alt=""><figcaption></figcaption></figure>
+
    Bu şekilde, Bölüm bilgisi tek bir yerde tutulur ve veri tekrarı ortadan kalkar.
    1NF'de olması gereken diğer özellikler:
    Her satırda null değer olmamalıdır.
@@ -2904,7 +2940,7 @@ En yaygın normal formlar şunlardır:
 
 <details>
 
-<summary>++NoSQL Nedir ?
+<summary>NoSQL Nedir ?
 ?</summary>
 
 NoSQL, "Not Only SQL" veya "No Structured Query Language" anlamına gelir. Geleneksel ilişkisel veritabanlarına (RDBMS) alternatif olarak ortaya çıkan bir veritabanı yönetim sistemleri (DBMS) ailesidir.
@@ -2940,7 +2976,7 @@ Yetenek gereksinimleriniz: Karmaşık sorgulara ihtiyacınız var mı?
 
 <details>
 
-<summary>++NoSQL Sistemlerin Dezavantajları Nelerdir?
+<summary>NoSQL Sistemlerin Dezavantajları Nelerdir?
 ?</summary>
 
 NoSQL sistemler, ilişkisel veritabanlarına (RDBMS) kıyasla birçok avantaj sunsa da, bazı dezavantajları da vardır.
@@ -2966,7 +3002,7 @@ NoSQL sistemlerin dezavantajları, her bir sistemin türüne ve kullanım amacı
 
 <details>
 
-<summary>++Execution Plan Nedir?
+<summary>Execution Plan Nedir?
 ?</summary>
 
 Execution plan, bir veritabanı yönetim sisteminde (DBMS) bir SQL sorgusunun nasıl yürütüleceğini tanımlayan bir belgedir. Sorguyu işlemenin en verimli yolunu belirlemek için DBMS tarafından otomatik olarak oluşturulur.
@@ -2989,7 +3025,7 @@ Umarım bu açıklamalar execution plan hakkında size daha fazla bilgi vermişt
 
 <details>
 
-<summary>++Mikroservis mimari bir projede Transactional bir problem ortaya çıkması durumunda neler yapabilirsin??</summary>
+<summary>Mikroservis mimari bir projede Transactional bir problem ortaya çıkması durumunda neler yapabilirsin??</summary>
 
 Mikroservis mimarisi, her biri kendi veri tabanına ve iş mantığına sahip bağımsız hizmetlerden oluşan bir sistemdir.
 Transactional problemler:
@@ -3012,7 +3048,7 @@ Transactional problemler, mikroservis mimarili projelerde önemli bir zorluktur.
 
 <details>
 
-<summary>++Bearer token nedir ve ne için kullanılır?
+<summary>Bearer token nedir ve ne için kullanılır?
 ?</summary>
 
 Bearer token, bir kullanıcının bir API'ye kimlik doğrulaması için kullandığı bir kimlik doğrulama belirtecidir. Genellikle bir JWT (JSON Web Token) formatında olur ve Authorization HTTP başlığında gönderilir.
@@ -3052,6 +3088,9 @@ Kullanıcının kimlik bilgilerini, tercihlerini ve diğer ayarları saklamak i�
 Birden fazla web sitesi veya uygulama tarafından kullanılabilir.
 Cookie'nin süresi dolduğunda veya kullanıcı tarafından silinene kadar saklanır.
 Session ve cookie arasındaki farklar:
+
+<figure><img src="assets/unnamed (15).png" alt=""><figcaption></figcaption></figure>
+
 Session ve cookie birlikte nasıl çalışır:
 Kullanıcı bir web sitesini veya uygulamayı ziyaret ettiğinde, sunucu bir session oluşturur ve kullanıcının bilgisayarına bir cookie yerleştirir.
 Cookie, kullanıcının kimlik bilgilerini ve diğer ayarları içerir.
