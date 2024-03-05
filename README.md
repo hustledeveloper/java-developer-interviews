@@ -2329,15 +2329,7 @@ Encoding, metinlerle çalışırken önemli bir kavramdır. Doğru encoding seç
 <summary>++Code Coverage
 ?</summary>
 
-cevap
-
-</details>
-
-
-
-<details>
-
-<summary>Code coverage, yazılım geliştirmede yazılan kodun ne kadarının testlerle kapsanıp çalıştırıldığına dair bir ölçüdür. Daha basitçe, kodunuzun ne kadarının test senaryoları ile çalıştırılıp kontrol edildiğini gösterir.
+Code coverage, yazılım geliştirmede yazılan kodun ne kadarının testlerle kapsanıp çalıştırıldığına dair bir ölçüdür. Daha basitçe, kodunuzun ne kadarının test senaryoları ile çalıştırılıp kontrol edildiğini gösterir.
 Ne İşe Yarar:
 Testlerin kapsamlılığını ölçmek: Yüksek code coverage oranı, kodun daha fazla test ile kapsanıp hataları tespit etme ihtimalini artırır.
 Hata yakalama olasılığını artırmak: Daha fazla kod test edildiği için hataların bulunma ve düzeltilme olasılığı yükselir.
@@ -2356,12 +2348,12 @@ Hata oranının düşük olması gereken sistemler
 Unutmayın:
 Code coverage tek başına bir kalite ölçütü değildir. İyi yazılım için test kapsamlılığının yanı sıra kodun temizliği, okunabilirliği, performansı gibi faktörler de önemlidir.
 Testler, code coverage'ı artırsa da her zaman doğru ve etkili olmayabilir. Kaliteli test yazmak önemlidir.
-Umarım bu bilgiler size yardımcı olmuştur.
-?</summary>
-
-cevap
 
 </details>
+
+
+
+
 
 
 
