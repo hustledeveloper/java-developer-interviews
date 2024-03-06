@@ -2,19 +2,147 @@
 
 ### _Java ve OOP_
 
+### _Temel Web Geliştirme_
+
+<details>
+
+<summary>HTTP istek türleri nelerdir? Get ve Post arasındaki fark nedir?
+?</summary>
+GET: Bir kaynağın sunucudan alınması için kullanılır. URL üzerinden veri gönderirken, parametreler URL’in bir parçası olarak iletilir. GET isteği, sunucudaki kaynakları okumak için kullanılır ve idempotent bir işlem olarak kabul edilir (yani aynı isteği birden fazla kez göndermek sonuçları değiştirmemelidir).
+POST: Bir kaynağa veri göndermek için kullanılır. POST isteği, sunucuya veri göndermek veya bir kaynağı değiştirmek için kullanılır. Veri, isteğin gövdesinde (body) taşınır ve genellikle bir HTML formu aracılığıyla gönderilir. POST isteği, sunucuda bir kaynağı oluşturabilir, güncelleyebilir veya silme işlemleri gerçekleştirebilir.
+PUT: Bir kaynağı güncellemek veya oluşturmak için kullanılır. PUT isteği, sunucuya belirli bir URL altında kaynak oluşturmak veya güncellemek için kullanılır. PUT isteği, sunucuda belirtilen URL altında kaynak varsa güncelleme işlemi yapar, yoksa yeni bir kaynak oluşturur.
+DELETE: Bir kaynağı silmek için kullanılır. DELETE isteği, sunucuda belirtilen bir URL altında kaynağın silinmesini sağlar.
+PATCH: Bir kaynağın kısmi güncellemeleri için kullanılır. PATCH isteği, sunucuda belirtilen bir URL altındaki kaynağın belirli bir bölümünü güncellemek için kullanılır.
+
+</details>
+
+<details>
+
+<summary>Veri yapıları hakkında bilgi verebilir misin?
+?</summary>
+
+Dizi (Array):
+
+Dizi, aynı türdeki verilerin bir araya getirildiği bir veri yapısıdır. Bellekte ardışık olarak yer kaplar ve her bir elemanı bir indeksle erişilebilir. Elemanlarına sabit sürede erişim sağlar.
+Bağlı Liste (Linked List):
+
+Bağlı liste, verilerin düğümler halinde saklandığı bir veri yapısıdır. Her düğüm, veriyi ve bir sonraki düğümün referansını içerir. Bağlı listeler, dinamik boyuta sahip olup, eleman ekleme ve silme işlemleri için uygundur. Erişim zamanı O(n)’dir.
+Yığın (Stack):
+
+Yığın, son giren ilk çıkar (LIFO) prensibiyle çalışan veri yapısıdır. Verilerin eklenip çıkarıldığı tek bir uç (top) bulunur. En son eklenen eleman en üstte tutulur. Eklenen ve çıkarılan elemanlar sabit sürede gerçekleşir.
+Kuyruk (Queue):
+
+Kuyruk, ilk giren ilk çıkar (FIFO) prensibiyle çalışan veri yapısıdır. Verilerin eklenip çıkarıldığı iki uç (ön ve arka) bulunur. En eski eklenen eleman ön tarafta, en yeni eklenen eleman ise arka tarafta tutulur.
+Ağaç (Tree):
+
+Ağaç, hiyerarşik bir yapıda düğümlerin birleştirildiği bir veri yapısıdır. Bir kök düğümü ve onun altındaki dallardan oluşur. Her düğüm birden fazla alt düğüm içerebilir. Ağaç veri yapısı, verileri organize etmek, arama ve sıralama gibi işlemleri hızlı bir şekilde gerçekleştirmek için kullanılır.
+Graf (Graph):
+
+Graf, düğümlerin ve bu düğümler arasındaki kenarların birleştiği bir veri yapısıdır. Düğümler, çeşitli ilişkileri temsil ederken, kenarlar bu ilişkileri gösterir. Graf veri yapısı, karmaşık ilişkileri ve bağlantıları modellerken kullanılır.
+
+</details>
+
+<details>
+
+<summary>Büyük O (Big O) Gösterimi nedir?
+?</summary>
+
+Büyük O gösterimi, bir algoritmanın veya veri yapısının zaman ve/veya bellek karmaşıklığını ifade etmek için kullanılan bir notaçtır. Algoritmanın veya veri yapısının performansının, veri boyutuna bağlı olarak nasıl değiştiğini gösterir. Örneğin, O(1), O(n), O(n²) gibi ifadeler kullanılır. O(1) sabit zamanlı, O(n) lineer zamanlı, O(n²) ise karesel zamanlı karmaşıklığı ifade eder.
+
+</details>
+<details>
+
+<summary>Cookie’lerin farkları nelerdir, bunlar hakkında bilgi verebilir misin?
+?</summary>
+
+Session Cookie (Oturum Çerezi) veya diğer adıyla Transient Cookie, kullanıcının web sitesine girdiği anda kayıt altına alınan ve kullanıcı internet tarayıcısını kapattığı anda geçerliliğini yitiren çerez türüdür. Session Cookie’ler geçici bellek hafızasında saklanırlar ve yalnızca tek bir oturum için kullanılabilirler.
+Burada bizim bilmemiz gereken asıl olay geçici çerezlerin aslında “Session Cookies” ve bizim bildiğimiz kalıcı çerezlerin de “Persistent Cookies (Kalıcı Çerez)” olduğunu bilmemiz gerekiyor.
+Session Cookie (geçici çerez), Persistent Cookie’lere nazaran tarayıcımızda kalıcı bir süre kalmaz. Biz sitede olduğumuz sürece Session Cookie de kalır. Ta ki tarayıcı kapatılana kadar.
+
+</details>
+
+<details>
+
+<summary>JWT token nedir?
+?</summary>
+
+JWT ile üretilen token Base64 ile kodlanmış 3 ana kısımdan oluşmaktadır. Bunlar Header(Başlık), Payload(Veri), Signature(İmza) kısımlarıdır.
+Tokenın geçerli olup olmadığı JWT ile doğrulanır. JWT doğrulama işlemi oldukça basittir. Gelen tokenda Header(1. kısım) ve Payload(2. kısım) sunucumuzda bulunan gizli anahtar ile imzalanır ve 3. kısım hesaplanır. Daha sonra bu oluşturulan imza(3. kısım) client tarafından gelen imza ile karşılaştırılır. Eğer imzalar aynı ise token geçerli sayılır ve kullanıcıya erişim verilir.
+
+</details>
+
+<details>
+
+<summary>REST API ve SOAP API arasındaki temel farklar nelerdir?
+?</summary>
+
+REST API ve SOAP API Arasındaki Temel Farklar:
+
+1. Mimarisi:
+
+REST: HTTP protokolü ve JSON/XML gibi hafif veri formatları üzerine kuruludur.
+SOAP: XML tabanlı bir mesajlaşma protokolü üzerine kuruludur. 2. Karmaşıklık:
+
+REST: Daha basit ve daha az karmaşıktır.
+SOAP: Daha karmaşık ve daha fazla yapılandırmaya ihtiyaç duyar. 3. Performans:
+
+REST: Daha hızlı ve daha hafiftir.
+SOAP: Daha yavaş ve daha fazla kaynak kullanır. 4. Güvenlik:
+
+REST: Güvenlik, ek modüller ile sağlanır.
+SOAP: Kendiliğinden güvenlik mekanizmaları içerir. 5. Kullanım Alanları:
+
+REST: Web servisleri, mobil uygulamalar, IoT cihazları gibi alanlarda kullanılır.
+SOAP: Web servisleri, SOA (Service Oriented Architecture) gibi alanlarda kullanılır.
+Kısaca:
+
+REST, daha basit, daha hızlı ve daha hafif bir API'dir.
+SOAP, daha karmaşık, daha güvenli ve daha fazla yapılandırmaya ihtiyaç duyan bir API'dir.
+
+</details>
+
+<details>
+
+<summary>Refresh Token ve Acces Token nedir? Farkları nelerdir?
+?</summary>
+
+Access Token: Access Token, bir kullanıcının belirli kaynaklara (örneğin web API’larına) erişmesine izin veren ve sınırlı bir süre boyunca geçerli olan bir kimlik doğrulama belgesidir. Genellikle kısa ömürlüdür ve sınırlı erişim haklarına sahip olabilir. Access Token, bir kullanıcının kimlik doğrulama sürecinden geçtiğinde ve başarılı bir şekilde yetkilendirildiğinde elde edilir. Bu token, her istekte sunucuya gönderilir ve kullanıcının yetkilendirilmiş kaynaklara erişmesine olanak sağlar. Access Token, genellikle JSON Web Token (JWT) formatında veya benzer bir formatta oluşturulur ve içinde kullanıcının kimlik bilgilerini (örneğin kullanıcı kimliği, roller, izinler vb.) taşır.
+Refresh Token: Refresh Token, Access Token’ın süresi dolduğunda yenilenmesini sağlayan ve daha uzun bir süre boyunca geçerli olan bir kimlik doğrulama belgesidir. Refresh Token, kullanıcının yetkilendirme işlemi sonucunda elde edilir ve güvenli bir şekilde saklanmalıdır, çünkü yeniden erişim belgesi almak için kullanılır. Refresh Token, sunucuya gönderildiğinde, sunucu tarafından değerlendirilir ve geçerli bir Refresh Token varsa, yeni bir Access Token oluşturulur ve kullanıcıya geri döndürülür. Bu sayede kullanıcı sürekli olarak oturum açma işlemi yapmadan ve kimlik doğrulama sürecini tekrarlamadan erişim belgesini yenileyebilir. Refresh Token’lar genellikle daha uzun süreli geçerlilik sürelerine sahiptir ve kullanıcının erişim yetkisini yenilemesini sağlar.
+Refresh Token ve Access Token’lar, birlikte çalışarak kullanıcının yetkilendirme sürecini kolaylaştırır ve güvenli bir şekilde kaynaklara erişim sağlar. Access Token’lar sınırlı sürelerle kontrol edilen ve sınırlı yetkilere sahip olan erişim belgeleridir, Refresh Token’lar ise daha uzun süreli ve yeniden erişim belgesi almak için kullanılan kimlik doğrulama belgeleridir. Bu şekilde, kullanıcıların kimliklerini doğrulayarak güvenli bir şekilde uygulamalara ve kaynaklara erişmeleri sağlanır.
+
+</details>
+
 <details>
 
 <summary>soru?</summary>
 
 cevap
 
-```java
-kodlar kodlar
-```
+</details>
+
+<details>
+
+<summary>soru?</summary>
+
+cevap
 
 </details>
 
-<figure><img src="assets/unnamed ().png" alt=""><figcaption></figcaption></figure>
+<details>
+
+<summary>soru?</summary>
+
+cevap
+
+</details>
+
+<details>
+
+<summary>soru?</summary>
+
+cevap
+
+</details>
 
 <details>
 
@@ -2036,7 +2164,8 @@ Volatile'in Dezavantajları:
 Performansı düşürebilir.
 Kod karmaşıklığını artırabilir.
 Volatile'in Örnek Kullanımı:
-Java
+
+```java
 public class VolatileExample {
 
     private volatile int counter = 0;
@@ -2050,6 +2179,7 @@ public class VolatileExample {
     }
 
 }
+```
 
 Bu örnekte, counter değişkeni volatile olarak tanımlanmıştır. Bu, birden fazla iş parçacığı tarafından erişilmesine izin vererek, her iş parçacığının her zaman counter'ın güncel değerini görmesini sağlar.
 Volatile, çoklu iş parçacığı programlamada ve donanım kesmeleri ile çalışırken önemli bir kavramdır. Doğru şekilde kullanıldığında, veri tutarlılığını sağlayabilir ve iş parçacıkları arasında veri yarışını önleyebilir.
