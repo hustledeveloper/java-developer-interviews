@@ -710,9 +710,6 @@ Ayrıca:
 Static metotlar da arayüzlere eklenebilir.
 Private metotlar ise eklenilemez.
 
-7. Nashorn JavaScript Motoru:
-   Java'da JavaScript kodlarını çalıştırmamızı sağlar.
-
 Bunlar sadece Java 8 ile gelen yeniliklerden birkaçıdır.
 
 </details>
@@ -770,6 +767,8 @@ Topluluk desteği: Seçtiğiniz teknolojiler için aktif ve destekleyici bir top
 
 <summary>Java’da monolith nedir? mikro servisler nedir ve farkları nelerdir?
 ?</summary>
+
+<figure><img src="assets/gif/monolith.gif" alt=""><figcaption></figcaption></figure>
 
 Java'da Monolith ve Mikro Hizmetler
 Monolith:
@@ -975,8 +974,9 @@ Builder deseni, karmaşık nesnelerin oluşturulmasını kolaylaştıran ve kodu
 
 <summary>Java nasıl çalışır?  javac java jvm açıkla bunları da
 ?</summary>
-
 Java Nasıl Çalışır?
+<figure><img src="assets/gif/java2.gif" alt=""><figcaption></figcaption></figure>
+
 Java, platformdan bağımsız bir programlama dilidir. Bu, Java kodunun herhangi bir işletim sisteminde, herhangi bir donanım üzerinde çalıştırılabileceği anlamına gelir. Java'nın bu özelliği, "bir kere yaz, her yerde çalıştır" (WORA) ilkesine dayanır.
 Javac:
 Java kaynak kodunu (.java dosyaları) bytecode'a dönüştüren bir derleyicidir.
@@ -1661,6 +1661,7 @@ Set: Anahtarların benzersiz olması ve sıralı olmaması gerektiğinde kullan�
 
 <summary>Java’da cache nasıl çalışır?
 ?</summary>
+<figure><img src="assets/gif/caching.gif" alt=""><figcaption></figcaption></figure>
 
 Java'da caching, verileri bellekte saklayarak tekrarlayan erişimleri hızlandırma tekniğidir. Bu, veritabanı sorguları, dosya sistemi işlemleri veya hesaplama yoğun işlemler gibi pahalı işlemler için erişim süresini önemli ölçüde azaltabilir.
 Java'da caching'in temel prensibi:
@@ -2022,6 +2023,8 @@ int ve Integer, Java'da tamsayı değerleri temsil etmek için kullanılan iki f
 
 <summary>REST API Özellikleri Nelerdir?
 ?</summary>
+
+<figure><img src="assets/gif/rest-api.gif" alt=""><figcaption></figcaption></figure>
 
 REST mimarisi, 6 madde üzerine inşa edilmiştir.
 Stateless: Stateless yapısı sayesinde geçmişe yönelik bir tarama yapmanız gerekmez ve her reguest arasında bir kayıt tutmak zorunluluğu yoktur.
@@ -2411,6 +2414,7 @@ Bir ağdaki paket kaybı ve gecikme süresi
 
 <summary>Reverse Proxy ve Forward Proxy
 ?</summary>
+<figure><img src="assets/gif/proxy.gif" alt=""><figcaption></figcaption></figure>
 
 Hem Forward Proxy hem de Reverse Proxy, ağ trafiğini yönlendirmek için kullanılan aracı sunuculardır. Ancak aralarında önemli farklılıklar mevcuttur:
 Forward Proxy:
