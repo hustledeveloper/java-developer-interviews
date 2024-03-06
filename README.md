@@ -8,11 +8,17 @@
 
 <summary>HTTP istek türleri nelerdir? Get ve Post arasındaki fark nedir?
 ?</summary>
+
 GET: Bir kaynağın sunucudan alınması için kullanılır. URL üzerinden veri gönderirken, parametreler URL’in bir parçası olarak iletilir. GET isteği, sunucudaki kaynakları okumak için kullanılır ve idempotent bir işlem olarak kabul edilir (yani aynı isteği birden fazla kez göndermek sonuçları değiştirmemelidir).
+
 POST: Bir kaynağa veri göndermek için kullanılır. POST isteği, sunucuya veri göndermek veya bir kaynağı değiştirmek için kullanılır. Veri, isteğin gövdesinde (body) taşınır ve genellikle bir HTML formu aracılığıyla gönderilir. POST isteği, sunucuda bir kaynağı oluşturabilir, güncelleyebilir veya silme işlemleri gerçekleştirebilir.
+
 PUT: Bir kaynağı güncellemek veya oluşturmak için kullanılır. PUT isteği, sunucuya belirli bir URL altında kaynak oluşturmak veya güncellemek için kullanılır. PUT isteği, sunucuda belirtilen URL altında kaynak varsa güncelleme işlemi yapar, yoksa yeni bir kaynak oluşturur.
+
 DELETE: Bir kaynağı silmek için kullanılır. DELETE isteği, sunucuda belirtilen bir URL altında kaynağın silinmesini sağlar.
+
 PATCH: Bir kaynağın kısmi güncellemeleri için kullanılır. PATCH isteği, sunucuda belirtilen bir URL altındaki kaynağın belirli bir bölümünü güncellemek için kullanılır.
+
 <figure><img src="assets/gif/http status.gif" alt=""><figcaption></figcaption></figure>
 
 </details>
@@ -98,7 +104,9 @@ SOAP, daha karmaşık, daha güvenli ve daha fazla yapılandırmaya ihtiyaç duy
 ?</summary>
 
 Access Token: Access Token, bir kullanıcının belirli kaynaklara (örneğin web API’larına) erişmesine izin veren ve sınırlı bir süre boyunca geçerli olan bir kimlik doğrulama belgesidir. Genellikle kısa ömürlüdür ve sınırlı erişim haklarına sahip olabilir. Access Token, bir kullanıcının kimlik doğrulama sürecinden geçtiğinde ve başarılı bir şekilde yetkilendirildiğinde elde edilir. Bu token, her istekte sunucuya gönderilir ve kullanıcının yetkilendirilmiş kaynaklara erişmesine olanak sağlar. Access Token, genellikle JSON Web Token (JWT) formatında veya benzer bir formatta oluşturulur ve içinde kullanıcının kimlik bilgilerini (örneğin kullanıcı kimliği, roller, izinler vb.) taşır.
+
 Refresh Token: Refresh Token, Access Token’ın süresi dolduğunda yenilenmesini sağlayan ve daha uzun bir süre boyunca geçerli olan bir kimlik doğrulama belgesidir. Refresh Token, kullanıcının yetkilendirme işlemi sonucunda elde edilir ve güvenli bir şekilde saklanmalıdır, çünkü yeniden erişim belgesi almak için kullanılır. Refresh Token, sunucuya gönderildiğinde, sunucu tarafından değerlendirilir ve geçerli bir Refresh Token varsa, yeni bir Access Token oluşturulur ve kullanıcıya geri döndürülür. Bu sayede kullanıcı sürekli olarak oturum açma işlemi yapmadan ve kimlik doğrulama sürecini tekrarlamadan erişim belgesini yenileyebilir. Refresh Token’lar genellikle daha uzun süreli geçerlilik sürelerine sahiptir ve kullanıcının erişim yetkisini yenilemesini sağlar.
+
 Refresh Token ve Access Token’lar, birlikte çalışarak kullanıcının yetkilendirme sürecini kolaylaştırır ve güvenli bir şekilde kaynaklara erişim sağlar. Access Token’lar sınırlı sürelerle kontrol edilen ve sınırlı yetkilere sahip olan erişim belgeleridir, Refresh Token’lar ise daha uzun süreli ve yeniden erişim belgesi almak için kullanılan kimlik doğrulama belgeleridir. Bu şekilde, kullanıcıların kimliklerini doğrulayarak güvenli bir şekilde uygulamalara ve kaynaklara erişmeleri sağlanır.
 
 </details>
@@ -108,9 +116,13 @@ Refresh Token ve Access Token’lar, birlikte çalışarak kullanıcının yetki
 <summary>temel oop kavramlarını açıklar mısın?</summary>
 
 Abstraction: Bir sınıfta davranış ve özelliklerin tanımlanmasıdır.
+
 Encapsulation: Kapsülleme sayesinde, hangi özellik ve davranışların program dışına gösterilip gösterilmeyeceğini belirleriz.
+
 Inheritance: : Sınıfların birbirinden türeme durumudur. Farklı sınıflar arasındaki ilişki “is a” şeklinde ifade edilir.
+
 Inferface: Uygulamaların donanım yapılarıyla ve birbirleriyle iletişim kurması için kullandığı bir yapıdır. Zorunlu olarak tanımlanması gereken metotları belirtir.
+
 Polymorphism: Methodların objeye göre farklı çıktılar üretmesi veya farklı işler yapmasıdır. Örneğin: Alt sınıfların farklı davranışları göstermesi.
 
 </details>
@@ -142,11 +154,13 @@ Java'da veri tipleri 3 ana kategoriye ayrılır:
    char (16 bit)
    Mantıksal Değerler:
    boolean (true veya false)
+
 2. Referans Tipleri (Reference Types)
    Nesneleri ve dizileri saklamak için kullanılır.
    Sınıflar
    Arabirimler
    Diziler
+
 3. Özel Veri Tipleri (Special Data Types)
 void
 null
