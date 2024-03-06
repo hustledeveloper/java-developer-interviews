@@ -13,6 +13,7 @@ POST: Bir kaynağa veri göndermek için kullanılır. POST isteği, sunucuya ve
 PUT: Bir kaynağı güncellemek veya oluşturmak için kullanılır. PUT isteği, sunucuya belirli bir URL altında kaynak oluşturmak veya güncellemek için kullanılır. PUT isteği, sunucuda belirtilen URL altında kaynak varsa güncelleme işlemi yapar, yoksa yeni bir kaynak oluşturur.
 DELETE: Bir kaynağı silmek için kullanılır. DELETE isteği, sunucuda belirtilen bir URL altında kaynağın silinmesini sağlar.
 PATCH: Bir kaynağın kısmi güncellemeleri için kullanılır. PATCH isteği, sunucuda belirtilen bir URL altındaki kaynağın belirli bir bölümünü güncellemek için kullanılır.
+<figure><img src="assets/gif/http status.gif" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -345,6 +346,8 @@ Java'da nesneleri karşılaştırmak için iki yöntem kullanılır:
 1. == Operatörü:
    == operatörü, iki nesnenin referanslarının aynı olup olmadığını kontrol eder.
    İki nesnenin referansları aynıysa, == operatörü true döndürür.
+
+```java
    String s1 = "Merhaba";
    String s2 = "Merhaba";
 
@@ -353,6 +356,7 @@ System.out.println("Nesneler aynı!");
 } else {
 System.out.println("Nesneler farklı!");
 }
+```
 
 2. .equals() Metotu:
    .equals() metodu, iki nesnenin içeriklerinin aynı olup olmadığını kontrol eder.
@@ -363,10 +367,6 @@ System.out.println("Nesneler farklı!");
    Dikkat:
    == operatörü, primitive tipler için de kullanılabilir. Primitive tipler için == operatörü, iki değerin aynı olup olmadığını kontrol eder.
    .equals() metodu, Object sınıfından miras alınır. Bu nedenle, tüm nesneler .equals() metoduna sahiptir.
-
-```java
-kodlar kodlar
-```
 
 </details>
 
@@ -454,11 +454,18 @@ Thread-safe yöntemleri oluşturmak için:
 
 1. Synchronized Anahtar Sözcüğü:
    synchronized anahtar sözcüğü, bir metodun veya kod bloğunun bir anda sadece bir thread tarafından erişilebilir olmasını sağlar. Bu sayede, bir thread metodu çalıştırırken diğer thread'ler o metodun tamamlanmasını bekler.
+   System.out.println("Nesneler farklı!");
+
+```java
    public synchronized void someMethod() {
    // Thread-safe kod
    }
+```
+
 2. Kilitler (Locks):
    Kilitler, bir resource'a erişimi kontrol etmek için kullanılan nesnelerdir. Bir thread bir resource'a erişmek istediğinde kilidi alır ve işini tamamladıktan sonra kilidi serbest bırakır. Bu sayede, birden fazla thread aynı resource'a erişmeye çalışırken veri bozulması önlenir.
+
+   ```java
    private final Lock lock = new ReentrantLock();
    public void someMethod() {
    lock.lock();
@@ -468,33 +475,42 @@ Thread-safe yöntemleri oluşturmak için:
    lock.unlock();
    }
    }
+   ```
+
 3. Atomik İşlemler:
    Atomik işlemler, tek bir adımda tamamlanan ve bölünemeyen işlemlerdir. Bu işlemler, birden fazla thread tarafından aynı anda erişilse bile tutarsızlık oluşmaz. Java'da AtomicInteger gibi atomik değişkenler ve compareAndSet() gibi atomik işlemler mevcuttur.
 
+```java
 private final AtomicInteger counter = new AtomicInteger();
 
 public void incrementCounter() {
 counter.incrementAndGet();
+```
+
 } 4. Değişmez Nesneler (Immutable Objects):
 Değişmez nesneler, oluşturulduktan sonra değiştirilemeyen nesnelerdir. Bu nesneler, birden fazla thread tarafından erişilse bile tutarsızlık oluşmaz. Java'da String ve Integer gibi değişmez nesneler mevcuttur.
 
+```java
 private final String name = "John Doe";
 
 public String getName() {
 return name;
-} 5. Thread-safe Kütüphaneler:
-Java'da java.util.concurrent paketi gibi thread-safe kütüphaneler mevcuttur. Bu kütüphaneler, thread-safe koleksiyonlar, senkronizasyon araçları ve diğer yardımcı sınıflar içerir.
-Thread-safe yöntemleri kullanmanın faydaları:
-Veri tutarsızlığı ve bozulmasını önler
-Programın stabilitesini ve güvenliğini artırır
-Thread'ler arasında veri yarışlarını (data races) önler
-Programın performansını optimize etmeye yardımcı olur
-Thread-safe yöntemleri kullanırken dikkat edilmesi gerekenler:
-Gereksiz yere synchronized anahtar sözcüğü kullanmaktan kaçının, performansı düşürebilir.
-Doğru kilit türünü seçin, ReentrantLock gibi.
-Atomik işlemleri doğru kullanın.
-Değişmez nesneleri tercih edin.
-Thread-safe kütüphanelerden yararlanın.
+}
+```
+
+5.  Thread-safe Kütüphaneler:
+    Java'da java.util.concurrent paketi gibi thread-safe kütüphaneler mevcuttur. Bu kütüphaneler, thread-safe koleksiyonlar, senkronizasyon araçları ve diğer yardımcı sınıflar içerir.
+    Thread-safe yöntemleri kullanmanın faydaları:
+    Veri tutarsızlığı ve bozulmasını önler
+    Programın stabilitesini ve güvenliğini artırır
+    Thread'ler arasında veri yarışlarını (data races) önler
+    Programın performansını optimize etmeye yardımcı olur
+    Thread-safe yöntemleri kullanırken dikkat edilmesi gerekenler:
+    Gereksiz yere synchronized anahtar sözcüğü kullanmaktan kaçının, performansı düşürebilir.
+    Doğru kilit türünü seçin, ReentrantLock gibi.
+    Atomik işlemleri doğru kullanın.
+    Değişmez nesneleri tercih edin.
+    Thread-safe kütüphanelerden yararlanın.
 
 </details>
 
@@ -535,8 +551,9 @@ Java'da nesneleri sıralamak için iki temel yöntem vardır:
     Comparable arayüzünü uygulayan nesneler karşılaştırılabilir hale gelir.
     Bu arayüz, compareTo() adında bir metodu tanımlar.
     Bu metot, iki nesneyi karşılaştırarak hangisinin daha büyük veya daha küçük olduğunu belirler.
-    Örnek:
-    Java
+
+```java
+
     public class Person implements Comparable<Person> {
     private String name;
     private int age;
@@ -552,7 +569,6 @@ Java'da nesneleri sıralamak için iki temel yöntem vardır:
         }
 
     }
-
 // Sıralama
 List<Person> people = Arrays.asList(
 new Person("Ahmet", 25),
@@ -567,11 +583,13 @@ for (Person person : people) {
 System.out.println(person.name + " - " + person.age);
 }
 
+```
+
 2. Stream Kullanarak:
    Java 8'den itibaren Stream API'si kullanılarak nesneleri sıralamak daha kolay hale gelmiştir.
    sorted() metodu, bir stream'deki nesneleri belirli bir kritere göre sıralar.
-   Örnek:
-   Java
+
+```java
    List<Person> people = Arrays.asList(
    new Person("Ahmet", 25),
    new Person("Ayşe", 30),
@@ -581,6 +599,7 @@ System.out.println(person.name + " - " + person.age);
 people.stream()
 .sorted(Comparator.comparingInt(Person::getAge))
 .forEach(System.out::println);
+```
 
 Farklı Sıralama Kriterleri:
 Comparable ile sıralama yaparken sadece tek bir kritere göre sıralama yapılabilir.
@@ -603,7 +622,8 @@ Java 8 ile gelen yenilikler, Java'da programlama yapmayı daha kolay, daha güç
 1. Lambda İfadeleri:
    Fonksiyonları daha kısa ve öz bir şekilde yazmamızı sağlar.
    Örnek:
-   Java
+
+```java
    // Java 7
    List<String> names = Arrays.asList("Ahmet", "Ayşe", "Mehmet");
    Collections.sort(names, new Comparator<String>() {
@@ -615,11 +635,13 @@ Java 8 ile gelen yenilikler, Java'da programlama yapmayı daha kolay, daha güç
 
 // Java 8
 names.sort((o1, o2) -> o1.compareTo(o2));
+```
 
 2. Stream API:
    Koleksiyonlar üzerinde daha kolay ve işlevsel bir şekilde işlem yapmamızı sağlar.
    Örnek:
 
+```java
 // Java 7
 List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
 int sum = 0;
@@ -631,21 +653,25 @@ sum += number;
 
 // Java 8
 sum = numbers.stream().filter(n -> n % 2 == 0).sum();
+```
 
 3. Method References:
    Metotları daha kısa ve öz bir şekilde referans almamızı sağlar.
-   Örnek:
-   Java
+
+```java
+
    // Java 7
    List<String> names = Arrays.asList("Ahmet", "Ayşe", "Mehmet");
    Collections.sort(names, String::compareToIgnoreCase);
 
 // Java 8
 names.sort(String::compareToIgnoreCase);
+```
 
 4. Date and Time API:
    Tarih ve saat ile işlemleri daha kolay ve modern bir şekilde yapmamızı sağlar.
-   Örnek:
+
+```java
 
 // Java 7
 Date date = new Date();
@@ -655,26 +681,28 @@ calendar.setTime(date);
 // Java 8
 LocalDate localDate = LocalDate.now();
 LocalTime localTime = LocalTime.now();
+```
 
 5. Optional Class:
    null değerlerini daha güvenli ve işlevsel bir şekilde yönetmemizi sağlar.
-   Örnek:
-   Java
+   ```java
    // Java 7
    String name = null;
    if (name != null) {
    System.out.println(name.toUpperCase());
    }
+   ```
 
 // Java 8
 Optional<String> optionalName = Optional.ofNullable(name);
 optionalName.ifPresent(System.out::println);
 
+````
+
 6.  Default ve Static Metotlar:
     Arayüzlere yeni metotlar eklememizi sağlar.
-    Örnek:
-    Java
-    public interface Animal {
+```java
+ public interface Animal {
     default void makeSound() {
     System.out.println("Ses çıkarıyor...");
     }
@@ -695,6 +723,7 @@ System.out.println("Havlıyor!");
 Dog dog = new Dog();
 dog.makeSound(); // Havlıyor!
 Animal.printInfo(); // Hayvan sınıfı
+````
 
 Default implementasyonun faydaları:
 Arayüzlere yeni metotlar eklemeyi kolaylaştırır.
@@ -716,7 +745,7 @@ Bunlar sadece Java 8 ile gelen yeniliklerden birkaçıdır.
 
 <details>
 
-<summary>Uçtan uca bir proje yazılmaya başlanırken hangi teknolojiler kullanılır ve neden bunlar kullanılır? 
+<summary>Uçtan uca bir proje yazılmaya başlanırken hangi teknolojiler kullanılır ve neden bunlar kullanılır?
 ?</summary>
 
 Yaygın olarak kullanılan bazı teknolojiler ve neden tercih edildikleri hakkında bilgiler yer almaktadır:
@@ -821,16 +850,17 @@ Heap ve Stack Arasındaki Farklar:
 
 <figure><img src="assets/tables/unnamed (6).png" alt=""><figcaption></figcaption></figure>
 
-Java
+```java
 public class Main {
 public static void main(String[] args) {
 int a = 10; // Stack'te saklanır
 String s = "Merhaba"; // Heap'te saklanır
 
-        // ...
+
     }
 
 }
+```
 
 Bu örnekte, a değişkeni stack'te, s değişkeni ise heap'te saklanır. main() metotu sona erdiğinde, a değişkeni stack'ten silinir. s değişkeni ise garbage collector tarafından bellekten silinene kadar heap'te kalacaktır.
 Heap ve stack, Java'da bellek yönetimi için önemli iki kavramdır. Bu kavramları anlamak, programınızın bellek kullanımını optimize etmenize yardımcı olacaktır.
@@ -899,6 +929,7 @@ Director: Builder arayüzünü kullanarak nesnenin nasıl oluşturulacağını y
 Client: Nesneyi oluşturmak için director sınıfını kullanır.
 Builder deseninin bir örneği:
 
+```java
 public interface PersonBuilder {
 PersonBuilder setName(String name);
 PersonBuilder setAge(int age);
@@ -959,6 +990,7 @@ Person person = director.constructPerson();
 System.out.println(person);
 }
 }
+```
 
 Bu örnekte, Person nesnesi karmaşık bir nesnedir ve birden fazla parametreye sahiptir. Builder deseni kullanılarak, bu nesne adım adım ve kolay bir şekilde oluşturulabilir.
 Builder deseninin kullanılabileceği durumlar:
@@ -1018,7 +1050,7 @@ Temel sınıfın yöntemlerine erişmek ve üst sınıf örneğini işaret etmek
 
 <details>
 
-<summary>JDK, JRE ve JWM nedir? 
+<summary>JDK, JRE ve JWM nedir?
 ?</summary>
 
 JDK (Java Development Kit): Java uygulamaları geliştirmek için kullanılan bir yazılım geliştirme paketidir. JDK, aşağıdakileri içeren bir dizi araç ve kütüphane içerir:
@@ -1377,7 +1409,7 @@ Polymorphism, Java'da önemli bir programlama tekniğidir. Kodun daha az tekrarl
 
 <details>
 
-<summary>Java’da Dynamic Binding-Late Binding / Static Binding-Early Binding nedir? 
+<summary>Java’da Dynamic Binding-Late Binding / Static Binding-Early Binding nedir?
 ?</summary>
 
 Java'da Dynamic Binding ve Static Binding (Geç Bağlantı ve Erken Bağlantı)
@@ -3118,6 +3150,8 @@ Umarım bu açıklamalar execution plan hakkında size daha fazla bilgi vermişt
 <details>
 
 <summary>Mikroservis mimari bir projede Transactional bir problem ortaya çıkması durumunda neler yapabilirsin??</summary>
+
+<figure><img src="assets/gif/microservis.gif" alt=""><figcaption></figcaption></figure>
 
 Mikroservis mimarisi, her biri kendi veri tabanına ve iş mantığına sahip bağımsız hizmetlerden oluşan bir sistemdir.
 Transactional problemler:
