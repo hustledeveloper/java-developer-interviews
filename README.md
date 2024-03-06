@@ -18,7 +18,7 @@ PATCH: Bir kaynağın kısmi güncellemeleri için kullanılır. PATCH isteği, 
 
 <details>
 
-<summary>Veri yapıları hakkında bilgi verebilir misin?
+<summary>Bildiğin veri yapıları hakkında kısaca bilgi verebilir misin?
 ?</summary>
 
 Dizi (Array):
@@ -48,16 +48,6 @@ Graf, düğümlerin ve bu düğümler arasındaki kenarların birleştiği bir v
 ?</summary>
 
 Büyük O gösterimi, bir algoritmanın veya veri yapısının zaman ve/veya bellek karmaşıklığını ifade etmek için kullanılan bir notaçtır. Algoritmanın veya veri yapısının performansının, veri boyutuna bağlı olarak nasıl değiştiğini gösterir. Örneğin, O(1), O(n), O(n²) gibi ifadeler kullanılır. O(1) sabit zamanlı, O(n) lineer zamanlı, O(n²) ise karesel zamanlı karmaşıklığı ifade eder.
-
-</details>
-<details>
-
-<summary>Cookie’lerin farkları nelerdir, bunlar hakkında bilgi verebilir misin?
-?</summary>
-
-Session Cookie (Oturum Çerezi) veya diğer adıyla Transient Cookie, kullanıcının web sitesine girdiği anda kayıt altına alınan ve kullanıcı internet tarayıcısını kapattığı anda geçerliliğini yitiren çerez türüdür. Session Cookie’ler geçici bellek hafızasında saklanırlar ve yalnızca tek bir oturum için kullanılabilirler.
-Burada bizim bilmemiz gereken asıl olay geçici çerezlerin aslında “Session Cookies” ve bizim bildiğimiz kalıcı çerezlerin de “Persistent Cookies (Kalıcı Çerez)” olduğunu bilmemiz gerekiyor.
-Session Cookie (geçici çerez), Persistent Cookie’lere nazaran tarayıcımızda kalıcı bir süre kalmaz. Biz sitede olduğumuz sürece Session Cookie de kalır. Ta ki tarayıcı kapatılana kadar.
 
 </details>
 
@@ -109,38 +99,6 @@ SOAP, daha karmaşık, daha güvenli ve daha fazla yapılandırmaya ihtiyaç duy
 Access Token: Access Token, bir kullanıcının belirli kaynaklara (örneğin web API’larına) erişmesine izin veren ve sınırlı bir süre boyunca geçerli olan bir kimlik doğrulama belgesidir. Genellikle kısa ömürlüdür ve sınırlı erişim haklarına sahip olabilir. Access Token, bir kullanıcının kimlik doğrulama sürecinden geçtiğinde ve başarılı bir şekilde yetkilendirildiğinde elde edilir. Bu token, her istekte sunucuya gönderilir ve kullanıcının yetkilendirilmiş kaynaklara erişmesine olanak sağlar. Access Token, genellikle JSON Web Token (JWT) formatında veya benzer bir formatta oluşturulur ve içinde kullanıcının kimlik bilgilerini (örneğin kullanıcı kimliği, roller, izinler vb.) taşır.
 Refresh Token: Refresh Token, Access Token’ın süresi dolduğunda yenilenmesini sağlayan ve daha uzun bir süre boyunca geçerli olan bir kimlik doğrulama belgesidir. Refresh Token, kullanıcının yetkilendirme işlemi sonucunda elde edilir ve güvenli bir şekilde saklanmalıdır, çünkü yeniden erişim belgesi almak için kullanılır. Refresh Token, sunucuya gönderildiğinde, sunucu tarafından değerlendirilir ve geçerli bir Refresh Token varsa, yeni bir Access Token oluşturulur ve kullanıcıya geri döndürülür. Bu sayede kullanıcı sürekli olarak oturum açma işlemi yapmadan ve kimlik doğrulama sürecini tekrarlamadan erişim belgesini yenileyebilir. Refresh Token’lar genellikle daha uzun süreli geçerlilik sürelerine sahiptir ve kullanıcının erişim yetkisini yenilemesini sağlar.
 Refresh Token ve Access Token’lar, birlikte çalışarak kullanıcının yetkilendirme sürecini kolaylaştırır ve güvenli bir şekilde kaynaklara erişim sağlar. Access Token’lar sınırlı sürelerle kontrol edilen ve sınırlı yetkilere sahip olan erişim belgeleridir, Refresh Token’lar ise daha uzun süreli ve yeniden erişim belgesi almak için kullanılan kimlik doğrulama belgeleridir. Bu şekilde, kullanıcıların kimliklerini doğrulayarak güvenli bir şekilde uygulamalara ve kaynaklara erişmeleri sağlanır.
-
-</details>
-
-<details>
-
-<summary>soru?</summary>
-
-cevap
-
-</details>
-
-<details>
-
-<summary>soru?</summary>
-
-cevap
-
-</details>
-
-<details>
-
-<summary>soru?</summary>
-
-cevap
-
-</details>
-
-<details>
-
-<summary>soru?</summary>
-
-cevap
 
 </details>
 
@@ -199,7 +157,7 @@ null bir referans tipinin değerinin boş olduğunu gösterir.
 
 <details>
 
-<summary>İmplement, extend ve instanceof kavramlarını açıklayınız?
+<summary>Implement, extend ve instanceof kavramlarını açıklayınız?
 </summary>
 
 Implement: Bir sınıfın belirli bir davranışa sahip olduğunu belirtmek için kullanılmalıdır. Bu davranış arayüzde tanımlanır ve sınıf bu arayüzü implement ederek bu davranışı sağlamalıdır.
@@ -220,7 +178,7 @@ Kodun sağlamlığı: Hatalı kodların ve veri tutarsızlıklarının önüne g
 Bakım kolaylığı: Kodun daha okunabilir ve anlaşılır olmasını sağlar.
 Encapsulation nasıl uygulanır:
 
-<figure><img src="assets/unnamed (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/tables/unnamed (2).png" alt=""><figcaption></figcaption></figure>
 
 Erişim belirteçleri: Sınıf üyelerinin erişim seviyelerini belirlemek için public, private ve protected gibi erişim belirteçleri kullanılır.
 Getter ve setter metodları: Sınıfın private üyelerine erişmek için getter ve setter metodları kullanılır.
@@ -374,7 +332,7 @@ Fırlatılabilecek hatalar bir veya daha fazla Exception nesnesi olarak belirtil
 Metodun hata fırlatıp fırlatmayacağını garanti etmez.
 Hata fırlatma işlemi try-catch bloğunda kontrol edilir.
 
-<figure><img src="assets/unnamed (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/tables/unnamed (1).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -562,7 +520,7 @@ Kullanım Alanları:
 List: Sıralı verileri depolamak için kullanılır. Örneğin, bir alışveriş listesi, öğrenci listesi veya isimler listesi.
 Set: Benzersiz elemanları depolamak için kullanılır. Örneğin, bir kelime listesi, kullanıcı kimliği listesi veya ürün katalogu.
 
-<figure><img src="assets/unnamed (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/tables/unnamed (8).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -786,7 +744,7 @@ Geliştiriciler için kullanımı kolay
 
 PostgreSQL vs MongoDB:
 
-<figure><img src="assets/unnamed (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/tables/unnamed (3).png" alt=""><figcaption></figcaption></figure>
 
 GraphQL:
 API'ler için sorgulanan bir dil
@@ -836,7 +794,7 @@ Hata ayıklama ve test etme daha zor olabilir.
 Hizmetler arasındaki iletişimi yönetmek gerekir.
 Monolith ve Mikro Hizmetler Arasındaki Farklar:
 
-<figure><img src="assets/unnamed (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/tables/unnamed (7).png" alt=""><figcaption></figcaption></figure>
 
 Ek soru Yemeksepeti Neden Monolith Değildir:
 Yemeksepeti, milyonlarca kullanıcısı olan bir platformdur. Bu kadar yüksek bir kullanıcı sayısını monolith bir mimari ile desteklemek zordur. Bu nedenle Yemeksepeti, mikro hizmetler mimarisine geçmiştir.
@@ -862,7 +820,7 @@ LIFO (Last In First Out) mantığıyla çalışır.
 Metot sona erdiğinde, stack'teki ilgili veri silinir.
 Heap ve Stack Arasındaki Farklar:
 
-<figure><img src="assets/unnamed (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/tables/unnamed (6).png" alt=""><figcaption></figcaption></figure>
 
 Java
 public class Main {
@@ -1083,7 +1041,7 @@ JRE, Java uygulamalarını çalıştırmak için kullanılır.
 JVM, Java bytecode'u çalıştıran bir sanal makinedir.
 JDK, JRE ve JVM arasındaki farklar:
 
-<figure><img src="assets/unnamed (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/tables/unnamed (9).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -1157,7 +1115,7 @@ Java, pass by value yöntemini kullanır. Bu, bir metoda parametre olarak bir de
 Pass by reference ise, bir metoda parametre olarak bir değişken gönderildiğinde, metodun değişkenin referansını aldığı anlamına gelir. Metot, değişkenin değerini değiştirebilir ve bu değişiklik, metottan çıkıldığında da kalıcı olur.
 Pass by value ve pass by reference arasındaki farklar:
 
-<figure><img src="assets/unnamed (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/tables/unnamed (12).png" alt=""><figcaption></figcaption></figure>
 
 Pass by value'nun avantajları:
 Daha hızlı olabilir.
@@ -1263,7 +1221,7 @@ Genellikle "bir şeyle ilişkili olma" anlamında kullanılır.
 Örnek: Bir kütüphane nesnesi, kitap nesneleriyle ilişkilidir. Kütüphane yok olduğunda, kitaplar hala var olur.
 Farklılıklar:
 
-<figure><img src="assets/unnamed (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/tables/unnamed (25).png" alt=""><figcaption></figcaption></figure>
 
 Hangi durumda hangisi kullanılır?
 Bir nesnenin diğer nesnelerden oluştuğu durumlarda composition kullanılır.
@@ -1891,7 +1849,7 @@ LinkedHashSet: Elemanların eklenme sırasını korumak için idealdir.
 TreeSet: Elemanları doğal sıralamalarına göre saklamak ve aramak için idealdir.
 Aşağıdaki tabloda bu üç veri setinin karşılaştırılması daha net bir şekilde gösterilmiştir:
 
-<figure><img src="assets/unnamed (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/tables/unnamed (17).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -1922,7 +1880,7 @@ Stream ve Collection, Java'da verileri işlemek için kullanılan iki farklı AP
    Collection: Küçük veri kümeleri üzerinde imperatif bir şekilde işlem yapmak için idealdir.
    Hangi API'yi kullanacağınız, uygulamanızın özel gereksinimlerine bağlıdır. Büyük veri kümeleri üzerinde işlem yapmanız gerekiyorsa Stream ideal bir seçimdir. Küçük veri kümeleri üzerinde işlem yapmanız veya verileri sıralı bir şekilde tutmanız gerekiyorsa Collection ideal bir seçimdir.
    Aşağıdaki tabloda bu iki API'nin karşılaştırılması daha net bir şekilde gösterilmiştir:
-   <figure><img src="assets/unnamed (16).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="assets/tables/unnamed (16).png" alt=""><figcaption></figcaption></figure>
 
    Stream ve Collection'ı birlikte kullanmak da mümkündür. Örneğin, bir Collection'ı bir Stream'e dönüştürebilir ve Stream işlemlerini uyguladıktan sonra sonucu tekrar bir Collection'a dönüştürebilirsiniz.
 
@@ -2471,7 +2429,7 @@ Birden fazla sunucuya gelen trafiği dağıtmak için
 SSL/TLS sertifikalarını merkezi olarak yönetmek için
 Forward Proxy ile Reverse Proxy arasındaki farklar:
 
-<figure><img src="assets/unnamed (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/tables/unnamed (19).png" alt=""><figcaption></figcaption></figure>
 
 Ek Bilgi:
 Her iki proxy türü de güvenlik riskleri oluşturabilir. Forward Proxy kullanırken gizliliğinizin korunduğundan emin olmak önemlidir. Reverse Proxy, web sunucularınızı ve uygulamalarınızı daha güvenli hale getirmeye yardımcı olabilir, ancak doğru yapılandırılmadığında güvenlik açıkları oluşturabilir.
@@ -3048,17 +3006,17 @@ En yaygın normal formlar şunlardır:
 3. Normal Form (3NF): 2NF'i sağlamanın yanı sıra, her sütunun geçişsiz bağımlılık olması gerekir.
    1NF Örneği:
    Öğrenci tablosu:
-   <figure><img src="assets/unnamed (21).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="assets/tables/unnamed (21).png" alt=""><figcaption></figcaption></figure>
 
    Bu tablo 1NF'dedir çünkü:
    Her satırın benzersiz bir anahtarı vardır (Öğrenci No).
    Her sütun atomiktir (ayrıştırılamaz).
    Ancak, bu tabloda veri tekrarı vardır. Bölüm bilgisi her satırda tekrarlanmaktadır. Bu veri tekrarını ortadan kaldırmak için Bölüm adında ayrı bir tablo oluşturabiliriz:
    Bölüm tablosu:
-   <figure><img src="assets/unnamed (22).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="assets/tables/unnamed (22).png" alt=""><figcaption></figcaption></figure>
 
    Öğrenci tablosu:
-   <figure><img src="assets/unnamed (23).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="assets/tables/unnamed (23).png" alt=""><figcaption></figcaption></figure>
 
    Bu şekilde, Bölüm bilgisi tek bir yerde tutulur ve veri tekrarı ortadan kalkar.
    1NF'de olması gereken diğer özellikler:
@@ -3219,7 +3177,7 @@ Birden fazla web sitesi veya uygulama tarafından kullanılabilir.
 Cookie'nin süresi dolduğunda veya kullanıcı tarafından silinene kadar saklanır.
 Session ve cookie arasındaki farklar:
 
-<figure><img src="assets/unnamed (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="assets/tables/unnamed (15).png" alt=""><figcaption></figcaption></figure>
 
 Session ve cookie birlikte nasıl çalışır:
 Kullanıcı bir web sitesini veya uygulamayı ziyaret ettiğinde, sunucu bir session oluşturur ve kullanıcının bilgisayarına bir cookie yerleştirir.
