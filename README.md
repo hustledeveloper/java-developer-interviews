@@ -1,8 +1,6 @@
-# java-developerMulakat-Sorulari
+# Java Developer Mülakat Soruları
 
-### _Java ve OOP_
-
-### _Temel Web Geliştirme_
+### _Java Soruları_
 
 <details>
 
@@ -1620,203 +1618,6 @@ Umarım bu bilgiler yardımcı olmuştur!
 
 <details>
 
-<summary>Java’da serializable nedir
-?</summary>
-
-Java'da serializable, bir nesnenin byte dizisine dönüştürülüp, dosya veya ağ üzerinden aktarılabilme özelliğidir. Bu sayede nesne, farklı bir JVM'de de yeniden oluşturulabilir.
-Serializable arayüzü:
-Serializable özelliğini kullanmak için, nesnenin Serializable arayüzünü implemente etmesi gerekir.
-Bu arayüz herhangi bir metot içermez, sadece bir marker interface görevi görür.
-Nesne serileştirme:
-Bir nesneyi serileştirmek için ObjectOutputStream sınıfı kullanılır.
-ObjectOutputStream, nesnenin alanlarını ve durumunu byte dizisine dönüştürür.
-Nesne deserializasyonu:
-Serileştirilmiş bir nesneyi deserialize etmek için ObjectInputStream sınıfı kullanılır.
-ObjectInputStream, byte dizisini nesneye dönüştürür.
-Serializable'ın faydaları:
-Nesnelerin depolanmasını ve taşınmasını kolaylaştırır.
-Nesnelerin durumunu kalıcı hale getirir.
-Farklı JVM'ler arasında nesne alışverişi yapmayı mümkün kılar.
-Serializable'ın dezavantajları:
-Güvenlik riskleri oluşturabilir.
-Sınıfın uyumluluğunu zorlaştırabilir.
-Serializable'ı ne zaman kullanmalıyız:
-Nesnelerin depolanması veya taşınması gerekiyorsa.
-Nesnelerin durumunun kalıcı hale getirilmesi gerekiyorsa.
-Farklı JVM'ler arasında nesne alışverişi yapılması gerekiyorsa.
-Serializable'ı ne zaman kullanmamalıyız:
-Nesnenin güvenli olması gerekiyorsa.
-Sınıfın uyumluluğunun korunması gerekiyorsa.
-Serializable'ın alternatifleri:
-Externalizable arayüzü
-JSON veya XML gibi formatlar
-Umarım bu bilgiler yardımcı olmuştur!
-
-</details>
-
-<details>
-
-<summary>Java’da Immutable,?</summary>
-
-bir nesnenin degismezligi anlamina gelir.
-Yani herhangi bir şekilde değiştirilemez.
-Bir Class'in immutable olmasi için,
-final olarak imlenmesi lazim.
-Set metotlarının olmamasi lazim.
-Deep Copy / Shallow Copy uygulanmasi lazim.
-
-</details>
-
-<details>
-
-<summary>Java'da Map Yapıları?</summary>
-
-Map, anahtar-değer çiftlerini depolamak için kullanılan bir veri yapıdır. Anahtarlar benzersizdir ve her anahtar bir değere eşlenir.
-Java'da map oluşturmak için:
-HashMap: En yaygın kullanılan map türüdür. Hızlı ve verimlidir.
-TreeMap: Anahtarların sıralı olmasını sağlar.
-LinkedHashMap: Ekleme sırasını korur.
-WeakHashMap: Anahtarların bellekten silinmesine izin verir.
-Map'te temel işlemler:
-put(key, value): Bir anahtar-değer çifti ekler.
-get(key): Bir anahtara bağlı değeri döndürür.
-remove(key): Bir anahtara bağlı değeri siler.
-containsKey(key): Bir anahtarın map'te olup olmadığını kontrol eder.
-isEmpty(): Map'in boş olup olmadığını kontrol eder.
-size(): Map'te kaç tane anahtar-değer çifti olduğunu döndürür.
-Map'i dolaşmak için:
-forEach(): Map'teki her anahtar-değer çifti için bir kod bloğu çalıştırır.
-entrySet(): Map'teki tüm girişlerin bir setini döndürür.
-keySet(): Map'teki tüm anahtarların bir setini döndürür.
-values(): Map'teki tüm değerlerin bir koleksiyonunu döndürür.
-
-Map'i kullanmanın faydaları:
-Anahtar-değer çiftlerini depolamak için idealdir.
-Hızlı ve verimlidir.
-Sıralama ve ekleme sırası gibi özel işlevler sunan farklı map türleri mevcuttur.
-Map'i kullanmanın dezavantajları:
-Anahtarların benzersiz olması gerekir.
-Sıralama ve ekleme sırası gibi özel işlevler, performansı etkileyebilir.
-Map'e alternatifler:
-List: Anahtar-değer çiftleri sıralı bir şekilde depolanmak istendiğinde kullanılabilir.
-Set: Anahtarların benzersiz olması ve sıralı olmaması gerektiğinde kullanılabilir.
-
-</details>
-
-<details>
-
-<summary>Java’da cache nasıl çalışır?
-?</summary>
-<figure><img src="assets/gif/caching.gif" alt=""><figcaption></figcaption></figure>
-
-Java'da caching, verileri bellekte saklayarak tekrarlayan erişimleri hızlandırma tekniğidir. Bu, veritabanı sorguları, dosya sistemi işlemleri veya hesaplama yoğun işlemler gibi pahalı işlemler için erişim süresini önemli ölçüde azaltabilir.
-Java'da caching'in temel prensibi:
-Bir veri ilk defa erişildiğinde, bellekten okunur ve cache'e kopyalanır.
-Aynı veriye tekrar erişildiğinde, veritabanından veya dosya sisteminden tekrar okunmak yerine cache'den okunur.
-Cache'de yer kalmadığında, en az kullanılan veri silinir ve yeni veri için yer açılır.
-Java'da caching'i uygulamak için:
-Cache API'si: Java, java.util.concurrent.ConcurrentHashMap gibi önceden hazırlanmış cache API'leri sunar. Bu API'ler, verileri ekleme, alma ve silme gibi temel işlemleri gerçekleştirmek için kullanışlı yöntemler sağlar.
-Üçüncü taraf kütüphaneler: Guava ve Ehcache gibi popüler üçüncü taraf kütüphaneler, daha gelişmiş caching işlevleri sunar. Bu kütüphaneler, TTL (time to live) ve LRU (least recently used) gibi cache eviction politikaları belirlemenize ve cache istatistiklerini izlemenize olanak tanır.
-Java'da caching'in faydaları:
-Performans artışı: Verilere erişim süresini azaltarak uygulamanızın performansını önemli ölçüde artırabilir.
-Ölçeklenebilirlik: Veritabanı yükünü azaltarak uygulamanızın daha fazla kullanıcıyı ve iş yükünü kaldırabilmesine yardımcı olabilir.
-Kullanılabilirlik: Veritabanı erişimi kesintiye uğrasa bile uygulamanızın çalışmaya devam etmesini sağlayabilir.
-Java'da caching'in dezavantajları:
-Bellek kullanımı: Cache'de saklanan veriler bellek kullanımı artırır.
-Tutarlılık: Veriler güncellendiğinde cache'deki eski veriler tutarsız hale gelebilir.
-Karmaşıklık: Cache'i doğru şekilde yapılandırmak ve yönetmek karmaşık olabilir.
-
-</details>
-
-<details>
-
-<summary>+Idempotency Nedir?
-?</summary>
-
-Idempotency, bir işlemin birden fazla kez aynı sonucu vermesi anlamına gelir. Yani, bir işlemi bir veya birden fazla kez tekrarlamak, sonucu etkilemez.
-Örnek:
-Bir banka hesabına para yatırma işlemi idempotenttir. Birden fazla kez para yatırmak, hesaptaki bakiyeyi aynı şekilde artırır.
-Bir e-posta gönderme işlemi idempotenttir. Aynı e-postayı birden fazla kez göndermek, alıcının gelen kutusunda birden fazla kopyası oluşmasına neden olur.
-Idempotency'nin faydaları:
-Hatalara karşı koruma sağlar. Bir işlem idempotent ise, bir hata oluşması durumunda işlem tekrarlanabilir ve aynı sonuca ulaşılabilir.
-Performansı artırır. Bir işlem idempotent ise, birden fazla kez tekrarlanmak zorunda kalmaz.
-Kullanımı kolaylaştırır. Bir işlem idempotent ise, kullanıcılar işlemin birden fazla kez tekrarlanmasından endişe duymadan kullanabilirler.
-Idempotency'nin sağlanması:
-İşlemin mantığını dikkatlice tasarlayarak. İşlem, her seferinde aynı sonucu verecek şekilde tasarlanmalıdır.
-Doğru veri yapıları ve algoritmalar kullanarak. İşlem, idempotent veri yapıları ve algoritmalar kullanmalıdır.
-Tekrarlanan istekleri kontrol ederek. Bir işlem idempotent olsa bile, tekrarlanan istekleri kontrol etmek ve gereksiz işlemleri önlemek önemlidir.
-Idempotency'nin kullanıldığı bazı durumlara örnek:
-Finansal işlemler
-E-ticaret işlemleri
-Otomasyon sistemleri
-Idempotency, birçok farklı alanda kullanılabilecek önemli bir kavramdır. Bir işlemin idempotent olmasını sağlayarak, hatalara karşı koruma sağlayabilir, performansı artırabilir ve kullanımı kolaylaştırabilirsiniz.
-
-</details>
-
-<details>
-
-<summary>Stateless ve statefull nedir?
-?</summary>
-
-Bilgisayar bilimlerinde, "stateless" ve "stateful" terimleri, bir sistemin veya bileşenin işleyiş şeklini tanımlamak için kullanılır. Bunlar arasındaki temel fark, sistemin geçmiş etkileşimleri hakkında bilgi saklama konusundaki yaklaşımlarıdır.
-Stateless:
-Tanım: Stateless sistemler, her istekte gerekli tüm bilgileri alır ve bu bilgiye dayanarak bir yanıt üretir. Geçmiş etkileşimlerle ilgili herhangi bir bilgiyi saklamaz.
-Özellikler:
-Her istek bağımsızdır.
-Ölçeklenebilirlik kolaydır.
-Hata toleransı yüksektir.
-Güvenlik açısından daha avantajlıdır.
-Kullanıcı oturumları gibi durum bilgisi gerektiren işlemleri gerçekleştiremez.
-Örnekler:
-Web sunucuları (her HTTP isteği bağımsızdır)
-API'ler (her API çağrısı gerekli parametreleri içerir)
-DNS sunucuları (her sorgu için IP adresi döner)
-Stateful:
-Tanım: Stateful sistemler, geçmiş etkileşimlerle ilgili bilgileri saklar ve bir sonraki istekleri işleme koyarken bu bilgileri kullanır.
-Özellikler:
-Kullanıcı oturumlarını yönetebilir.
-Alışveriş sepeti gibi uygulama içi durum bilgilerini saklayabilir.
-Daha karmaşık işlemleri gerçekleştirebilir.
-Ölçeklenebilirlik daha zordur.
-Hata toleransı daha düşüktür.
-Güvenlik açısından daha dikkatli yönetilmelidir.
-Örnekler:
-E-ticaret uygulamaları (alışveriş sepeti tutulur)
-Sosyal medya platformları (kullanıcı oturumları)
-Online oyunlar (oyun durumu saklanır)
-Seçim Kriterleri:
-Hangi yaklaşımı kullanacağınız, projenin ihtiyaçlarına bağlıdır. Eğer ölçeklenebilirlik, hata toleransı ve güvenlik sizin için öncelikli ise stateless yaklaşım daha avantajlı olabilir. Ancak kullanıcı oturumları veya durum bilgisi gerektiren işlemler için stateful yaklaşım tercih edilebilir.
-
-</details>
-
-<details>
-
-<summary>Scale Down Yapmak Nedir?
-?</summary>
-
-Scale down, bir sistemin veya uygulamanın kapasitesini veya boyutunu küçültmek anlamına gelir. Bu, çeşitli nedenlerle yapılabilir:
-Maliyetleri düşürmek: Daha az kaynak kullanarak maliyetleri düşürmek mümkündür.
-Verimliliği artırmak: Daha az kaynak kullanarak daha fazla iş yapmak mümkündür.
-Güvenilirliği artırmak: Daha az karmaşık bir sistem daha az hata yapma eğilimindedir.
-Bakımı kolaylaştırmak: Daha küçük bir sistemin bakımı ve güncellenmesi daha kolaydır.
-Scale down yapmanın birkaç yolu vardır:
-Daha az kaynak kullanmak: Daha az CPU, RAM veya depolama alanı kullanmak mümkündür.
-Daha az karmaşık bir sistem kullanmak: Daha az özellik veya işlev içeren bir sistem kullanmak mümkündür.
-Daha az sayıda sunucu kullanmak: Daha az sayıda sunucu çalıştırarak kaynak kullanımını optimize etmek mümkündür.
-Scale down yaparken dikkat edilmesi gerekenler:
-Sistemin ihtiyaçlarını karşılamak için yeterli kapasiteyi korumak önemlidir.
-Scale down işleminin sistemin performansı veya işlevselliği üzerinde olumsuz bir etkisi olmamalıdır.
-Scale down işleminin geri döndürülebilir olması önemlidir.
-Scale down yapmanın bazı örnekleri:
-Bir web sitesinin daha az trafik aldığı zamanlarda sunucu sayısını azaltmak.
-Bir uygulamanın daha az özellik içeren bir sürümünü kullanmak.
-Bir veritabanının boyutunu küçültmek.
-Scale down, bir sistemin veya uygulamanın kapasitesini veya boyutunu optimize etmek için kullanılabilecek bir tekniktir. Doğru şekilde yapıldığında, maliyetleri düşürmeye, verimliliği artırmaya ve güvenilirliği ve bakımı kolaylaştırmaya yardımcı olabilir.
-
-</details>
-
-<details>
-
 <summary>Singleton Class Nedir & Nasıl Oluşturulur?
 ?</summary>
 
@@ -2081,6 +1882,334 @@ Layered System: Client-server mimarisi her zaman client’in direkt bir server�
 Code on Demand: Code on demand kısıt, server’ın client’a belli durumlarda executable script’ler ve applet’ler gönderebilmesini kapsar.
 
 </details>
+
+---
+
+### _Kodun Çıktısı Nedir_
+
+<details>
+
+<summary>Kodun çıktısı nedir?</summary>
+
+public static void main(String [Jargs)
+Integer a = 50;
+Integer b = 50;
+System.out.println(\*a == b?
+
+- (a = b) );
+  Integer c = 500:
+  Integer d = 500;
+  System.out-println(\*c = d?" + (c = d) );
+
+JVM parametrelerinin default değerleri koruduğu varsayılarak -127 +128 değerleri arasını cacheler ve bu değerler arasına yazılan iki farklı sayıyı aynı referans noktalarına atar. Bundan dolayı birinci ifade true, ikinci ifade false çıktısını verir.
+
+</details>
+
+<details>
+
+<summary>Kodun çıktısı nedir?</summary>
+
+public static void main(String args[]) ‹
+System.out -printin(0.1 _ 3 == 0.3);
+System.out.println(0.1 _ 2 ==
+0.2);
+
+Float değişken derin binary formatinda nasil saklandığı
+ile alakali olan bu soruda, 0.2 tam olarak binary sisteme
+cevrilebilirken 0.3 tam olarak binary sisteme çevrilemez
+ve bundan dolayı:
+false
+true
+çıktısını alırız.
+
+</details>
+
+<details>
+
+<summary>Kodun çıktısı nedir?</summary>
+
+```java
+public static void main(String[] args) {
+    int intValue = Integer.MAX_VALUE;
+    intValue++;
+    System.out.println(intValue);
+}
+```
+
+overflow söz konusudur, max value üstüne bir değer daha eklenince min value -231231 gibi bir değere ulaşılır
+
+</details>
+
+<details>
+
+<summary>Kodun çıktısı nedir?</summary>
+
+```java
+class A {
+  static void staticMethod() {
+      System.out println("Static Method");
+  }
+}
+      public class MainClass {  
+        public static void main(String[] args) {
+            A a = null;
+            a.staticMethod();
+   }
+}           
+```
+
+static metotlar nesne üzerinden değil sınıf üzerinden çağrıldıkları için örneği yaratılmayan bir sınıfa ait static method da çağırıldığı zaman çalışılacaktır.
+
+</details>
+
+<details>
+
+<summary>Kodun çıktısı nedir?</summary>
+
+
+```java
+public static void main(String[] args) {
+    String[] array = {
+      "Turkey",
+      "Java"
+    };
+    List« String > v = Arrays.asList(array);
+    v.set(0, "Community");
+    System.out.println(v.contains("Community"));
+}
+```   
+
+true değeri verir, asList den dönen özelleştirilmiş listede elemanların eklenmesine veya çıkarılmasına izin verilmez ancak set operasyonunu gerçekleştirebiliriz.
+
+</details>
+
+<details>
+
+<summary>Kodun çıktısı nedir?</summary>
+
+```java
+public interface Interface {
+  static void main(String args) {
+  System.out.println("This is interface")
+}
+}
+public class ClassA implements Interface {
+  public static void main(String[] args) {
+      InterfaceA.main(new String[10]);
+      System.out.println("This is class");
+  }
+}
+
+```
+
+
+This is interface
+This is class
+
+</details>
+
+---
+
+### _Sözlük_
+
+<details>
+
+<summary>Java’da serializable nedir
+?</summary>
+
+Java'da serializable, bir nesnenin byte dizisine dönüştürülüp, dosya veya ağ üzerinden aktarılabilme özelliğidir. Bu sayede nesne, farklı bir JVM'de de yeniden oluşturulabilir.
+Serializable arayüzü:
+Serializable özelliğini kullanmak için, nesnenin Serializable arayüzünü implemente etmesi gerekir.
+Bu arayüz herhangi bir metot içermez, sadece bir marker interface görevi görür.
+Nesne serileştirme:
+Bir nesneyi serileştirmek için ObjectOutputStream sınıfı kullanılır.
+ObjectOutputStream, nesnenin alanlarını ve durumunu byte dizisine dönüştürür.
+Nesne deserializasyonu:
+Serileştirilmiş bir nesneyi deserialize etmek için ObjectInputStream sınıfı kullanılır.
+ObjectInputStream, byte dizisini nesneye dönüştürür.
+Serializable'ın faydaları:
+Nesnelerin depolanmasını ve taşınmasını kolaylaştırır.
+Nesnelerin durumunu kalıcı hale getirir.
+Farklı JVM'ler arasında nesne alışverişi yapmayı mümkün kılar.
+Serializable'ın dezavantajları:
+Güvenlik riskleri oluşturabilir.
+Sınıfın uyumluluğunu zorlaştırabilir.
+Serializable'ı ne zaman kullanmalıyız:
+Nesnelerin depolanması veya taşınması gerekiyorsa.
+Nesnelerin durumunun kalıcı hale getirilmesi gerekiyorsa.
+Farklı JVM'ler arasında nesne alışverişi yapılması gerekiyorsa.
+Serializable'ı ne zaman kullanmamalıyız:
+Nesnenin güvenli olması gerekiyorsa.
+Sınıfın uyumluluğunun korunması gerekiyorsa.
+Serializable'ın alternatifleri:
+Externalizable arayüzü
+JSON veya XML gibi formatlar
+Umarım bu bilgiler yardımcı olmuştur!
+
+</details>
+
+<details>
+
+<summary>Java’da Immutable,?</summary>
+
+bir nesnenin degismezligi anlamina gelir.
+Yani herhangi bir şekilde değiştirilemez.
+Bir Class'in immutable olmasi için,
+final olarak imlenmesi lazim.
+Set metotlarının olmamasi lazim.
+Deep Copy / Shallow Copy uygulanmasi lazim.
+
+</details>
+
+<details>
+
+<summary>Java'da Map Yapıları?</summary>
+
+Map, anahtar-değer çiftlerini depolamak için kullanılan bir veri yapıdır. Anahtarlar benzersizdir ve her anahtar bir değere eşlenir.
+Java'da map oluşturmak için:
+HashMap: En yaygın kullanılan map türüdür. Hızlı ve verimlidir.
+TreeMap: Anahtarların sıralı olmasını sağlar.
+LinkedHashMap: Ekleme sırasını korur.
+WeakHashMap: Anahtarların bellekten silinmesine izin verir.
+Map'te temel işlemler:
+put(key, value): Bir anahtar-değer çifti ekler.
+get(key): Bir anahtara bağlı değeri döndürür.
+remove(key): Bir anahtara bağlı değeri siler.
+containsKey(key): Bir anahtarın map'te olup olmadığını kontrol eder.
+isEmpty(): Map'in boş olup olmadığını kontrol eder.
+size(): Map'te kaç tane anahtar-değer çifti olduğunu döndürür.
+Map'i dolaşmak için:
+forEach(): Map'teki her anahtar-değer çifti için bir kod bloğu çalıştırır.
+entrySet(): Map'teki tüm girişlerin bir setini döndürür.
+keySet(): Map'teki tüm anahtarların bir setini döndürür.
+values(): Map'teki tüm değerlerin bir koleksiyonunu döndürür.
+
+Map'i kullanmanın faydaları:
+Anahtar-değer çiftlerini depolamak için idealdir.
+Hızlı ve verimlidir.
+Sıralama ve ekleme sırası gibi özel işlevler sunan farklı map türleri mevcuttur.
+Map'i kullanmanın dezavantajları:
+Anahtarların benzersiz olması gerekir.
+Sıralama ve ekleme sırası gibi özel işlevler, performansı etkileyebilir.
+Map'e alternatifler:
+List: Anahtar-değer çiftleri sıralı bir şekilde depolanmak istendiğinde kullanılabilir.
+Set: Anahtarların benzersiz olması ve sıralı olmaması gerektiğinde kullanılabilir.
+
+</details>
+
+<details>
+
+<summary>Java’da cache nasıl çalışır?
+?</summary>
+<figure><img src="assets/gif/caching.gif" alt=""><figcaption></figcaption></figure>
+
+Java'da caching, verileri bellekte saklayarak tekrarlayan erişimleri hızlandırma tekniğidir. Bu, veritabanı sorguları, dosya sistemi işlemleri veya hesaplama yoğun işlemler gibi pahalı işlemler için erişim süresini önemli ölçüde azaltabilir.
+Java'da caching'in temel prensibi:
+Bir veri ilk defa erişildiğinde, bellekten okunur ve cache'e kopyalanır.
+Aynı veriye tekrar erişildiğinde, veritabanından veya dosya sisteminden tekrar okunmak yerine cache'den okunur.
+Cache'de yer kalmadığında, en az kullanılan veri silinir ve yeni veri için yer açılır.
+Java'da caching'i uygulamak için:
+Cache API'si: Java, java.util.concurrent.ConcurrentHashMap gibi önceden hazırlanmış cache API'leri sunar. Bu API'ler, verileri ekleme, alma ve silme gibi temel işlemleri gerçekleştirmek için kullanışlı yöntemler sağlar.
+Üçüncü taraf kütüphaneler: Guava ve Ehcache gibi popüler üçüncü taraf kütüphaneler, daha gelişmiş caching işlevleri sunar. Bu kütüphaneler, TTL (time to live) ve LRU (least recently used) gibi cache eviction politikaları belirlemenize ve cache istatistiklerini izlemenize olanak tanır.
+Java'da caching'in faydaları:
+Performans artışı: Verilere erişim süresini azaltarak uygulamanızın performansını önemli ölçüde artırabilir.
+Ölçeklenebilirlik: Veritabanı yükünü azaltarak uygulamanızın daha fazla kullanıcıyı ve iş yükünü kaldırabilmesine yardımcı olabilir.
+Kullanılabilirlik: Veritabanı erişimi kesintiye uğrasa bile uygulamanızın çalışmaya devam etmesini sağlayabilir.
+Java'da caching'in dezavantajları:
+Bellek kullanımı: Cache'de saklanan veriler bellek kullanımı artırır.
+Tutarlılık: Veriler güncellendiğinde cache'deki eski veriler tutarsız hale gelebilir.
+Karmaşıklık: Cache'i doğru şekilde yapılandırmak ve yönetmek karmaşık olabilir.
+
+</details>
+
+<details>
+
+<summary>+Idempotency Nedir?
+?</summary>
+
+Idempotency, bir işlemin birden fazla kez aynı sonucu vermesi anlamına gelir. Yani, bir işlemi bir veya birden fazla kez tekrarlamak, sonucu etkilemez.
+Örnek:
+Bir banka hesabına para yatırma işlemi idempotenttir. Birden fazla kez para yatırmak, hesaptaki bakiyeyi aynı şekilde artırır.
+Bir e-posta gönderme işlemi idempotenttir. Aynı e-postayı birden fazla kez göndermek, alıcının gelen kutusunda birden fazla kopyası oluşmasına neden olur.
+Idempotency'nin faydaları:
+Hatalara karşı koruma sağlar. Bir işlem idempotent ise, bir hata oluşması durumunda işlem tekrarlanabilir ve aynı sonuca ulaşılabilir.
+Performansı artırır. Bir işlem idempotent ise, birden fazla kez tekrarlanmak zorunda kalmaz.
+Kullanımı kolaylaştırır. Bir işlem idempotent ise, kullanıcılar işlemin birden fazla kez tekrarlanmasından endişe duymadan kullanabilirler.
+Idempotency'nin sağlanması:
+İşlemin mantığını dikkatlice tasarlayarak. İşlem, her seferinde aynı sonucu verecek şekilde tasarlanmalıdır.
+Doğru veri yapıları ve algoritmalar kullanarak. İşlem, idempotent veri yapıları ve algoritmalar kullanmalıdır.
+Tekrarlanan istekleri kontrol ederek. Bir işlem idempotent olsa bile, tekrarlanan istekleri kontrol etmek ve gereksiz işlemleri önlemek önemlidir.
+Idempotency'nin kullanıldığı bazı durumlara örnek:
+Finansal işlemler
+E-ticaret işlemleri
+Otomasyon sistemleri
+Idempotency, birçok farklı alanda kullanılabilecek önemli bir kavramdır. Bir işlemin idempotent olmasını sağlayarak, hatalara karşı koruma sağlayabilir, performansı artırabilir ve kullanımı kolaylaştırabilirsiniz.
+
+</details>
+
+<details>
+
+<summary>Stateless ve statefull nedir?
+?</summary>
+
+Bilgisayar bilimlerinde, "stateless" ve "stateful" terimleri, bir sistemin veya bileşenin işleyiş şeklini tanımlamak için kullanılır. Bunlar arasındaki temel fark, sistemin geçmiş etkileşimleri hakkında bilgi saklama konusundaki yaklaşımlarıdır.
+Stateless:
+Tanım: Stateless sistemler, her istekte gerekli tüm bilgileri alır ve bu bilgiye dayanarak bir yanıt üretir. Geçmiş etkileşimlerle ilgili herhangi bir bilgiyi saklamaz.
+Özellikler:
+Her istek bağımsızdır.
+Ölçeklenebilirlik kolaydır.
+Hata toleransı yüksektir.
+Güvenlik açısından daha avantajlıdır.
+Kullanıcı oturumları gibi durum bilgisi gerektiren işlemleri gerçekleştiremez.
+Örnekler:
+Web sunucuları (her HTTP isteği bağımsızdır)
+API'ler (her API çağrısı gerekli parametreleri içerir)
+DNS sunucuları (her sorgu için IP adresi döner)
+Stateful:
+Tanım: Stateful sistemler, geçmiş etkileşimlerle ilgili bilgileri saklar ve bir sonraki istekleri işleme koyarken bu bilgileri kullanır.
+Özellikler:
+Kullanıcı oturumlarını yönetebilir.
+Alışveriş sepeti gibi uygulama içi durum bilgilerini saklayabilir.
+Daha karmaşık işlemleri gerçekleştirebilir.
+Ölçeklenebilirlik daha zordur.
+Hata toleransı daha düşüktür.
+Güvenlik açısından daha dikkatli yönetilmelidir.
+Örnekler:
+E-ticaret uygulamaları (alışveriş sepeti tutulur)
+Sosyal medya platformları (kullanıcı oturumları)
+Online oyunlar (oyun durumu saklanır)
+Seçim Kriterleri:
+Hangi yaklaşımı kullanacağınız, projenin ihtiyaçlarına bağlıdır. Eğer ölçeklenebilirlik, hata toleransı ve güvenlik sizin için öncelikli ise stateless yaklaşım daha avantajlı olabilir. Ancak kullanıcı oturumları veya durum bilgisi gerektiren işlemler için stateful yaklaşım tercih edilebilir.
+
+</details>
+
+<details>
+
+<summary>Scale Down Yapmak Nedir?
+?</summary>
+
+Scale down, bir sistemin veya uygulamanın kapasitesini veya boyutunu küçültmek anlamına gelir. Bu, çeşitli nedenlerle yapılabilir:
+Maliyetleri düşürmek: Daha az kaynak kullanarak maliyetleri düşürmek mümkündür.
+Verimliliği artırmak: Daha az kaynak kullanarak daha fazla iş yapmak mümkündür.
+Güvenilirliği artırmak: Daha az karmaşık bir sistem daha az hata yapma eğilimindedir.
+Bakımı kolaylaştırmak: Daha küçük bir sistemin bakımı ve güncellenmesi daha kolaydır.
+Scale down yapmanın birkaç yolu vardır:
+Daha az kaynak kullanmak: Daha az CPU, RAM veya depolama alanı kullanmak mümkündür.
+Daha az karmaşık bir sistem kullanmak: Daha az özellik veya işlev içeren bir sistem kullanmak mümkündür.
+Daha az sayıda sunucu kullanmak: Daha az sayıda sunucu çalıştırarak kaynak kullanımını optimize etmek mümkündür.
+Scale down yaparken dikkat edilmesi gerekenler:
+Sistemin ihtiyaçlarını karşılamak için yeterli kapasiteyi korumak önemlidir.
+Scale down işleminin sistemin performansı veya işlevselliği üzerinde olumsuz bir etkisi olmamalıdır.
+Scale down işleminin geri döndürülebilir olması önemlidir.
+Scale down yapmanın bazı örnekleri:
+Bir web sitesinin daha az trafik aldığı zamanlarda sunucu sayısını azaltmak.
+Bir uygulamanın daha az özellik içeren bir sürümünü kullanmak.
+Bir veritabanının boyutunu küçültmek.
+Scale down, bir sistemin veya uygulamanın kapasitesini veya boyutunu optimize etmek için kullanılabilecek bir tekniktir. Doğru şekilde yapıldığında, maliyetleri düşürmeye, verimliliği artırmaya ve güvenilirliği ve bakımı kolaylaştırmaya yardımcı olabilir.
+
+</details>
+
+
 
 <details>
 
@@ -2675,6 +2804,10 @@ nedir abi
 
 </details>
 
+---
+
+### _Veritabanı Yönetimi_
+
 <details>
 
 <summary>DDL Komutları Nelerdir?
@@ -3161,9 +3294,15 @@ Umarım bu açıklamalar execution plan hakkında size daha fazla bilgi vermişt
 
 </details>
 
+
+---
+
+### _İleri seviye yorum soruları_
+
 <details>
 
 <summary>Mikroservis mimari bir projede Transactional bir problem ortaya çıkması durumunda neler yapabilirsin??</summary>
+
 
 <figure><img src="assets/gif/microservis.gif" alt=""><figcaption></figcaption></figure>
 
@@ -3246,112 +3385,5 @@ Session ve cookie'ler, çalınabilir veya tahmin edilebilir.
 Güvenli bir şekilde kullanılmaları gerekir.
 HTTPS gibi güvenli bir protokol kullanılmalıdır.
 Session ve cookie'lerin süresi dolduğunda veya kullanıcı oturumunu kapattığında silinmelidir.
-
-</details>
-
-<details>
-
-<summary>soru?</summary>
-
-public static void main(String [Jargs)
-Integer a = 50;
-Integer b = 50;
-System.out.println(\*a == b?
-
-- (a = b) );
-  Integer c = 500:
-  Integer d = 500;
-  System.out-println(\*c = d?" + (c = d) );
-
-JVM parametrelerinin default değerleri koruduğu varsayılarak -127 +128 değerleri arasını cacheler ve bu değerler arasına yazılan iki farklı sayıyı aynı referans noktalarına atar. Bundan dolayı birinci ifade true, ikinci ifade false çıktısını verir.
-
-</details>
-
-<details>
-
-<summary>soru?</summary>
-
-public static void main(String args[]) ‹
-System.out -printin(0.1 _ 3 == 0.3);
-System.out.println(0.1 _ 2 ==
-0.2);
-
-Float değişken derin binary formatinda nasil saklandığı
-ile alakali olan bu soruda, 0.2 tam olarak binary sisteme
-cevrilebilirken 0.3 tam olarak binary sisteme çevrilemez
-ve bundan dolayı:
-false
-true
-çıktısını alırız.
-
-</details>
-
-<details>
-
-<summary>soru?</summary>
-
-public static void main(String[] args) {
-int intValue = Integer MAX_VALUE;
-intValue++;
-System.out.println(intValue);
-
-overflow söz konusudur, max value üstüne bir değer daha eklenince min value -231231 gibi bir değere ulaşılır
-
-</details>
-
-<details>
-
-<summary>soru?</summary>
-
-class A {
-static void staticMethod() {
-System.out println( "Static Method");
-public class MainClass { »
-public static void main(String(] args) {
-A a = null;
-a.staticMethod();
-
-static metotlar nesne üzerinden değil sınıf üzerinden çağrıldıkları için örneği yaratılmayan bir sınıfa ait static method da çağırıldığı zaman çalışılacaktır.
-
-</details>
-
-<details>
-
-<summary>soru?</summary>
-
-cevap
-
-</details>
-
-<details>
-
-<summary>soru?</summary>
-
-public static void main(String() args) ‹
-String(] array = {"Turkey", "Java"};
-List«String> v = Arrays.asList(array);
-v.set(0, "Community");
-System.out.println(v.contains("Community"));
-}
-
-true değeri verir, asList den dönen özelleştirilmiş listede elemanların eklenmesine veya çıkarılmasına izin verilmez ancak set operasyonunu gerçekleştirebiliriz.
-
-</details>
-
-<details>
-
-<summary>soru?</summary>
-
-public interface Interface {
-static void main(String
-args) €
-System. out - printin("This is interface")
-public class ClassA implements Interface {
-public static void main(String) args) ‹
-InterfaceA.main(new String [ 10]);
-System.out println( "This is class");
-
-This is interface
-This is class
 
 </details>
