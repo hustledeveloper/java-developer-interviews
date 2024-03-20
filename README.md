@@ -1,5 +1,32 @@
 # Java Developer Mülakat Soruları
 
+### _Katkı Sunmak İçin_
+- Bu sorular daha çok Java backend geliştirme yapacak backend developer rolündeki kişilere uygun olarak hazırlanmıştır. Temel konuların yanısıra ve ileri seviye java soruları, genel programlama konseplerinden sorular, kod çıktısı soruları ve bir sözlük eklenmiştir.
+
+- Pull Request oluşturarak yeni sorular ekleyebilir, soru deposuna katkıda bulunabilirsiniz. 
+- Yanlış olduğunu düşündüğünüz cevapları değiştirebilir veya cevapları geliştirebilirsiniz.
+
+- Sorular bu readme dosyasında aşağıdaki formata uygun etkiketler arasına yazılarak depolanmaktadır.
+
+
+
+<figure><img src="assets/diğer/örnek.png" alt=""><figcaption></figcaption></figure>
+
+
+<details>
+<summary> Sorunuzu buraya ekleyin </summary>
+
+Cevabını buraya ekleyin
+
+```java
+//java kodunu buraya ekleyin
+
+```
+</details>
+
+
+
+
 ### _Java Soruları_
 
 <details>
@@ -888,13 +915,7 @@ Heap ve stack, Java'da programlama yaparken göz önünde bulundurulması gereke
 
 </details>
 
-<details>
 
-<summary>soru?</summary>
-
-cevap
-
-</details>
 
 <details>
 
