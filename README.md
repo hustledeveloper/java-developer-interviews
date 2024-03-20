@@ -1882,8 +1882,6 @@ int ve Integer, Java'da tamsayı değerleri temsil etmek için kullanılan iki f
    Bir metni büyük harfe veya küçük harfe dönüştürmek
    Ekstra Bilgi:
    StringBuilder sınıfına benzer bir sınıf olan StringBuffer sınıfı da mevcuttur. StringBuffer sınıfı thread-safe'dir, ancak StringBuilder sınıfından daha yavaştır.
-   Java 9'dan itibaren String sınıfına concat() metodu eklenmiştir. Bu metot, iki String nesnesini birleştirmek için kullanılabilir.
-   Umarım bu bilgiler yardımcı olmuştur.
 
 </details>
 
@@ -2599,10 +2597,7 @@ Bir ağdaki paket kaybı ve gecikme süresi
    Merkezi sunucular: Çoğu blog platformu içeriği kendi sunucularında depolar. Bu sunucular genellikle güvenli ve bakımı yapılmış verimerkezlerinde bulunur.
    CDN (Content Delivery Network): Bazı platformlar veya blog yazarları içeriği daha hızlı yüklemek için CDN hizmetlerinden yararlanır. CDN, dünyanın farklı yerlerinde bulunan sunucularda web sitesi içeriğini önbelleğe alır. Böylece ziyaretçi içeriğe en yakın sunucudan erişerek daha hızlı yükleme elde eder.
    Yerel depolama: Eğer WordPress gibi kendi kod tabanınızı barındıran bir platform kullanıyorsanız, blog içeriği web sunucunuzun disk alanında depolanır.
-   "Blog storage" hakkında ek bilgilendirme isterseniz, şu konuları belirterek sorunuzu detaylandırabilirsiniz:
-   Hangi bağlamda "blog storage" terimini duyduğunuz?
-   Siz ne tür bir bilgi arıyorsunuz?
-   Umarım bu açıklamalar size yardımcı olur.
+
 
 </details>
 
